@@ -1,0 +1,22 @@
+.NavBarContainer {
+  width: 100%;
+  display: inline-block;
+  max-width: 910px;
+  margin-bottom: 64px;
+  height: 20vh;
+  margin-top: 32px;
+}
+
+.NavBar {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-text {
+  color: #5d5d5d;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}

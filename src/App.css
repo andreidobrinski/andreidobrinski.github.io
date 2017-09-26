@@ -21,28 +21,8 @@
   line-height: 1.618em;
 }
 
-.NavBarContainer {
-  width: 100%;
-  display: inline-block;
-  max-width: 910px;
-}
-
-.NavBar {
-  display: flex; 
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.nav-text {
-  color: #5d5d5d;
-  font-size: 2em;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .fold {
-  height: 100vh;
+  height: 80vh;
   width: 80%;
   display: inline-block;
 }
