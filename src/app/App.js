@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './andreiDLogo.svg';
+import logo from '../andreiDLogo.svg';
 import './App.css';
-import NavBar from './navbar.js';
-import Card from './card.js';
+import NavBar from '../navbar/navbar.js';
+import Card from '../card/card.js';
 
 class App extends Component {
   render() {
