@@ -11,7 +11,7 @@ class App extends Component {
         
         <div className="fold">
 
-            <img src={logo} alt="logo" />
+            <img src={logo} className="logo" alt="logo" />
 
             <br />
 
