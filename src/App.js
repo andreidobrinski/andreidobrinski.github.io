@@ -22,12 +22,15 @@ class App extends Component {
                 Currently working at LifeTales in Toronto<br />
                 What would you like to know more about?<br />
                 My ...<br />
-            </p>
-
-            <NavBar />
+            </p>  
 
         </div>
 
+        <NavBar />
+
+        <Card />
+        <Card />
+        <Card />
         <Card />
 
       </div>
