@@ -13,25 +13,7 @@
   font-size: large;
 }
 
-.intro-text {
-  color: #5d5d5d;
-  text-align: left;
-  display: inline-block;
-  font-size: 2em;
-  line-height: 1.618em;
-}
-
-.fold {
-  height: 80vh;
-  width: 80%;
-  display: inline-block;
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-.logo {
-  top: 0;
 }

@@ -1,0 +1,17 @@
+.intro-text {
+  color: #5d5d5d;
+  text-align: left;
+  display: inline-block;
+  font-size: 2em;
+  line-height: 1.618em;
+}
+
+.fold {
+  height: 80vh;
+  width: 80%;
+  display: inline-block;
+}
+
+.logo {
+  top: 0;
+}

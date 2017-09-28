@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../andreiDLogo.svg';
 import './App.css';
+import Fold from '../fold/fold.js';
 import NavBar from '../navbar/navbar.js';
 import Card from '../card/card.js';
 
@@ -9,22 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         
-        <div className="fold">
-
-            <img src={logo} className="logo" alt="logo" />
-
-            <br />
-
-            <p className="intro-text">
-                Hi, I'm<br />
-                Andrei Dobrinski,<br />
-                a UX Designer with a passion for motion design.<br />
-                Currently working at LifeTales in Toronto<br />
-                What would you like to know more about?<br />
-                My ...<br />
-            </p>  
-
-        </div>
+        <Fold />
 
         <NavBar />
 
