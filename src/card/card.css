@@ -10,7 +10,7 @@
   max-height: 533px;
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
 }
 
 .overlay {
