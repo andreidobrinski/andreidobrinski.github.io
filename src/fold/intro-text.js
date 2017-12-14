@@ -1,7 +1,7 @@
 import React from 'react';
 import './fold.css';
 
-const IntroText = (props) => {
+const IntroText = () => {
   return (
 		<p className="intro-text">
 			Hi, I'm<br />

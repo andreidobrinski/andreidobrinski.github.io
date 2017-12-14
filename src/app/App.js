@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './App.css';
 import LandingPage from './landing-page';
-import Fold from '../fold/fold.js';
-import NavBar from '../navbar/navbar.js';
-import Card from '../card/card.js';
+import IntroText from '../fold/intro-text';
 
 class App extends Component {
   render() {
@@ -13,6 +10,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Switch>
+            <Route path="/work/BadlandsBrewing" component={IntroText} />
             <Route path="/" component={LandingPage} />
           </Switch>
         </div>
