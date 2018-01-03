@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import LandingPage from './landing-page';
-import IntroText from '../fold/intro-text';
-import BadlandsBrewing from '../work/badlands-brewing';
+import LandingPage from './LandingPage';
+import BadlandsBrewing from '../work/BadlandsBrewing';
 
 class App extends Component {
   render() {

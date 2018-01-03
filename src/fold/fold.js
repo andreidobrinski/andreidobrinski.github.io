@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../andreiDLogo.svg';
 import '../fold/fold.css';
-import IntroText from '../fold/intro-text.js';
+import IntroText from '../fold/IntroText';
 
 const Fold = () => (
 	<div className="fold">

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
-import Fold from '../fold/fold.js';
-import NavBar from '../navbar/navbar.js';
-import Card from '../card/card.js';
+import Fold from '../fold/Fold';
+import NavBar from '../navbar/Navbar';
+import Card from '../card/Card';
 
 class LandingPage extends Component {
   render() {
