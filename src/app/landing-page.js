@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import Fold from '../fold/fold.js';
 import NavBar from '../navbar/navbar.js';
@@ -10,7 +11,12 @@ class LandingPage extends Component {
       <div className="App">
         <Fold />
         <NavBar workStyle="nav-text" playStyle="nav-text-subtle" selfStyle="nav-text-subtle"/>
-        <Card />
+        <Link to="/work/BadlandsBrewing">
+          <Card
+            product="Badlands Brewing"
+            skill="Logo Design"
+          />
+        </Link>
         <Card />
         <Card />
         <Card />
