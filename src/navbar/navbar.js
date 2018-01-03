@@ -6,9 +6,9 @@ class NavBar extends Component {
     return (
       <nav className="NavBarContainer">
         <div className="NavBar">
-          <a className="nav-text" href="#">Work</a>
-          <a className="nav-text" href="#">Play</a>
-          <a className="nav-text" href="#">Self</a>
+          <a className={this.props.workStyle} href="#">Work</a>
+          <a className={this.props.playStyle} href="#">Play</a>
+          <a className={this.props.selfStyle} href="#">Self</a>
         </div>
       </nav>
     );
