@@ -1,4 +1,6 @@
-.card {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   background-color: #3CDCFF;
   height: 60vw;
   width: 90vw;
@@ -11,9 +13,14 @@
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
   transition-timing-function: ease-in-out;
-}
 
-.overlay {
+  :hover {
+    box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02, 1.02);
+  }
+`;
+
+export const Overlay = styled.div`
   color: white;
   bottom: 0;
   position: absolute;
@@ -21,21 +28,16 @@
   height: 20%;
   background: linear-gradient(to top, rgba(0,0,0,100), rgba(0,0,0,0));
   max-height: 75px;
-}
+`;
 
-.card-product {
+export const Product = styled.div`
   position: absolute;
   left: 16px;
   bottom: 0;
-}
+`;
 
-.card-skill {
+export const Skill = styled.div`
   position: absolute;
   right: 16px;
   bottom: 0;
-}
-
-.card:hover {
-  box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5);
-  transform: scale(1.02, 1.02);
-}
+`;

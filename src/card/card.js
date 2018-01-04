@@ -1,17 +1,17 @@
 import React from 'react';
-import './card.css';
+import { Wrapper, Overlay, Product, Skill } from './styled';
 
 const Card = (props) => (
-  <div className="card" onClick={this.handleClick}>
-    <div className="overlay">
-      <div className="card-product">
+  <Wrapper>
+    <Overlay>
+      <Product>
         <p>{props.product}</p>
-      </div>
-      <div className="card-skill">
+      </Product>
+      <Skill>
         <p>{props.skill}</p>
-      </div>
-    </div>
-  </div>
+      </Skill>
+    </Overlay>
+  </Wrapper>
 );
 
 export default Card;
