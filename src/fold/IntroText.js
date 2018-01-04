@@ -1,15 +1,15 @@
 import React from 'react';
-import './fold.css';
+import { Intro } from './styled';
 
 const IntroText = () => (
-	<p className="intro-text">
+	<Intro>
 		Hi, I'm<br />
 		Andrei Dobrinski,<br />
 		a UX Designer and Front-End Developer.<br />
 		Currently working at LifeTales in Toronto<br />
 		What would you like to know more about?<br />
 		My ...<br />
-	</p>
+	</Intro>
 );
 
 export default IntroText;

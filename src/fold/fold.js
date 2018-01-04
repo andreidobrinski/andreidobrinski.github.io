@@ -1,14 +1,14 @@
 import React from 'react';
 import logo from '../andreiDLogo.svg';
-import '../fold/fold.css';
-import IntroText from '../fold/IntroText';
+import IntroText from './IntroText';
+import { Wrapper, ADLogo } from './styled';
 
 const Fold = () => (
-	<div className="fold">
-		<img src={logo} className="logo" alt="logo" />
+	<Wrapper>
+		<ADLogo src={logo} alt="Andrei Dobrinski's logo" />
 		<br />
 		<IntroText />
-	</div>
+	</Wrapper>
 );
 
 export default Fold;
