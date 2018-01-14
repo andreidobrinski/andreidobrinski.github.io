@@ -1,9 +1,12 @@
 import React from 'react';
+import illustratorIcon from './assets/illustrator-icon.svg';
+import zeldaOwl from './assets/zelda-owl.png';
+import { Wrapper, Summary, Header, Body } from './styled';
 
 const BadlandsBrewing = () => (
-  <div>
-    <h1>Designing a logo for an Ontario craft brewery.</h1>
-    <h2>Understanding the problem</h2>
+  <Wrapper>
+    <Summary>Designing a logo for an Ontario craft brewery.</Summary>
+    <Header>Understanding the problem</Header>
     <p>
       Badlands Brewing Company needed a logo that would be suitable for bottle labels, kegs, taps,
       glasses, and merchandise. The logo needed to be simple enough to be printed on the different mediums.
@@ -16,10 +19,10 @@ const BadlandsBrewing = () => (
       My task was to design a unique and iconic logo that would identify the
       Badlands Brewing brand in the competitive beer industry.
     </p>
-    <h2>The Stack</h2>
+    <Header>The Stack</Header>
     <p>Adobe Illustrator</p>
-    <p>need image</p>
-    <h2>The Process</h2>
+    <img src={illustratorIcon} alt="adobe illustrator logo" />
+    <Header>The Process</Header>
     <p>
       Coming up with an image that represented the Cheltenham Badlands while also giving the brand an
       identifying logo was initally a challenge. The Badlands are known for their sweaping landscapes but
@@ -32,7 +35,7 @@ const BadlandsBrewing = () => (
       &nbsp;from The Legend of Zelda - Ocarina of Time. As a nocturnal animal,
       it would be something beer-drinking night owls could relate to.
     </p>
-    <p>insert picture of zelda owl</p>
+    <img src={zeldaOwl} alt="owl from Ocarina of Time" />
     <p>
       Designing the logo took several iterations. The owl needed to resemble both the beauty and grit of the
       Badlands, while being recognizable in the craft beer market. Following this idea was the pronounced
@@ -40,11 +43,7 @@ const BadlandsBrewing = () => (
       Below is the final design.
     </p>
     <p>insert picture of logo</p>
-    <h2>The Learning</h2>
-    <p>
-      This project was an interesting challenge as it taught me useful technical knowledge about using
-      Illustrator and about creating a unique identity for a brand.
-    </p>
+    <Header>The Learning</Header>
     <p>
       This project was an interesting challenge as it expanded both my technical knowledge of
       Illustrator and my knowledge of branding in a competitive market.
@@ -58,12 +57,12 @@ const BadlandsBrewing = () => (
       I enjoyed the challenge of symbolizing the Badlands environment and the process
       of making the design a reality.
     </p>
-    <h2>The Company</h2>
+    <Header>The Company</Header>
     <p>
       If you would like to learn more about Badlands Brewing, check out their website here.
     </p>
     <p>Instagram pictures</p>
-  </div>
+  </Wrapper>
 );
 
 export default BadlandsBrewing;
