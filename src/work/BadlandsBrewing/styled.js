@@ -32,4 +32,7 @@ export const LargeImage = styled.img`
   max-width: 600px;
 `;
 
+export const StackIcon = styled.img`
+  height: 100px;
+  width: 100px;
 `;
