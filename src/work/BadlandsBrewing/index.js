@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../../card/Card';
 import illustratorIcon from './assets/illustrator-icon.svg';
 import zeldaOwl from './assets/zelda-owl.png';
 import { Wrapper, Content, Summary, Header, Body, LargeImage, StackIcon } from './styled';
@@ -12,6 +13,11 @@ class BadlandsBrewing extends Component {
     return(
       <Wrapper>
         <Content>
+          <Card
+            product="Badlands Brewing"
+            skill="Logo Design"
+            noHover
+          />
           <Summary>Designing a logo for an Ontario craft brewery.</Summary>
           <Header>Understanding the Problem</Header>
           <Body>
