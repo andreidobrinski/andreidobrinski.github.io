@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   background-image: url("${props => props.image}");
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 400px 500px;
+  background-size: contain;
   height: 60vw;
   width: 90vw;
   display: inline-block;
