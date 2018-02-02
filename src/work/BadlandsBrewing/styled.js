@@ -23,12 +23,11 @@ export const Header = styled.h3`
 export const Body = styled.p`
   line-height: 1.618;
   font-size: 1.618em;
-  ${'' /* text-align: justify;
-  text-justify: inter-word; */}
 `;
 
 export const LargeImage = styled.img`
-  max-width: 600px;
+  max-width: 1000px;
+  width: 100%;
 `;
 
 export const StackIcon = styled.img`
