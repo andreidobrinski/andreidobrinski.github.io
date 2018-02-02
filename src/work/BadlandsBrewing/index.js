@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../card/Card';
+import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import illustratorIcon from './assets/illustrator-icon.svg';
 import zeldaOwl from './assets/zelda-owl.png';
 import { Wrapper, Content, Summary, Header, Body, LargeImage, StackIcon } from './styled';
@@ -16,6 +17,7 @@ class BadlandsBrewing extends Component {
           <Card
             product="Badlands Brewing"
             skill="Logo Design"
+            image={badlandsLogo}
             noHover
           />
           <Summary>Designing a logo for an Ontario craft brewery.</Summary>

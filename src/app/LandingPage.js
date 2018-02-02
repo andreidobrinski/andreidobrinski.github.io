@@ -4,6 +4,7 @@ import './App.css';
 import Fold from '../fold/Fold';
 import NavBar from '../navbar/Navbar';
 import Card from '../card/Card';
+import badlandsLogo from '../work/BadlandsBrewing/assets/badlands-brewing-logo.svg';
 
 class LandingPage extends Component {
   render() {
@@ -15,6 +16,7 @@ class LandingPage extends Component {
           <Card
             product="Badlands Brewing"
             skill="Logo Design"
+            image={badlandsLogo}
           />
         </Link>
         <Card />
