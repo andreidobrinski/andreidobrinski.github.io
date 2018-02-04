@@ -35,8 +35,8 @@ class BadlandsBrewing extends Component {
             Badlands Brewing brand in the competitive beer industry.
           </Body>
           <Header>The Stack</Header>
-          <p>Adobe Illustrator</p>
           <StackIcon src={illustratorIcon} alt="adobe illustrator logo" />
+          <Body>Adobe Illustrator</Body>
           <Header>The Process</Header>
           <Body>
             Coming up with an image that represented the Cheltenham Badlands while also giving the brand an
