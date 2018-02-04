@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   display: inline-block;
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 32px;
+  margin: 16px 0px;
   max-width: 800px;
   max-height: 533px;
   z-index: 1;
