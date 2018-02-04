@@ -77,7 +77,9 @@ class BadlandsBrewing extends Component {
           </Body>
           <Header>The Company</Header>
           <Body>
-            If you would like to learn more about Badlands Brewing, check out their website here.
+            If you would like to learn more about Badlands Brewing, check out their website&nbsp;
+            <a target="_blank" rel="noopener noreferrer"
+              href="http://badlandsbrewing.ca">here</a>.
           </Body>
           <p>Instagram pictures</p>
         </Content>
