@@ -35,6 +35,16 @@ export const StackIcon = styled.img`
   width: 100px;
 `;
 
+export const StackToolWrap = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border: 1px solid #000000;
+  border-radius: 16px 0px 16px 0px;
+`;
+
 export const InstagramWrap = styled.div`
   display: flex;
   justify-content: space-around;
