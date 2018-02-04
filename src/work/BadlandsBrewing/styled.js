@@ -34,3 +34,8 @@ export const StackIcon = styled.img`
   height: 100px;
   width: 100px;
 `;
+
+export const InstagramWrap = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;

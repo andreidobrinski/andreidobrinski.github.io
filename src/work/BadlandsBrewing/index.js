@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../card/Card';
+import InstagramPhotos from './assets/instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import illustratorIcon from './assets/illustrator-icon.svg';
 import zeldaOwl from './assets/zelda-owl.png';
@@ -81,7 +82,7 @@ class BadlandsBrewing extends Component {
             <a target="_blank" rel="noopener noreferrer"
               href="http://badlandsbrewing.ca">here</a>.
           </Body>
-          <p>Instagram pictures</p>
+          <InstagramPhotos />
         </Content>
       </Wrapper>
     );
