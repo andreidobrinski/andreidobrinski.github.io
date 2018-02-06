@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb"],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"] }],
+    "jsx-a11y/media-has-caption": [0, {
+        "audio": [ "Audio" ],
+        "video": [ "Video" ],
+        "track": [ "Track" ],
+      }],
+      "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "to", ],
+      }]
+  },
+  "env": {
+    "browser": true,
+  },
+  "parser": "babel-eslint",
+}
