@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
 import Fold from '../fold/Fold';
 import NavBar from '../navbar/Navbar';
 import Card from '../card/Card';
 import badlandsLogo from '../work/BadlandsBrewing/assets/badlands-brewing-logo.svg';
+import { App } from './styled';
 
 const LandingPage = () => (
-  <div className="App">
+  <App>
     <Fold />
     <NavBar workStyle="nav-text" playStyle="nav-text-subtle" selfStyle="nav-text-subtle" />
     <Link to="/work/BadlandsBrewing">
@@ -24,7 +24,7 @@ const LandingPage = () => (
     <Card />
     <Card />
     <Card />
-  </div>
+  </App>
 );
 
 export default LandingPage;
