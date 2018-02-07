@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 const sizes = {
   desktop: 992,
   tablet: 768,
-}
+};
 
 // iterate through the sizes and create a media template
 export const media = Object.keys(sizes).reduce((accumulator, label) => {

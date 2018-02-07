@@ -2,6 +2,8 @@
   "extends": ["airbnb"],
   "plugins": ["react"],
   "rules": {
+    "indent": 0,
+    "no-tabs": 0,
     "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"] }],
     "jsx-a11y/media-has-caption": [0, {
         "audio": [ "Audio" ],

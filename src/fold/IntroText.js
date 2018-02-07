@@ -3,7 +3,7 @@ import { Intro } from './styled';
 
 const IntroText = () => (
 	<Intro>
-		Hi, I'm<br />
+		Hi, I&apos;m<br />
 		Andrei Dobrinski,<br />
 		a UX Designer and Front-End Developer.<br />
 		Currently working at LifeTales in Toronto<br />
