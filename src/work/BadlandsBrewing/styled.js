@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: ${props => props.theme.colours.background};
 `;
 
 export const Content = styled.div`
@@ -14,15 +15,18 @@ export const Content = styled.div`
 
 export const Summary = styled.h2`
   font-size: 2.619em;
+  color: ${props => props.theme.colours.text};
 `;
 
 export const Header = styled.h3`
   font-size: 2.619em;
+  color: ${props => props.theme.colours.text};
 `;
 
 export const Body = styled.p`
   line-height: 1.618;
   font-size: 1.618em;
+  color: ${props => props.theme.colours.text};
 `;
 
 export const LargeImage = styled.img`
@@ -41,8 +45,11 @@ export const StackToolWrap = styled.div`
   align-items: center;
   justify-content: center;
   padding: 16px;
-  border: 1px solid #000000;
+  border: 1px solid rgba(0,0,0,0.5);
   border-radius: 16px 0px 16px 0px;
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,0.85);
+  font-size: 1.618em;
 `;
 
 export const InstagramWrap = styled.div`

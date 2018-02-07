@@ -16,11 +16,20 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
     }
   `
   return accumulator
-}, {})
+}, {});
+
+export const colours = {
+  main: '#7BB9FF',
+  cta: '#062F70',
+  support: '#FFFFFF',
+  text: 'rgba(0,0,0,0.85)',
+  background: 'rgba(0,0,0,0.025)',
+};
 
 export const spacer = '16px';
 
 export default {
   media,
+  colours,
   spacer,
 };
