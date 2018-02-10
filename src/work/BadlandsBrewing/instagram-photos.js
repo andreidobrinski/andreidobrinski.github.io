@@ -5,7 +5,7 @@ import { InstagramWrap } from './styled';
 const InstagramPhotos = () => (
   <InstagramWrap>
     <InstagramEmbed
-      url="https://www.instagram.com/p/BedKYX5nFla/?taken-by=badlandsbrewing"
+      url="https://www.instagram.com/p/BbCJF1xnFmV/?taken-by=badlandsbrewing"
       maxWidth={375}
       hideCaption
       containerTagName="div"
@@ -16,7 +16,7 @@ const InstagramPhotos = () => (
       onFailure={() => {}}
     />
     <InstagramEmbed
-      url="https://www.instagram.com/p/BbCJF1xnFmV/?taken-by=badlandsbrewing"
+      url="https://www.instagram.com/p/BedKYX5nFla/?taken-by=badlandsbrewing"
       maxWidth={375}
       hideCaption
       containerTagName="div"

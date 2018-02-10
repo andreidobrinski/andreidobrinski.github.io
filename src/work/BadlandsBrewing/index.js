@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Card from '../../card/Card';
-import StackTool from './stack-tool';
-import InstagramPhotos from './assets/instagram-photos';
+import StackTool from '../../components/stack-tool';
+import LargeImage from '../../components/large-image';
+import InstagramPhotos from './instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import zeldaOwl from './assets/zelda-owl.png';
-import { Wrapper, Content, Summary, Header, Body, LargeImage } from './styled';
+import illustratorIcon from './assets/illustrator-icon.svg';
+import { Wrapper, Content, Summary, Header, Body } from './styled';
 
 class BadlandsBrewing extends Component {
   componentDidMount() {
@@ -38,7 +40,11 @@ class BadlandsBrewing extends Component {
             Badlands Brewing brand in the competitive beer industry.
           </Body>
           <Header>The Stack</Header>
-          <StackTool />
+          <StackTool
+            image={illustratorIcon}
+            alt="Adobe Illustrator icon"
+            tool="Adobe Illustrator"
+          />
           <Header>The Process</Header>
           <Body>
             Coming up with an image that represented the Cheltenham Badlands while
@@ -59,7 +65,11 @@ class BadlandsBrewing extends Component {
             it would be something beer-drinking night owls could relate to.
           </Body>
         </Content>
-        <LargeImage src={zeldaOwl} alt="owl from Ocarina of Time" />
+        <LargeImage
+          image={zeldaOwl}
+          alt="owl from Ocarina of Time"
+          cite="The Legend of Zelda Ocarina of Time. Nintendo, 1998"
+        />
         <Content>
           <Body>
             Designing the logo took several iterations. The owl needed to resemble
