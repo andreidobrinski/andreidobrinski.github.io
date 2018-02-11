@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   background-position: right center;
   background-size: contain;
   height: 60vw;
-  width: ${props => props.header ? '100%' : '90vw' };
+  width: ${props => (props.header ? '100%' : '90vw')};
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   margin: 16px auto;
@@ -17,8 +17,8 @@ export const Wrapper = styled.div`
   transition-timing-function: ease-in-out;
 
   :hover {
-    ${props => props.header ?
-      '' : 'box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5); transform: scale(1.02, 1.02);'};
+    ${props => (props.header ?
+      '' : 'box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5); transform: scale(1.02, 1.02);')};
   }
 `;
 
