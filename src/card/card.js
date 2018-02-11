@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import { Wrapper, Overlay, Product, Skill } from './styled';
 
 const Card = props => (
-  <Wrapper noHover={props.noHover} image={props.image}>
+  <Wrapper
+    header={props.header}
+    image={props.image}
+  >
     <Overlay>
       <Product>
         <p>{props.product}</p>
@@ -18,12 +21,12 @@ const Card = props => (
 Card.propTypes = {
   product: PropTypes.string.isRequired,
   skill: PropTypes.string.isRequired,
-  noHover: PropTypes.bool,
+  header: PropTypes.bool,
   image: PropTypes.shape({}).isRequired,
 };
 
 Card.defaultProps = {
-  noHover: false,
+  header: false,
 };
 
 export default Card;

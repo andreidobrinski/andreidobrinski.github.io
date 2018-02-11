@@ -16,13 +16,13 @@ class BadlandsBrewing extends Component {
   render() {
     return (
       <Wrapper>
+        <Card
+          product="Badlands Brewing"
+          skill="Logo Design"
+          image={badlandsLogo}
+          header
+        />
         <Content>
-          <Card
-            product="Badlands Brewing"
-            skill="Logo Design"
-            image={badlandsLogo}
-            noHover
-          />
           <Summary>Designing a logo for an Ontario craft brewery.</Summary>
           <Header>Understanding the Problem</Header>
           <Body>

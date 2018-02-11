@@ -6,11 +6,10 @@ export const Wrapper = styled.div`
   background-position: right center;
   background-size: contain;
   height: 60vw;
-  width: 90vw;
-  display: inline-block;
+  width: ${props => props.header ? '100%' : '90vw' };
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-  margin: 16px 0px;
+  margin: 16px auto;
   max-width: 800px;
   max-height: 533px;
   z-index: 1;
@@ -18,7 +17,7 @@ export const Wrapper = styled.div`
   transition-timing-function: ease-in-out;
 
   :hover {
-    ${props => props.noHover ?
+    ${props => props.header ?
       '' : 'box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5); transform: scale(1.02, 1.02);'};
   }
 `;
