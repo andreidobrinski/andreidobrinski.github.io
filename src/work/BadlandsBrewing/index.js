@@ -4,9 +4,11 @@ import StackTool from '../../components/stack-tool';
 import LargeImage from '../../components/large-image';
 import InstagramPhotos from './instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
+import badlandsLogoLight from './assets/badlands-logo-light.png';
+import badlandsLogoDark from './assets/badlands-logo-dark.png'
 import zeldaOwl from './assets/zelda-owl.png';
 import illustratorIcon from './assets/illustrator-icon.svg';
-import { Wrapper, Content, Summary, Header, Body } from './styled';
+import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
 
 class BadlandsBrewing extends Component {
   componentDidMount() {
@@ -78,7 +80,12 @@ class BadlandsBrewing extends Component {
             owl&apos;s face, as well as the mixture of sharp and rounded edges throughout the body.
             Below is the final design.
           </Body>
-          <p>insert picture of logo</p>
+        </Content>
+        <LogoWrap>
+          <Logo src={badlandsLogoLight} />
+          <Logo src={badlandsLogoDark} />
+        </LogoWrap>
+        <Content>
           <Header>The Learning</Header>
           <Body>
             This project was an interesting challenge as it expanded both my technical knowledge of
