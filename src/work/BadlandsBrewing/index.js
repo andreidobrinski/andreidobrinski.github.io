@@ -5,7 +5,7 @@ import LargeImage from '../../components/large-image';
 import InstagramPhotos from './instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
-import badlandsLogoDark from './assets/badlands-logo-dark.png'
+import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import illustratorIcon from './assets/illustrator-icon.svg';
 import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
