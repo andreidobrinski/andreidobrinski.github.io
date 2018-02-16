@@ -20,3 +20,8 @@ export const IconWrap = styled.a`
     fill: #000000;
   }
 `;
+
+export const CopiedConfirm = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

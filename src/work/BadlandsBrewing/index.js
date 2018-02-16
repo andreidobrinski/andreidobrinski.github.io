@@ -8,6 +8,7 @@ import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import illustratorIcon from './assets/illustrator-icon.svg';
+import Footer from '../../components/footer';
 import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
 
 class BadlandsBrewing extends Component {
@@ -114,6 +115,7 @@ class BadlandsBrewing extends Component {
           </Body>
           <InstagramPhotos />
         </Content>
+        <Footer />
       </Wrapper>
     );
   }
