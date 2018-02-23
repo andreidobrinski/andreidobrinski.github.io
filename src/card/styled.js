@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-image: url("${props => props.image}");
+  background-image: url(${props => props.image});
+  background-color: ${props => props.theme.colours.support};
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
