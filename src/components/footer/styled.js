@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrap = styled.div`
   display: flex;
@@ -7,18 +7,33 @@ export const Wrap = styled.div`
   padding: 8px 0px;
 `;
 
-export const IconWrap = styled.a`
+const StyledIcons = css`
   display: flex;
   width: 40px;
   height: 40px;
   margin: 8px;
-  background-image: url("${props => props.icon}");
+  background-image: url(${props => props.icon});
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
 
   & > svg {
     fill: #000000;
   }
+`;
+
+export const EmailButton = styled.button`
+  ${StyledIcons};
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline-style: none;
+  }
+`;
+
+export const SocialLink = styled.a`
+  ${StyledIcons};
 `;
 
 export const CopiedConfirm = styled.div`

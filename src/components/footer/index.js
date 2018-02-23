@@ -3,7 +3,7 @@ import CopyToClipboard from 'react-copy-to-clipboard';
 import Email from './assets/email-logo.svg';
 import Github from './assets/github-logo.svg';
 import LinkedIn from './assets/linkedin-logo.svg';
-import { Wrap, IconWrap, CopiedConfirm } from './styled';
+import { Wrap, EmailButton, SocialLink, CopiedConfirm } from './styled';
 
 class Footer extends Component {
   state = { copiedEmail: false };
@@ -20,15 +20,15 @@ class Footer extends Component {
           text="dobrinski.andrei@gmail.com"
           onCopy={() => this.setState({ copiedEmail: true })}
         >
-          <IconWrap icon={Email} />
+          <EmailButton icon={Email} />
         </CopyToClipboard>
-        <IconWrap
+        <SocialLink
           icon={Github}
           href="https://github.com/andreidobrinski"
           target="_blank"
           rel="noopener noreferrer"
         />
-        <IconWrap
+        <SocialLink
           icon={LinkedIn}
           href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
           target="_blank"
