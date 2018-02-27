@@ -10,12 +10,14 @@ class Footer extends Component {
 
   render() {
     if (this.state.copiedEmail === true) {
-      setTimeout(() => this.setState({ copiedEmail: false }), 3000);
+      setTimeout(() => this.setState({ copiedEmail: false }), 2000);
     }
 
     return (
       <Wrap>
-        {this.state.copiedEmail && <CopiedConfirm>Copied Email to Clipboard</CopiedConfirm>}
+        <CopiedConfirm visible={this.state.copiedEmail}>
+          Email Copied to Clipboard
+        </CopiedConfirm>
         <CopyToClipboard
           text="dobrinski.andrei@gmail.com"
           onCopy={() => this.setState({ copiedEmail: true })}
@@ -29,6 +31,7 @@ class Footer extends Component {
           rel="noopener noreferrer"
         />
         <SocialLink
+          center
           icon={LinkedIn}
           href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
           target="_blank"
