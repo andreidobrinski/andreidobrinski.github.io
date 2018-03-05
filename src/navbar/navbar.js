@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { NavBarContainer, NavBarWrap } from './styled';
 import './navbar.css';
 
-class NavBar extends Component {
-  render() {
-    return (
-      <nav className="NavBarContainer">
-        <div className="NavBar">
-          <a className={this.props.workStyle} href="#">Work</a>
-          <a className={this.props.playStyle} href="#">Play</a>
-          <a className={this.props.selfStyle} href="#">Self</a>
-        </div>
-      </nav>
-    );
-  }
-}
+const NavBar = () => (
+  <NavBarContainer>
+    <NavBarWrap>
+      <p className="nav-text">Work</p>
+      <p className="nav-text-subtle">Play</p>
+      <p className="nav-text-subtle">Self</p>
+    </NavBarWrap>
+  </NavBarContainer>
+);
 
 export default NavBar;

@@ -10,7 +10,7 @@ import { App } from './styled';
 const LandingPage = () => (
   <App>
     <Fold />
-    <NavBar workStyle="nav-text" playStyle="nav-text-subtle" selfStyle="nav-text-subtle" />
+    <NavBar />
     <Link to="/work/BadlandsBrewing">
       <Card
         product="Badlands Brewing"
@@ -21,7 +21,6 @@ const LandingPage = () => (
     <Card />
     <Card />
     <Card />
-    <NavBar workStyle="nav-text-subtle" playStyle="nav-text" selfStyle="nav-text-subtle" />
     <Card />
     <Card />
     <Card />

@@ -1,25 +1,3 @@
-.NavBarContainer {
-  display: inline-block;
-  width: 100%;
-  max-width: 910px;
-  height: 20vh;
-  margin-bottom: 64px;
-  margin-top: 32px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.NavBar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  background-color: white;
-  width: 100%;
-}
-
 .nav-text {
   color: #5d5d5d;
   font-size: 2em;
@@ -28,13 +6,8 @@
 }
 
 .nav-text-subtle {
-  color: #d1d1d1;
+  color: #5d5d5d;
   font-size: 2em;
   text-decoration: none;
   font-weight: medium;
-}
-
-.sticky {
-  top: 0;
-  position: fixed;
 }
