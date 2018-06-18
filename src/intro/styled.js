@@ -15,9 +15,8 @@ export const TextWrap = styled.div`
 export const Text = styled.p`
   color: ${props => props.theme.colours.text};
   text-align: left;
-  font-size: 2em;
-  line-height: 1.618em;
-  margin-left: 112px;
+  font-size: 1.618rem;
+  margin: 5% 12%;
 `;
 
 export const ADLogo = styled.img`

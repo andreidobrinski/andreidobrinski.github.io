@@ -33,7 +33,7 @@ export const Overlay = styled.div`
   max-height: 75px;
 `;
 
-export const Product = styled.div`
+export const Project = styled.div`
   position: absolute;
   left: 16px;
   bottom: 0;

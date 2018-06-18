@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { selectProjectName, selectProjectSkill, selectProjectImage } from './selectors';
-import { Wrapper, Overlay, Product, Skill } from './styled';
+import { Wrapper, Overlay, Project, Skill } from './styled';
 
 const Card = ({
   isHeader, project,
@@ -11,9 +11,9 @@ const Card = ({
     image={selectProjectImage(project)}
   >
     <Overlay>
-      <Product>
+      <Project>
         <p>{selectProjectName(project)}</p>
-      </Product>
+      </Project>
       <Skill>
         <p>{selectProjectSkill(project)}</p>
       </Skill>

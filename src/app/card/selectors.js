@@ -8,7 +8,7 @@ export const selectProjectName = (project) => {
 
 export const selectProjectSkill = (project) => {
   if (project === 'badlands') return 'Logo Design';
-  if (project === 'albumpicker') return 'Dev/Design';
+  if (project === 'albumpicker') return 'Dev & Design';
   return false;
 };
 
