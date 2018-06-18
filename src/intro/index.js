@@ -9,8 +9,8 @@ const Intro = () => (
     <Text>
 			Hi, I&apos;m<br />
 			Andrei Dobrinski,<br />
-			a UX Designer and Front-End Developer.<br />
-			Currently working at LifeTales in Toronto<br />
+			a front-end developer that loves the modern web.<br />
+			I&apos;m currently working at LifeTales in Toronto.<br />
 			What would you like to know more about?<br />
 			My ...<br />
     </Text>
