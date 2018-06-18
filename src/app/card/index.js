@@ -1,32 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { selectProjectName, selectProjectSkill, selectProjectImage } from './selectors';
 import { Wrapper, Overlay, Product, Skill } from './styled';
 
-const Card = props => (
+const Card = ({
+  isHeader, project,
+}) => (
   <Wrapper
-    header={props.header}
-    image={props.image}
+    isHeader={isHeader}
+    image={selectProjectImage(project)}
   >
     <Overlay>
       <Product>
-        <p>{props.product}</p>
+        <p>{selectProjectName(project)}</p>
       </Product>
       <Skill>
-        <p>{props.skill}</p>
+        <p>{selectProjectSkill(project)}</p>
       </Skill>
     </Overlay>
   </Wrapper>
 );
 
 Card.propTypes = {
-  product: PropTypes.string.isRequired,
-  skill: PropTypes.string.isRequired,
-  header: PropTypes.bool,
-  image: PropTypes.string.isRequired,
+  project: PropTypes.string.isRequired,
+  isHeader: PropTypes.bool,
 };
 
 Card.defaultProps = {
-  header: false,
+  isHeader: false,
 };
 
 export default Card;

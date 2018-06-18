@@ -2,32 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Intro from '../intro';
 // import NavBar from './navbar/';
-import Card from './card/';
+import Card from './card';
 import Footer from './footer';
-import badlandsLogo from '../work/badlands-brewing/assets/badlands-brewing-logo.svg';
 import { App } from './styled';
 
 const LandingPage = () => (
   <App>
     <Intro />
     <Link to="/work/badlands-brewing">
-      <Card
-        product="Badlands Brewing"
-        skill="Logo Design"
-        image={badlandsLogo}
-      />
+      <Card project="badlands" />
     </Link>
     <Link to="/work/album-picker">
-      <Card
-        product="Album Picker"
-        skill="Dev/Design"
-      />
+      <Card project="albumpicker" />
     </Link>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
     <Footer />
   </App>
 );

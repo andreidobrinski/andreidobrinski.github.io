@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import Card from '../../app/card/';
+import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
 import LargeImage from '../../app/large-image';
 import InstagramPhotos from './instagram-photos';
-import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
@@ -18,12 +17,7 @@ class BadlandsBrewing extends Component {
   render() {
     return (
       <Wrapper>
-        <Card
-          product="Badlands Brewing"
-          skill="Logo Design"
-          image={badlandsLogo}
-          header
-        />
+        <Card project="badlands" isHeader />
         <Content>
           <Summary>Designing a logo for an Ontario craft brewery.</Summary>
           <Header>Understanding the Problem</Header>
