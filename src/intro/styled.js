@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: inline-block;
 `;
 
-export const Intro = styled.p`
+export const Text = styled.p`
   color: ${props => props.theme.colours.text};
   text-align: left;
   display: inline-block;

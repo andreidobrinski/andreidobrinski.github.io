@@ -2,18 +2,16 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import theme from './theme';
-import LandingPage from './LandingPage';
-import BadlandsBrewing from '../work/BadlandsBrewing';
+import LandingPage from './landing-page';
+import BadlandsBrewing from '../work/badlands-brewing';
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
-      <div>
-        <Switch>
-          <Route path="/work/BadlandsBrewing" component={BadlandsBrewing} />
-          <Route path="/" component={LandingPage} />
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/work/badlands-brewing" component={BadlandsBrewing} />
+        <Route path="/" component={LandingPage} />
+      </Switch>
     </BrowserRouter>
   </ThemeProvider>
 );

@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Fold from '../fold/Fold';
-import NavBar from '../navbar/Navbar';
-import Card from '../card/Card';
-import Footer from '../components/footer';
-import badlandsLogo from '../work/BadlandsBrewing/assets/badlands-brewing-logo.svg';
+import Intro from '../intro';
+import NavBar from './navbar/';
+import Card from './card/';
+import Footer from './footer';
+import badlandsLogo from '../work/badlands-brewing/assets/badlands-brewing-logo.svg';
 import { App } from './styled';
 
 const LandingPage = () => (
   <App>
-    <Fold />
+    <Intro />
     <NavBar />
-    <Link to="/work/BadlandsBrewing">
+    <Link to="/work/badlands-brewing">
       <Card
         product="Badlands Brewing"
         skill="Logo Design"

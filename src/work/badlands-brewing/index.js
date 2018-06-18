@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Card from '../../card/Card';
-import StackTool from '../../components/stack-tool';
-import LargeImage from '../../components/large-image';
+import Card from '../../app/card/';
+import StackTool from '../../app/stack-tool';
+import LargeImage from '../../app/large-image';
 import InstagramPhotos from './instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import illustratorIcon from './assets/illustrator-icon.svg';
-import Footer from '../../components/footer';
+import Footer from '../../app/footer';
 import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
 
 class BadlandsBrewing extends Component {

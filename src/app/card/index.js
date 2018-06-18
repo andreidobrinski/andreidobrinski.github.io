@@ -22,7 +22,7 @@ Card.propTypes = {
   product: PropTypes.string.isRequired,
   skill: PropTypes.string.isRequired,
   header: PropTypes.bool,
-  image: PropTypes.shape({}).isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 Card.defaultProps = {
