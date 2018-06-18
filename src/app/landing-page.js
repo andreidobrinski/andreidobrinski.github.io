@@ -17,7 +17,12 @@ const LandingPage = () => (
         image={badlandsLogo}
       />
     </Link>
-    <Card />
+    <Link to="/work/album-picker">
+      <Card
+        product="Album Picker"
+        skill="Dev/Design"
+      />
+    </Link>
     <Card />
     <Card />
     <Card />
