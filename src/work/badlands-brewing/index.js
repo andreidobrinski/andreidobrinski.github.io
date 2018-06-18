@@ -7,7 +7,8 @@ import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import Footer from '../../app/footer';
-import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
+import { Wrapper, Content, Summary, Header, Body } from '../styled';
+import { LogoWrap, Logo } from './styled';
 
 class BadlandsBrewing extends Component {
   componentDidMount() {

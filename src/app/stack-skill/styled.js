@@ -11,6 +11,7 @@ export const Wrap = styled.div`
   background-color: rgba(255,255,255,1);
   color: rgba(0,0,0,0.85);
   font-size: 1.618em;
+  margin: 16px;
 `;
 
 export const Icon = styled.img`
@@ -20,7 +21,7 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.p`
-  font-size: 0.85em;
+  font-size: 0.65em;
   line-height: 0.85em;
   margin: ${props => props.theme.spacer} calc(${props => props.theme.spacer} / 4);
 `;
