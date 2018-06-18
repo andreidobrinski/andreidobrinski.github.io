@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../andreiDLogo.svg';
+import logo from './andreiDLogo.svg';
 import { Wrapper, ADLogo, TextWrap, Text } from './styled';
 
 const Intro = () => (
