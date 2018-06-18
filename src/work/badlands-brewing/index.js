@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Card from '../../app/card/';
-import StackTool from '../../app/stack-tool';
+import StackSkill from '../../app/stack-skill';
 import LargeImage from '../../app/large-image';
 import InstagramPhotos from './instagram-photos';
 import badlandsLogo from './assets/badlands-brewing-logo.svg';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
-import illustratorIcon from './assets/illustrator-icon.svg';
 import Footer from '../../app/footer';
 import { Wrapper, Content, Summary, Header, Body, LogoWrap, Logo } from './styled';
 
@@ -43,11 +42,7 @@ class BadlandsBrewing extends Component {
             Badlands Brewing brand in the competitive beer industry.
           </Body>
           <Header>The Stack</Header>
-          <StackTool
-            image={illustratorIcon}
-            alt="Adobe Illustrator icon"
-            tool="Adobe Illustrator"
-          />
+          <StackSkill skill="illustrator" />
           <Header>The Process</Header>
           <Body>
             Coming up with an image that represented the Cheltenham Badlands while
