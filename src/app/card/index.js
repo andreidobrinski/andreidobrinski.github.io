@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { selectProjectName, selectProjectSkill, selectProjectImage } from './selectors';
+import Projects from './projects';
 import { Wrapper, Overlay, Project, Skill } from './styled';
 
 const Card = ({
@@ -8,14 +8,14 @@ const Card = ({
 }) => (
   <Wrapper
     isHeader={isHeader}
-    image={selectProjectImage(project)}
+    image={Projects[project].image}
   >
     <Overlay>
       <Project>
-        <p>{selectProjectName(project)}</p>
+        <p>{Projects[project].name}</p>
       </Project>
       <Skill>
-        <p>{selectProjectSkill(project)}</p>
+        <p>{Projects[project].skill}</p>
       </Skill>
     </Overlay>
   </Wrapper>
