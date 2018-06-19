@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { selectImage, selectAltText, selectTitle } from './selectors';
+import Skills from './skills';
 import { Wrap, Icon, Text } from './styled';
 
 const StackSkill = ({ skill }) => (
   <Wrap>
     <Icon
-      src={selectImage(skill)}
-      alt={selectAltText(skill)}
+      src={Skills[skill].image}
+      alt={`${Skills[skill].name} icon`}
     />
     <Text>
-      {selectTitle(skill)}
+      {Skills[skill].name}
     </Text>
   </Wrap>
 );
