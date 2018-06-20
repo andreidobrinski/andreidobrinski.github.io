@@ -15,22 +15,20 @@ class AlbumPicker extends Component {
             Album Picker
           </Header>
           <Header>
-            Motivation
+            The Motivation
           </Header>
           <Body>
-            To build a React App that helps people with a
+            To learn React through building an app that helps people with a
             vinyl collection choose which album to listen to.
           </Body>
           <Header>
-            Stack
+            The Stack
           </Header>
-          <Body>
-            <StackSkill skill="react" />
-            <StackSkill skill="reactrouter" />
-            <StackSkill skill="styledcomponents" />
-            <StackSkill skill="googlesheets" />
-            <StackSkill skill="sketch" />
-          </Body>
+          <StackSkill skill="react" />
+          <StackSkill skill="reactrouter" />
+          <StackSkill skill="styledcomponents" />
+          <StackSkill skill="googlesheets" />
+          <StackSkill skill="sketch" />
           <Header>
             The Product
           </Header>

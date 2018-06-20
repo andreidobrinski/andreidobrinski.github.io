@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './andreiDLogo.svg';
-import { Wrapper, ADLogo, TextWrap, Text } from './styled';
+import AdLogo from './ad-logo';
+import { Wrapper, TextWrap, Text } from './styled';
 
 const Intro = () => (
   <Wrapper>
-    <ADLogo src={logo} alt="Andrei Dobrinski's logo" />
+    <AdLogo />
     <TextWrap>
       <Text>
         Hi, I&apos;m Andrei Dobrinski,
