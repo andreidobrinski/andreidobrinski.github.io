@@ -27,15 +27,11 @@ class Footer extends Component {
         <SocialLink
           icon={Github}
           href="https://github.com/andreidobrinski"
-          target="_blank"
-          rel="noopener noreferrer"
         />
         <SocialLink
           center
           icon={LinkedIn}
           href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
-          target="_blank"
-          rel="noopener noreferrer"
         />
       </Wrap>
     );

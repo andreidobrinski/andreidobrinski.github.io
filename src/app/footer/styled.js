@@ -37,7 +37,10 @@ export const EmailButton = styled.button`
   }
 `;
 
-export const SocialLink = styled.a`
+export const SocialLink = styled.a.attrs({
+  target: '_blank',
+  rel: 'noopener noreferrer',
+})`
   ${StyledIcons};
   grid-column: ${props => (props.center ? '3' : '4')};
 `;
