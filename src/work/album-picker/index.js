@@ -47,9 +47,15 @@ class AlbumPicker extends Component {
           <Body>
             write about the process of making it
           </Body>
-          <h4>
-            Check out the link to the project here, and the open-source code here.
-          </h4>
+          <Body>
+            Check out the project&nbsp;
+            <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
+              here
+            </ExternalLink>, and the open-source code&nbsp;
+            <ExternalLink href="https://github.com/andreidobrinski/album-picker">
+              here
+            </ExternalLink>.
+          </Body>
         </Content>
       </Wrapper>
     );
