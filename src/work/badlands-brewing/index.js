@@ -21,6 +21,7 @@ class BadlandsBrewing extends Component {
       <Wrapper>
         <Card project="badlands" isHeader />
         <Content>
+          <Header>Badlands Brewing</Header>
           <Summary>Designing a logo for an Ontario craft brewery.</Summary>
           <Header>Understanding the Problem</Header>
           <Body>
