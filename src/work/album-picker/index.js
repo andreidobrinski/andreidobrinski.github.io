@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
+import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
 import { Wrapper, Content, Header, Body } from '../styled';
 
@@ -57,6 +58,7 @@ class AlbumPicker extends Component {
             </ExternalLink>.
           </Body>
         </Content>
+        <Footer />
       </Wrapper>
     );
   }
