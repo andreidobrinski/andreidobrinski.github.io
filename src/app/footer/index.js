@@ -1,41 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { Tooltip } from 'react-tippy';
 import Email from './assets/email-logo.svg';
 import Github from './assets/github-logo.svg';
 import LinkedIn from './assets/linkedin-logo.svg';
-import { Wrap, EmailButton, SocialLink, CopiedConfirm } from './styled';
+import { Wrap, EmailButton, SocialLink } from './styled';
 
-class Footer extends Component {
-  state = { copiedEmail: false };
-
-  render() {
-    if (this.state.copiedEmail === true) {
-      setTimeout(() => this.setState({ copiedEmail: false }), 2000);
-    }
-
-    return (
-      <Wrap>
-        <CopiedConfirm visible={this.state.copiedEmail}>
-          Email Copied to Clipboard
-        </CopiedConfirm>
-        <CopyToClipboard
-          text="dobrinski.andrei@gmail.com"
-          onCopy={() => this.setState({ copiedEmail: true })}
-        >
-          <EmailButton icon={Email} />
-        </CopyToClipboard>
-        <SocialLink
-          icon={Github}
-          href="https://github.com/andreidobrinski"
-        />
-        <SocialLink
-          center
-          icon={LinkedIn}
-          href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
-        />
-      </Wrap>
-    );
-  }
-}
+const Footer = () => (
+  <Wrap>
+    <Tooltip
+      title="Email copied to clipboard"
+      trigger="click"
+      animation="scale"
+      style={{ gridRow: '2 / 3', gridColumn: '2' }}
+    >
+      <CopyToClipboard
+        text="dobrinski.andrei@gmail.com"
+      >
+        <EmailButton icon={Email} />
+      </CopyToClipboard>
+    </Tooltip>
+    <SocialLink
+      icon={Github}
+      href="https://github.com/andreidobrinski"
+    />
+    <SocialLink
+      center
+      icon={LinkedIn}
+      href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
+    />
+  </Wrap>
+);
 
 export default Footer;

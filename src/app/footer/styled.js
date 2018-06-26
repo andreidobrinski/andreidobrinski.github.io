@@ -44,17 +44,3 @@ export const SocialLink = styled.a.attrs({
   ${StyledIcons};
   grid-column: ${props => (props.center ? '3' : '4')};
 `;
-
-export const CopiedConfirm = styled.div`
-  font-size: 1.1618em;
-  grid-column: 1 / 6;
-  justify-self: center;
-  align-self: center;
-  cursor: default;
-
-  color: ${props => props.theme.colours.text};
-
-  transition: opacity 1s ease-in, transform 1s ease-in-out;
-  transform: ${props => (props.visible ? 'rotateX(0deg)' : 'rotateX(45deg)')};
-  opacity: ${props => (props.visible ? '1' : '0')};
-`;
