@@ -10,14 +10,16 @@ const Card = ({
     isHeader={isHeader}
     image={Projects[project].image}
   >
-    <Overlay>
-      <Project>
-        <Text>{Projects[project].name}</Text>
-      </Project>
-      <Skill>
-        <Text>{Projects[project].skill}</Text>
-      </Skill>
-    </Overlay>
+    {!isHeader && (
+      <Overlay>
+        <Project>
+          <Text>{Projects[project].name}</Text>
+        </Project>
+        <Skill>
+          <Text>{Projects[project].skill}</Text>
+        </Skill>
+      </Overlay>
+    )}
   </Wrapper>
 );
 
