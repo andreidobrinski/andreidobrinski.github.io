@@ -16,11 +16,20 @@ export const Wrapper = styled.div`
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
   transition-timing-function: ease-in-out;
+  ${props => props.isHeader && `
+    margin: 0 auto 16px auto;
+  `};
+  ${props => props.theme.media.tablet`
+    ${props.isHeader && `
+      margin: 16px auto;
+    `};
+  `};
 
   :hover {
-    ${props => (props.isHeader ?
-      '' : 'box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5); transform: scale(1.02, 1.02);')};
-  }
+    ${props => props.isHeader && `
+      box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5);
+      transform: scale(1.02, 1.02);
+    `}
 `;
 
 export const Overlay = styled.div`

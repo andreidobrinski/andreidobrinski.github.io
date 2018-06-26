@@ -11,4 +11,6 @@ export const Image = styled.img`
 
 export const SourceText = styled.p`
   text-align: right;
+  margin-right: 8px;
+  margin-top: 0;
 `;
