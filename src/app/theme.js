@@ -22,7 +22,7 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
 }, {});
 
 export const colours = {
-  main: '#7BB9FF',
+  main: '#61DBFF',
   cta: '#062F70',
   support: '#FFFFFF',
   text: 'rgba(0,0,0,0.85)',
