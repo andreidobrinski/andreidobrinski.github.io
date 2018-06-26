@@ -7,6 +7,7 @@ import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import Footer from '../../app/footer';
+import { ExternalLink } from '../../app/styled';
 import { Wrapper, Content, Summary, Header, Body } from '../styled';
 import { LogoWrap, Logo } from './styled';
 
@@ -48,13 +49,10 @@ class BadlandsBrewing extends Component {
           <Body>
             I decided to choose an owl as this could serve as both a logo and
             a mascot for the brand. For the design I was inspired by&nbsp;
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://zelda.wikia.com/wiki/Kaepora_Gaebora"
-            >
+            <ExternalLink href="http://zelda.wikia.com/wiki/Kaepora_Gaebora">
               this owl
-            </a>&nbsp;from <i>The Legend of Zelda - Ocarina of Time</i>. As a nocturnal animal,
+            </ExternalLink>
+            &nbsp;from <i>The Legend of Zelda - Ocarina of Time</i>. As a nocturnal animal,
             it would be something beer-drinking night owls could relate to.
           </Body>
         </Content>
@@ -95,13 +93,9 @@ class BadlandsBrewing extends Component {
           <Header>The Company</Header>
           <Body>
             If you would like to learn more about Badlands Brewing, check out their website&nbsp;
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://badlandsbrewing.ca"
-            >
+            <ExternalLink href="http://badlandsbrewing.ca">
               here
-            </a>.
+            </ExternalLink>.
           </Body>
           <InstagramPhotos />
         </Content>

@@ -11,6 +11,7 @@ export const ExternalLink = styled.a.attrs({
   target: '_blank',
   rel: 'noopener noreferrer',
 })`
+  color: ${props => props.theme.colours.text};
   text-decoration: none;
   padding: 0 2px;
   box-shadow: inset 0 -6px 0 0 ${props => props.theme.colours.main};
