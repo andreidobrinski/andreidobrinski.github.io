@@ -44,3 +44,12 @@ export const Skill = styled.div`
   right: 16px;
   bottom: 0;
 `;
+
+export const Text = styled.p`
+  font-size: 1rem;
+  margin-bottom: 8px;
+  ${props => props.theme.media.smallTablet`
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  `};
+`;

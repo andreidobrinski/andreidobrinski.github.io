@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Projects from './projects';
-import { Wrapper, Overlay, Project, Skill } from './styled';
+import { Wrapper, Overlay, Project, Skill, Text } from './styled';
 
 const Card = ({
   isHeader, project,
@@ -12,10 +12,10 @@ const Card = ({
   >
     <Overlay>
       <Project>
-        <p>{Projects[project].name}</p>
+        <Text>{Projects[project].name}</Text>
       </Project>
       <Skill>
-        <p>{Projects[project].skill}</p>
+        <Text>{Projects[project].skill}</Text>
       </Skill>
     </Overlay>
   </Wrapper>
