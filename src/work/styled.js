@@ -13,8 +13,10 @@ export const Content = styled.div`
   margin: 0px 12px;
 `;
 
-export const Summary = styled.h2`
-  font-size: 2.619em;
+export const Context = styled.h2`
+  font-size: 1.618rem;
+  font-weight: 100;
+  margin-bottom: 2.618em;
   color: ${props => props.theme.colours.text};
 `;
 

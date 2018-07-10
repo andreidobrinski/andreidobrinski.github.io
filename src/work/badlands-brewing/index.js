@@ -8,7 +8,7 @@ import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Wrapper, Content, Summary, Header, Body } from '../styled';
+import { Wrapper, Content, Context, Header, Body } from '../styled';
 import { LogoWrap, Logo } from './styled';
 
 class BadlandsBrewing extends Component {
@@ -22,7 +22,7 @@ class BadlandsBrewing extends Component {
         <Card project="badlands" isHeader />
         <Content>
           <Header>Badlands Brewing</Header>
-          <Summary>Designing a logo for an Ontario craft brewery.</Summary>
+          <Context>Designing a logo for an Ontario craft brewery.</Context>
           <Header>Understanding the Problem</Header>
           <Body>
             Badlands Brewing Company needed a logo that would be suitable for
