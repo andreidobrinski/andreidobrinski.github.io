@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   `};
 
   :hover {
-    ${props => props.isHeader && `
+    ${props => !props.isHeader && `
       box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5);
       transform: scale(1.02, 1.02);
     `}
