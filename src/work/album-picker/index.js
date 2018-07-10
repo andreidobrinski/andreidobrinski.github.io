@@ -9,7 +9,7 @@ import { Wrapper, Content, Header, Body } from '../styled';
 const AlbumPicker = () => (
   <ScrollToTop>
     <Wrapper>
-      <Card project="albumpicker" isHeader />
+      <Card isHeader project="albumpicker" />
       <Content>
         <Header>
           Album Picker

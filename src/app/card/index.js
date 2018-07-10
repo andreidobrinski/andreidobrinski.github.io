@@ -9,6 +9,7 @@ const Card = ({
   <Wrapper
     isHeader={isHeader}
     image={Projects[project].image}
+    backgroundColor={Projects[project].backgroundColor}
   >
     {!isHeader && (
       <Overlay>
