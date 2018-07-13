@@ -1,5 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Wrapper } from '../work/styled';
 
 class ScrollToTop extends Component {
   componentDidMount() {
@@ -7,7 +8,11 @@ class ScrollToTop extends Component {
   }
 
   render() {
-    return this.props.children;
+    return (
+      <Wrapper>
+        {this.props.children}
+      </Wrapper>
+    );
   }
 }
 
