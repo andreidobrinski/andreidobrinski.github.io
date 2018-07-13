@@ -9,7 +9,7 @@ import { Wrapper, Content, Context, Header, Body } from '../../work/styled';
 const Learning = () => (
   <ScrollToTop>
     <Wrapper>
-      <ADLogo />
+      <ADLogo height={200} />
       <Content>
         <Header>Learning</Header>
         <Context>A quick list of courses I&apos;ve taken and enjoyed</Context>
