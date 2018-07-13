@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper, Content, Header, Body } from '../work/styled';
-import { ExternalLink } from './styled';
+import { ExternalLink, InternalLink } from './styled';
 
 const AboutMe = () => (
   <Wrapper style={{ backgroundColor: 'transparent', textAlign: 'left' }}>
@@ -13,7 +13,11 @@ const AboutMe = () => (
         I like to build websites using modern tools such as
         React, Redux, Styled Components, and Gatsby.
         I do mostly front-end development while staying mindful of the UX design.
-        I&apos;m always learning and&nbsp;
+        I&apos;m always&nbsp;
+        <InternalLink to="/learning">
+          learning
+        </InternalLink>
+        &nbsp;and&nbsp;
         <ExternalLink href="https://github.com/andreidobrinski">
           contributing to open-source software
         </ExternalLink>.
