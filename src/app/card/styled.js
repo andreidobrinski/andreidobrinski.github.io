@@ -30,6 +30,7 @@ export const Wrapper = styled.div`
       box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.5);
       transform: scale(1.02, 1.02);
     `}
+  }
 `;
 
 export const Overlay = styled.div`
