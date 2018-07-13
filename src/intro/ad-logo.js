@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Svg } from './styled';
 
-const AdLogo = () => (
-  <Svg width="167px" height="167px" viewBox="0 0 167 167" version="1.1" xmlns="http://www.w3.org/2000/svg">
+const AdLogo = ({ height }) => (
+  <Svg width="167px" height={`${height}px`} viewBox="0 0 167 167" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <g id="adLogo" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Group-3" stroke="#5D5D5D" strokeWidth="2">
         <rect id="Rectangle-Copy-14" transform="translate(83.500000, 83.500000) scale(-1, -1) translate(-83.500000, -83.500000) " x="71.5" y="6.5" width="24" height="154" rx="12" />
@@ -15,5 +16,13 @@ const AdLogo = () => (
     </g>
   </Svg>
 );
+
+AdLogo.propTypes = {
+  height: PropTypes.number,
+};
+
+AdLogo.defaultProps = {
+  height: 167,
+};
 
 export default AdLogo;
