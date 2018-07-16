@@ -24,6 +24,12 @@ export const ExternalLink = styled.a.attrs({
   rel: 'noopener noreferrer',
 })`
   ${LinkStyles};
+  ${props => props.noStyle && `
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+    }
+  `};
 `;
 
 export const InternalLink = styled(Link)`
