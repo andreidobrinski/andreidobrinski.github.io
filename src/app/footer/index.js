@@ -1,9 +1,9 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Tooltip } from 'react-tippy';
-import Email from './assets/email-logo.svg';
-import Github from './assets/github-logo.svg';
-import LinkedIn from './assets/linkedin-logo.svg';
+import EmailIcon from './assets/email-icon';
+import GithubLogo from './assets/github-logo';
+import LinkedInLogo from './assets/linkedin-logo';
 import { Wrap, EmailButton, SocialLink } from './styled';
 
 const Footer = () => (
@@ -14,21 +14,18 @@ const Footer = () => (
       animation="scale"
       style={{ gridRow: '2 / 3', gridColumn: '2' }}
     >
-      <CopyToClipboard
-        text="dobrinski.andrei@gmail.com"
-      >
-        <EmailButton icon={Email} />
+      <CopyToClipboard text="dobrinski.andrei@gmail.com">
+        <EmailButton>
+          <EmailIcon />
+        </EmailButton>
       </CopyToClipboard>
     </Tooltip>
-    <SocialLink
-      icon={Github}
-      href="https://github.com/andreidobrinski"
-    />
-    <SocialLink
-      center
-      icon={LinkedIn}
-      href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
-    />
+    <SocialLink center href="https://github.com/andreidobrinski">
+      <GithubLogo />
+    </SocialLink>
+    <SocialLink href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/">
+      <LinkedInLogo />
+    </SocialLink>
   </Wrap>
 );
 

@@ -7,7 +7,6 @@ export const Wrap = styled.div`
   align-items: center;
   justify-content: center;
   padding: 16px 0px;
-  perspective: 750px;
 `;
 
 const StyledIcons = css`
@@ -16,13 +15,15 @@ const StyledIcons = css`
   width: 40px;
   height: 40px;
   margin: 8px;
-  background-image: url(${props => props.icon});
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-
   & > svg {
+    transition: fill 0.3s;
     fill: #000000;
+    :hover {
+      fill: ${props => props.theme.colours.main};
+    }
   }
 `;
 
@@ -31,6 +32,8 @@ export const EmailButton = styled.button`
   border: none;
   cursor: pointer;
   grid-column: 2;
+  padding: 0;
+  margin-top: 10px;
 
   &:focus {
     outline-style: none;
