@@ -13,10 +13,10 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
       <Switch>
-        <Route path="/work/album-picker" component={AlbumPicker} />
-        <Route path="/work/badlands-brewing" component={BadlandsBrewing} />
-        <Route path="/learning" component={Learning} />
-        <Route path="/" component={LandingPage} />
+        <Route exact path="/work/album-picker" component={AlbumPicker} />
+        <Route exact path="/work/badlands-brewing" component={BadlandsBrewing} />
+        <Route exact path="/learning" component={Learning} />
+        <Route exact path="/" component={LandingPage} />
       </Switch>
     </BrowserRouter>
   </ThemeProvider>
