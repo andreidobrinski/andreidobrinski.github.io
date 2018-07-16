@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const App = styled.div`
   text-align: center;
   width: 100%;
-  display: inline-block;
   background-color: ${props => props.theme.colours.background};
 `;
 
