@@ -12,7 +12,7 @@ const Learning = () => (
     <Content>
       <Header>Learning</Header>
       <Context>A quick list of courses I&apos;ve taken and enjoyed</Context>
-      {Object.keys(LearningList).map(course => (
+      {Object.keys(LearningList).slice().reverse().map(course => (
         <Body>
           {LearningList[course].author}
           &nbsp;-&nbsp;
