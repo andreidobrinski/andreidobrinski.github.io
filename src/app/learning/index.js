@@ -15,7 +15,7 @@ const Learning = () => (
       <Body>In reverse chronological order:</Body>
       <Body>-</Body>
       {Object.keys(LearningList).slice().reverse().map(item => (
-        <Body>
+        <Body key={item}>
           {LearningList[item].author}
           &nbsp;-&nbsp;
           {LearningList[item].type}
