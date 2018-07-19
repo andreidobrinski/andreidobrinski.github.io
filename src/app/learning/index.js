@@ -11,14 +11,26 @@ const Learning = () => (
     <ADLogo height={200} />
     <Content>
       <Header>Learning</Header>
-      <Context>A quick list of courses I&apos;ve taken and enjoyed</Context>
-      {Object.keys(LearningList).slice().reverse().map(course => (
+      <Context>A quick list of courses and workshops I&apos;ve taken and enjoyed</Context>
+      <Body>In reverse chronological order:</Body>
+      <Body>-</Body>
+      {Object.keys(LearningList).slice().reverse().map(item => (
         <Body>
-          {LearningList[course].author}
+          {LearningList[item].author}
           &nbsp;-&nbsp;
-          <ExternalLink href={LearningList[course].link}>
-            {LearningList[course].name}
+          {LearningList[item].type}
+          :&nbsp;
+          <ExternalLink href={LearningList[item].link}>
+            {LearningList[item].name}
           </ExternalLink>
+          {LearningList[item].repo && (
+            <span>
+              &nbsp;/&nbsp;
+              <ExternalLink href={LearningList[item].repo}>
+                Repo
+              </ExternalLink>
+            </span>
+          )}
         </Body>
       ))}
       <Body style={{ marginTop: '2.618em' }}>
