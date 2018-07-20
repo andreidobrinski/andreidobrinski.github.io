@@ -22,7 +22,7 @@ const StyledIcons = css`
     transition: fill 0.3s;
     fill: #000000;
     :hover {
-      fill: ${props => props.theme.colours.main};
+      fill: ${props => props.theme.colours.link};
     }
   }
 `;
