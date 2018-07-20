@@ -26,7 +26,7 @@ export const colours = {
   cta: '#062F70',
   support: '#FFFFFF',
   text: 'rgba(0,0,0,0.85)',
-  background: 'rgba(0,0,0,0.025)',
+  background: 'rgba(0,0,0,0.02)',
 };
 
 export const spacer = '16px';
