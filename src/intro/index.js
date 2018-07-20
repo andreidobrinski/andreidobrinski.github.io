@@ -6,7 +6,7 @@ const Intro = () => (
   <Wrapper>
     <AdLogo />
     <TextWrap>
-      <Text>
+      <Text style={{ fontWeight: 'bold' }}>
         Hi, I&apos;m Andrei Dobrinski,
       </Text>
       <Text>

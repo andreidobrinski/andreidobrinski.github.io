@@ -56,6 +56,7 @@ export const Skill = styled.div`
 `;
 
 export const Text = styled.p`
+  font-family: ${props => props.theme.fonts.header};
   font-size: 1rem;
   margin-bottom: 8px;
   ${props => props.theme.media.smallTablet`

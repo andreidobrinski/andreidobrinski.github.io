@@ -9,7 +9,7 @@ import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Content, Context, Header, Body } from '../styled';
+import { Content, Context, Header, Subheader, Body } from '../styled';
 import { LogoWrap, Logo } from './styled';
 
 const BadlandsBrewing = () => (
@@ -18,7 +18,7 @@ const BadlandsBrewing = () => (
     <Content>
       <Header>Badlands Brewing</Header>
       <Context>Designing a logo for an Ontario craft brewery.</Context>
-      <Header>Understanding the Problem</Header>
+      <Subheader>Understanding the Problem</Subheader>
       <Body>
         Badlands Brewing Company needed a logo that would be suitable for
         bottle labels, kegs, taps, glasses, and merchandise.
@@ -33,9 +33,9 @@ const BadlandsBrewing = () => (
         My task was to design a unique and iconic logo that would identify the
         Badlands Brewing brand in the competitive beer industry.
       </Body>
-      <Header>The Stack</Header>
+      <Subheader>The Stack</Subheader>
       <StackSkill skill="illustrator" />
-      <Header>The Process</Header>
+      <Subheader>The Process</Subheader>
       <Body>
         Coming up with an image that represented the Cheltenham Badlands while
         also giving the brand an identifying logo was initally a challenge.
@@ -71,7 +71,7 @@ const BadlandsBrewing = () => (
       <Logo src={badlandsLogoDark} />
     </LogoWrap>
     <Content>
-      <Header>The Learning</Header>
+      <Subheader>The Learning</Subheader>
       <Body>
         This project was an interesting challenge as it expanded both my technical knowledge of
         Illustrator and my knowledge of branding in a competitive market.
@@ -86,7 +86,7 @@ const BadlandsBrewing = () => (
         I enjoyed the challenge of symbolizing the Badlands environment and the process
         of making the design a reality.
       </Body>
-      <Header>The Company</Header>
+      <Subheader>The Company</Subheader>
       <Body>
         If you would like to learn more about Badlands Brewing, check out their website&nbsp;
         <ExternalLink href="http://badlandsbrewing.ca">

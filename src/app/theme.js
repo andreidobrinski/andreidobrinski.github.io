@@ -29,10 +29,16 @@ export const colours = {
   background: 'rgba(0,0,0,0.02)',
 };
 
+export const fonts = {
+  header: '"Oxygen", "sans-serif"',
+  body: '"Bitter", "serif"',
+};
+
 export const spacer = '16px';
 
 export default {
   media,
   colours,
+  fonts,
   spacer,
 };

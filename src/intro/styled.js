@@ -13,6 +13,7 @@ export const TextWrap = styled.div`
 `;
 
 export const Text = styled.p`
+  font-family: ${props => props.theme.fonts.header};
   color: ${props => props.theme.colours.text};
   text-align: left;
   font-size: 1.4rem;

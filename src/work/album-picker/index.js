@@ -4,7 +4,7 @@ import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Content, Header, Body } from '../styled';
+import { Content, Header, Subheader, Body } from '../styled';
 
 const AlbumPicker = () => (
   <ScrollToTop>
@@ -13,33 +13,33 @@ const AlbumPicker = () => (
       <Header>
         Album Picker
       </Header>
-      <Header>
+      <Subheader>
         The Motivation
-      </Header>
+      </Subheader>
       <Body>
         To learn React through building an app that helps people with a
         vinyl collection choose which album to listen to.
       </Body>
-      <Header>
+      <Subheader>
         The Stack
-      </Header>
+      </Subheader>
       <StackSkill skill="react" />
       <StackSkill skill="reactrouter" />
       <StackSkill skill="styledcomponents" />
       <StackSkill skill="googlesheets" />
       <StackSkill skill="sketch" />
-      <Header>
+      <Subheader>
         The Product
-      </Header>
+      </Subheader>
       <Body>
         Album Picker helps people with a list of albums they love choose which music
         to listen to for the next hour. It does this by taking a list of artists and
         album titles from a Google Sheet and presenting one of them at random.
         It supports multiple curators and works on all devices.
       </Body>
-      <Header>
+      <Subheader>
         The Process
-      </Header>
+      </Subheader>
       <Body>
         write about the process of making it
       </Body>

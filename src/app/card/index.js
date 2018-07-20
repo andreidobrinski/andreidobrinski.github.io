@@ -13,7 +13,7 @@ const Card = ({
   >
     {!isHeader && (
       <Overlay>
-        <Project>
+        <Project style={{ fontWeight: 'bold' }}>
           <Text>{Projects[project].name}</Text>
         </Project>
         <Skill>
