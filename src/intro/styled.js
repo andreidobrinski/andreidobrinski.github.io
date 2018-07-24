@@ -18,7 +18,7 @@ export const Text = styled.p`
   text-align: left;
   font-size: 1.4rem;
   ${props => props.theme.media.smallTablet`
-    font-size: 1.618rem;
+    font-size: ${props.theme.ratio.one}rem;
   `};
   margin: 5% 12%;
 `;

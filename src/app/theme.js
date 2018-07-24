@@ -36,9 +36,16 @@ export const fonts = {
 
 export const spacer = '16px';
 
+export const ratio = {
+  one: '1.618',
+  two: '2.618',
+  three: '4.236',
+};
+
 export default {
   media,
   colours,
   fonts,
+  ratio,
   spacer,
 };

@@ -32,7 +32,7 @@ export const Text = styled.p`
   font-size: 1.2rem;
   margin: ${props => props.theme.spacer} calc(${props => props.theme.spacer} / 4) calc(${props => props.theme.spacer} / 2);
   ${props => props.theme.media.tablet`
-    font-size: 1.618rem;
+    font-size: ${props.theme.ratio.one}rem;
     margin: ${props.theme.spacer} calc(${props.theme.spacer} / 4);
   `};
 `;
