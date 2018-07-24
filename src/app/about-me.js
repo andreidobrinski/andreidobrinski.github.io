@@ -10,7 +10,7 @@ const AboutMe = () => (
       </Header>
       <Body>
         I&apos;m Andrei.
-        I like to build websites using modern tools such as
+        I like to build websites using modern tools like
         React, Redux, Styled Components, and Gatsby.
         I do mostly front-end development while staying mindful of the UX design.
         I&apos;m always&nbsp;
