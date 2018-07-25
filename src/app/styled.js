@@ -12,10 +12,10 @@ const LinkStyles = css`
   text-decoration: none;
   padding: 0 2px;
   box-shadow: inset 0 -6px 0 0 ${props => props.theme.colours.link};
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s ease-in;
 
   &:hover {
-    box-shadow: inset 0 -24px 0 0 ${props => props.theme.colours.link};
+    box-shadow: inset 0 -30px 0 0 ${props => props.theme.colours.link};
   }
 `;
 
