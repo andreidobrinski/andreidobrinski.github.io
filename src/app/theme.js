@@ -2,6 +2,7 @@ import { css } from 'styled-components';
 
 const sizes = {
   smallTablet: 630,
+  mediumTablet: 712,
   tablet: 880,
   desktop: 992,
 };
