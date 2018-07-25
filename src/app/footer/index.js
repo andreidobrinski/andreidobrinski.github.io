@@ -12,7 +12,7 @@ const Footer = () => (
       title="Email copied to clipboard"
       trigger="click"
       animation="scale"
-      style={{ gridRow: '2 / 3', gridColumn: '2' }}
+      style={{ gridColumn: '2' }}
     >
       <CopyToClipboard text="dobrinski.andrei@gmail.com">
         <EmailButton>

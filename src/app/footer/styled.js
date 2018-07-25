@@ -2,15 +2,13 @@ import styled, { css } from 'styled-components';
 
 export const Wrap = styled.div`
   display: grid;
-  grid-template-rows: 32px 1fr;
   grid-template-columns: 1fr 56px 56px 56px 1fr;
   align-items: center;
   justify-content: center;
-  padding: 16px 0px;
+  padding: 32px 0px;
 `;
 
 const StyledIcons = css`
-  grid-row: 2 / 3;
   justify-self: center;
   width: 40px;
   height: 40px;
