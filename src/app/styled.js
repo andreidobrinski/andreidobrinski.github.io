@@ -29,6 +29,7 @@ export const ExternalLink = styled.a.attrs({
     &:hover {
       box-shadow: none;
     }
+    padding: 0;
   `};
 `;
 
