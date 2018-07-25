@@ -8,23 +8,11 @@ const InstagramPhotos = () => (
       url="https://www.instagram.com/p/BbCJF1xnFmV/?taken-by=badlandsbrewing"
       maxWidth={375}
       hideCaption
-      containerTagName="div"
-      protocol=""
-      onLoading={() => {}}
-      onSuccess={() => {}}
-      onAfterRender={() => {}}
-      onFailure={() => {}}
     />
     <InstagramEmbed
       url="https://www.instagram.com/p/BedKYX5nFla/?taken-by=badlandsbrewing"
       maxWidth={375}
       hideCaption
-      containerTagName="div"
-      protocol=""
-      onLoading={() => {}}
-      onSuccess={() => {}}
-      onAfterRender={() => {}}
-      onFailure={() => {}}
     />
   </InstagramWrap>
 );
