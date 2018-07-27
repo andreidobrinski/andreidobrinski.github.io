@@ -1,6 +1,6 @@
 import React from 'react';
 import AdLogo from './ad-logo';
-import { ExternalLink } from '../app/styled';
+import { ExternalLink } from '../../app/styled';
 import { Wrapper, TextWrap, Text } from './styled';
 
 const Intro = () => (

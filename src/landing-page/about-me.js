@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper, Content, Header, Body } from '../work/styled';
-import { ExternalLink, InternalLink } from './styled';
+import { ExternalLink, InternalLink } from '../app/styled';
 
 const AboutMe = () => (
   <Wrapper style={{ backgroundColor: 'transparent', textAlign: 'left' }}>

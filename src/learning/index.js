@@ -1,10 +1,10 @@
 import React from 'react';
-import ScrollToTop from '../scroll-to-top';
-import ADLogo from '../../intro/ad-logo';
-import Footer from '../footer';
+import ScrollToTop from '../app/scroll-to-top';
+import ADLogo from '../intro/ad-logo';
+import Footer from '../app/footer';
 import LearningList from './list';
-import { ExternalLink, InternalLink } from '../styled';
-import { Content, Context, Header, Body } from '../../work/styled';
+import { ExternalLink, InternalLink } from '../app/styled';
+import { Content, Context, Header, Body } from '../work/styled';
 
 const Learning = () => (
   <ScrollToTop>

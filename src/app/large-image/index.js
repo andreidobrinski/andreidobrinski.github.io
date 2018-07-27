@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Wrapper, Image, SourceText } from './styled';
+import { Image, SourceText } from './styled';
 
 const LargeImage = props => (
-  <Wrapper>
+  <div>
     <Image
       src={props.image}
       alt={props.alt}
@@ -11,7 +11,7 @@ const LargeImage = props => (
     <SourceText>
       {props.cite}
     </SourceText>
-  </Wrapper>
+  </div>
 );
 
 LargeImage.propTypes = {
