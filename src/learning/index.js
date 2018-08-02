@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollToTop from '../app/scroll-to-top';
-import ADLogo from '../intro/ad-logo';
+import ADLogo from '../landing-page/intro/ad-logo';
 import Footer from '../app/footer';
 import LearningList from './list';
 import { ExternalLink, InternalLink } from '../app/styled';
