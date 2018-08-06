@@ -28,6 +28,7 @@ export const Icon = styled.img`
 `;
 
 export const Text = styled.p`
+  font-family: ${props => props.theme.fonts.header};
   line-height: 0.5;
   font-size: 1.2rem;
   margin: ${props => props.theme.spacer} calc(${props => props.theme.spacer} / 4) calc(${props => props.theme.spacer} / 2);
