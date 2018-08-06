@@ -7,6 +7,8 @@ import gatsbyIcon from './assets/gatsby.svg';
 import styledComponentsIcon from './assets/styled-components.png';
 import sketchIcon from './assets/sketch.svg';
 import googleSheetsIcon from './assets/google-sheets.png';
+import swiftIcon from './assets/swift.svg';
+import xcodeIcon from './assets/xcode.png';
 
 const Skills = {
   illustrator: {
@@ -44,6 +46,14 @@ const Skills = {
   googlesheets: {
     name: 'Google Sheets',
     image: googleSheetsIcon,
+  },
+  swift: {
+    name: 'Swift',
+    image: swiftIcon,
+  },
+  xcode: {
+    name: 'XCode',
+    image: xcodeIcon,
   },
 };
 
