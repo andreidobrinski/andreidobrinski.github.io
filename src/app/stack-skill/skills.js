@@ -6,6 +6,7 @@ import graphqlIcon from './assets/graphql.svg';
 import gatsbyIcon from './assets/gatsby.svg';
 import styledComponentsIcon from './assets/styled-components.png';
 import sketchIcon from './assets/sketch.svg';
+import invisionIcon from './assets/invision.svg';
 import googleSheetsIcon from './assets/google-sheets.png';
 import swiftIcon from './assets/swift.svg';
 import xcodeIcon from './assets/xcode.png';
@@ -42,6 +43,10 @@ const Skills = {
   sketch: {
     name: 'Sketch',
     image: sketchIcon,
+  },
+  invision: {
+    name: 'Invision',
+    image: invisionIcon,
   },
   googlesheets: {
     name: 'Google Sheets',
