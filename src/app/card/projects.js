@@ -1,8 +1,14 @@
 import badlandsLogo from './assets/badlands-logo.svg';
 import albumpickerLogo from './assets/album-picker.svg';
 import spiralGif from './assets/spiral-one.gif';
+import lifetalesLogo from './assets/lifetales-logo.svg';
 
 const Projects = {
+  lifetales: {
+    name: 'LifeTales',
+    skill: 'Dev & Design',
+    image: lifetalesLogo,
+  },
   badlands: {
     name: 'Badlands Brewing',
     skill: 'Logo Design',

@@ -9,6 +9,9 @@ import { App, ExternalLink } from '../app/styled';
 const LandingPage = () => (
   <App>
     <Intro />
+    <Link to="/lifetales">
+      <Card project="lifetales" />
+    </Link>
     <Link to="/albumpicker">
       <Card project="albumpicker" />
     </Link>
