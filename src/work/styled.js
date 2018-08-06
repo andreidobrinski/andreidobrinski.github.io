@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -35,9 +35,17 @@ export const Subheader = styled.h3`
   color: ${props => props.theme.colours.text};
 `;
 
-export const Body = styled.p`
+const BodyTextStyles = css`
   font-family: ${props => props.theme.fonts.body};
   line-height: ${props => props.theme.ratio.one};
   font-size: ${props => props.theme.ratio.one}em;
   color: ${props => props.theme.colours.text};
+`;
+
+export const Body = styled.p`
+  ${BodyTextStyles};
+`;
+
+export const ListItem = styled.li`
+  ${BodyTextStyles};
 `;
