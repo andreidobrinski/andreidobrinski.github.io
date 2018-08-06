@@ -4,7 +4,7 @@ import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Content, Header, Subheader, Body } from '../styled';
+import { Content, Context, Header, Subheader, Body } from '../styled';
 
 const AlbumPicker = () => (
   <ScrollToTop>
@@ -13,6 +13,9 @@ const AlbumPicker = () => (
       <Header>
         Album Picker
       </Header>
+      <Context>
+        Designing and building a React app as a side project to solve a personal problem.
+      </Context>
       <Subheader>
         The Motivation
       </Subheader>
