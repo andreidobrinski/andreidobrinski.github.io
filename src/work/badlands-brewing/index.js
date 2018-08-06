@@ -14,7 +14,7 @@ import { LogoWrap, Logo } from './styled';
 
 const BadlandsBrewing = () => (
   <ScrollToTop>
-    <Card project="badlands" isHeader />
+    <Card isHeader project="badlands" />
     <Content>
       <Header>Badlands Brewing</Header>
       <Context>Designing a logo for an Ontario craft brewery.</Context>
