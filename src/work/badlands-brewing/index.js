@@ -16,9 +16,15 @@ const BadlandsBrewing = () => (
   <ScrollToTop>
     <Card isHeader project="badlands" />
     <Content>
-      <Header>Badlands Brewing</Header>
-      <Context>Designing a logo for an Ontario craft brewery.</Context>
-      <Subheader>Understanding the Problem</Subheader>
+      <Header>
+        Badlands Brewing
+      </Header>
+      <Context>
+        Designing a logo for an Ontario craft brewery.
+      </Context>
+      <Subheader>
+        The Motivation
+      </Subheader>
       <Body>
         Badlands Brewing Company needed a logo that would be suitable for
         bottle labels, kegs, taps, glasses, and merchandise.
@@ -33,9 +39,13 @@ const BadlandsBrewing = () => (
         My task was to design a unique and iconic logo that would identify the
         Badlands Brewing brand in the competitive beer industry.
       </Body>
-      <Subheader>The Stack</Subheader>
+      <Subheader>
+        The Stack
+      </Subheader>
       <StackSkill skill="illustrator" />
-      <Subheader>The Process</Subheader>
+      <Subheader>
+        The Process
+      </Subheader>
       <Body>
         Coming up with an image that represented the Cheltenham Badlands while
         also giving the brand an identifying logo was initally a challenge.
@@ -71,7 +81,9 @@ const BadlandsBrewing = () => (
       <Logo src={badlandsLogoDark} />
     </LogoWrap>
     <Content>
-      <Subheader>The Learning</Subheader>
+      <Subheader>
+        The Learning
+      </Subheader>
       <Body>
         This project was an interesting challenge as it expanded both my technical knowledge of
         Illustrator and my knowledge of branding in a competitive market.
@@ -86,7 +98,9 @@ const BadlandsBrewing = () => (
         I enjoyed the challenge of symbolizing the Badlands environment and the process
         of making the design a reality.
       </Body>
-      <Subheader>The Company</Subheader>
+      <Subheader>
+        The Company
+      </Subheader>
       <Body>
         If you would like to learn more about Badlands Brewing, check out their website&nbsp;
         <ExternalLink href="http://badlandsbrewing.ca">
