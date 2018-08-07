@@ -16,11 +16,9 @@ const AboutMe = () => (
         I&apos;m always&nbsp;
         <InternalLink to="/learning">
           learning
-        </InternalLink>
-        &nbsp;and&nbsp;
-        <ExternalLink href="https://github.com/andreidobrinski">
-          contributing to open-source software
-        </ExternalLink>.
+        </InternalLink> and&nbsp;
+        <ExternalLink href="https://github.com/andreidobrinski">contributing</ExternalLink>
+        &nbsp;to open-source software.
       </Body>
       <Body>
         In my spare time, you can find me playing my Stratocaster,
