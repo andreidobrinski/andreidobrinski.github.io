@@ -27,4 +27,15 @@ export const Svg = styled.svg`
   grid-column: 2;
   grid-row: 1;
   align-self: center;
+
+  & > g {
+    transition: all 0.5s;
+    stroke: transparent;
+    fill: #5D5D5D;
+
+    &:hover {
+      stroke: #5D5D5D;
+      fill: transparent;
+    }
+  }
 `;
