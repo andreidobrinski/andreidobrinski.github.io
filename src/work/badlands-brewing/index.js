@@ -107,8 +107,8 @@ const BadlandsBrewing = () => (
           here
         </ExternalLink>.
       </Body>
-      <InstagramPhotos />
     </Content>
+    <InstagramPhotos />
     <Footer />
   </ScrollToTop>
 );
