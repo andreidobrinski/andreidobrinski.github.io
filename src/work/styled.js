@@ -35,7 +35,7 @@ export const Subheader = styled.h3`
   color: ${props => props.theme.colours.text};
 `;
 
-const BodyTextStyles = css`
+export const BodyTextStyles = css`
   font-family: ${props => props.theme.fonts.body};
   line-height: ${props => props.theme.ratio.one};
   font-size: ${props => props.theme.ratio.one}em;

@@ -4,28 +4,33 @@ import { Tooltip } from 'react-tippy';
 import EmailIcon from './assets/email-icon';
 import GithubLogo from './assets/github-logo';
 import LinkedInLogo from './assets/linkedin-logo';
-import { Wrap, EmailButton, SocialLink } from './styled';
+import { Wrap, CtaWrap, EmailButton, SocialLink, Message } from './styled';
 
 const Footer = () => (
   <Wrap>
-    <Tooltip
-      title="Email copied to clipboard"
-      trigger="click"
-      animation="scale"
-      style={{ gridColumn: '2' }}
-    >
-      <CopyToClipboard text="dobrinski.andrei@gmail.com">
-        <EmailButton>
-          <EmailIcon />
-        </EmailButton>
-      </CopyToClipboard>
-    </Tooltip>
-    <SocialLink center href="https://github.com/andreidobrinski">
-      <GithubLogo />
-    </SocialLink>
-    <SocialLink href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/">
-      <LinkedInLogo />
-    </SocialLink>
+    <Message>
+      Get in touch
+    </Message>
+    <CtaWrap>
+      <Tooltip
+        title="Email copied to clipboard"
+        trigger="click"
+        animation="scale"
+        style={{ gridColumn: '2' }}
+      >
+        <CopyToClipboard text="dobrinski.andrei@gmail.com">
+          <EmailButton>
+            <EmailIcon />
+          </EmailButton>
+        </CopyToClipboard>
+      </Tooltip>
+      <SocialLink center href="https://github.com/andreidobrinski">
+        <GithubLogo />
+      </SocialLink>
+      <SocialLink href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/">
+        <LinkedInLogo />
+      </SocialLink>
+    </CtaWrap>
   </Wrap>
 );
 

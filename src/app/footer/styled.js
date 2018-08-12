@@ -1,11 +1,19 @@
 import styled, { css } from 'styled-components';
+import { BodyTextStyles } from '../../work/styled';
 
 export const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CtaWrap = styled.div`
   display: grid;
   grid-template-columns: 1fr 56px 56px 56px 1fr;
   align-items: center;
   justify-content: center;
-  padding: 32px 0px;
+  padding: 0px 0px 32px;
 `;
 
 const StyledIcons = css`
@@ -44,4 +52,12 @@ export const SocialLink = styled.a.attrs({
 })`
   ${StyledIcons};
   grid-column: ${props => (props.center ? '3' : '4')};
+`;
+
+export const Message = styled.p`
+  grid-column: 2 / 5;
+  justify-self: center;
+  ${BodyTextStyles};
+  font-family: ${props => props.theme.fonts.header};
+  margin: 64px 0px 0px;
 `;
