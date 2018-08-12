@@ -64,6 +64,12 @@ const LearningList = {
     link: 'https://trydesignlab.com/figma-101-course/',
     type: 'Course',
   },
+  11: {
+    author: 'RegexOne',
+    name: 'Learn Regular Expressions',
+    link: 'https://regexone.com/',
+    type: 'Lessons',
+  },
 };
 
 export default LearningList;
