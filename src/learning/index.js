@@ -3,7 +3,8 @@ import ScrollToTop from '../app/scroll-to-top';
 import ADLogo from '../landing-page/intro/ad-logo';
 import Footer from '../app/footer';
 import LearningList from './list';
-import { ExternalLink, InternalLink } from '../app/styled';
+import BackButton from '../app/back-button';
+import { ExternalLink } from '../app/styled';
 import { Content, Context, Header, Body } from '../work/styled';
 
 const Learning = () => (
@@ -33,11 +34,7 @@ const Learning = () => (
           )}
         </Body>
       ))}
-      <Body style={{ marginTop: '2.618em' }}>
-        <InternalLink to="/">
-          Back
-        </InternalLink>
-      </Body>
+      <BackButton />
     </Content>
     <Footer />
   </ScrollToTop>

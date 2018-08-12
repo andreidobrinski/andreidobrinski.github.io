@@ -7,7 +7,7 @@ export const App = styled.div`
   background-color: ${props => props.theme.colours.background};
 `;
 
-const LinkStyles = css`
+export const LinkStyles = css`
   color: ${props => props.theme.colours.text};
   text-decoration: none;
   padding: 0 2px;

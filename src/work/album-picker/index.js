@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollToTop from '../../app/scroll-to-top';
 import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
+import BackButton from '../../app/back-button';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
 import { Content, Context, Header, Subheader, Body } from '../styled';
@@ -88,6 +89,7 @@ const AlbumPicker = () => (
           here
         </ExternalLink>.
       </Body>
+      <BackButton />
     </Content>
     <Footer />
   </ScrollToTop>

@@ -7,6 +7,7 @@ import InstagramPhotos from './instagram-photos';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
+import BackButton from '../../app/back-button';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
 import { Content, Context, Header, Subheader, Body } from '../styled';
@@ -107,8 +108,9 @@ const BadlandsBrewing = () => (
           here
         </ExternalLink>.
       </Body>
+      <InstagramPhotos />
+      <BackButton />
     </Content>
-    <InstagramPhotos />
     <Footer />
   </ScrollToTop>
 );
