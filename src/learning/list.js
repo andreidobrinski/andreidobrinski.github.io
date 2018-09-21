@@ -70,6 +70,18 @@ const LearningList = {
     link: 'https://regexone.com/',
     type: 'Lessons',
   },
+  12: {
+    author: 'Wes Bos',
+    name: 'Mastering Markdown',
+    link: 'https://masteringmarkdown.com',
+    type: 'Mini Course',
+  },
+  13: {
+    author: 'Matt Gaunt (Google CodeLabs)',
+    name: 'Adding Push Notifications to a Web App',
+    link: 'https://developers.google.com/web/fundamentals/codelabs/push-notifications/',
+    type: 'Tutorial',
+  },
 };
 
 export default LearningList;
