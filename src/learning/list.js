@@ -80,6 +80,7 @@ const LearningList = {
     author: 'Matt Gaunt (Google CodeLabs)',
     name: 'Adding Push Notifications to a Web App',
     link: 'https://developers.google.com/web/fundamentals/codelabs/push-notifications/',
+    repo: 'https://github.com/andreidobrinski/web-push-codelab',
     type: 'Tutorial',
   },
 };
