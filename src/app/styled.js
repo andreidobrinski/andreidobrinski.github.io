@@ -10,7 +10,7 @@ export const App = styled.div`
 export const LinkStyles = css`
   color: ${props => props.theme.colours.text};
   text-decoration: none;
-  padding: 0 2px;
+  padding: 0 1px;
   box-shadow: inset 0 -6px 0 0 ${props => props.theme.colours.link};
   transition: box-shadow 0.3s ease-in;
 
