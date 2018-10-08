@@ -55,11 +55,13 @@ const BadlandsBrewing = () => (
       </Body>
       <Body>
         I decided to choose an owl as this could serve as both a logo and
-        a mascot for the brand. For the design I was inspired by&nbsp;
+        a mascot for the brand. For the design I was inspired by
+        {' '}
         <ExternalLink href="http://zelda.wikia.com/wiki/Kaepora_Gaebora">
           this owl
         </ExternalLink>
-        &nbsp;from <i>The Legend of Zelda - Ocarina of Time</i>. As a nocturnal animal,
+        {' '}
+        from <i>The Legend of Zelda - Ocarina of Time</i>. As a nocturnal animal,
         it would be something beer-drinking night owls could relate to.
       </Body>
     </Content>
@@ -103,7 +105,8 @@ const BadlandsBrewing = () => (
         The Company
       </Subheader>
       <Body>
-        If you would like to learn more about Badlands Brewing, check out their website&nbsp;
+        If you would like to learn more about Badlands Brewing, check out their website
+        {' '}
         <ExternalLink href="http://badlandsbrewing.ca">
           here
         </ExternalLink>.

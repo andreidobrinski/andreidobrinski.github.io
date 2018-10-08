@@ -81,10 +81,12 @@ const AlbumPicker = () => (
         also enabled users to bookmark their unique URL for easy access.
       </Body>
       <Body>
-        Check out the project&nbsp;
+        Check out the project
+        {' '}
         <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
           here
-        </ExternalLink>, and the open-source code&nbsp;
+        </ExternalLink>, and the open-source code
+        {' '}
         <ExternalLink href="https://github.com/andreidobrinski/album-picker">
           here
         </ExternalLink>.

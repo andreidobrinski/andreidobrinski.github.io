@@ -14,11 +14,13 @@ const Intro = () => (
         a front-end developer that loves the modern web.
       </Text>
       <Text>
-        I&apos;m currently working at&nbsp;
+        I&apos;m currently working at
+        {' '}
         <ExternalLink href="https://www.lifetales.com">
           LifeTales
         </ExternalLink>
-        &nbsp;in Toronto.
+        {' '}
+        in Toronto.
       </Text>
       <Text>
         Check out some of my projects.
