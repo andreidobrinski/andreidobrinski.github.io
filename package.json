@@ -4,14 +4,14 @@
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^15.6.2",
+    "react": "^16.5.2",
     "react-copy-to-clipboard": "^5.0.1",
-    "react-dom": "^15.6.1",
+    "react-dom": "^16.5.2",
     "react-instagram-embed": "^1.4.0",
     "react-router-dom": "^4.0.0",
-    "react-scripts": "1.1.4",
-    "react-tippy": "^1.2.2",
-    "styled-components": "^2.4.0"
+    "react-scripts": "2.0.5",
+    "react-tippy": "^1.2.3",
+    "styled-components": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -20,10 +20,15 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.6.1"
-  }
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
