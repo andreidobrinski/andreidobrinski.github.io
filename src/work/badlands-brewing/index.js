@@ -10,7 +10,9 @@ import zeldaOwl from './assets/zelda-owl.png';
 import BackButton from '../../app/back-button';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Content, Context, Header, Subheader, Body } from '../styled';
+import {
+  Content, Context, Header, Subheader, Body,
+} from '../styled';
 import { LogoWrap, Logo } from './styled';
 
 const BadlandsBrewing = () => (
@@ -61,7 +63,11 @@ const BadlandsBrewing = () => (
           this owl
         </ExternalLink>
         {' '}
-        from <i>The Legend of Zelda - Ocarina of Time</i>. As a nocturnal animal,
+        from
+        {' '}
+        <i>The Legend of Zelda - Ocarina of Time.</i>
+        {' '}
+        As a nocturnal animal,
         it would be something beer-drinking night owls could relate to.
       </Body>
     </Content>
@@ -108,8 +114,8 @@ const BadlandsBrewing = () => (
         If you would like to learn more about Badlands Brewing, check out their website
         {' '}
         <ExternalLink href="http://badlandsbrewing.ca">
-          here
-        </ExternalLink>.
+          here.
+        </ExternalLink>
       </Body>
       <InstagramPhotos />
       <BackButton />

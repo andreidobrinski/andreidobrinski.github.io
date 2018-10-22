@@ -5,7 +5,9 @@ import StackSkill from '../../app/stack-skill';
 import BackButton from '../../app/back-button';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
-import { Content, Context, Header, Subheader, Body } from '../styled';
+import {
+  Content, Context, Header, Subheader, Body,
+} from '../styled';
 
 const AlbumPicker = () => (
   <ScrollToTop>
@@ -40,7 +42,7 @@ const AlbumPicker = () => (
       </Subheader>
       <Body>
         Album Picker helps people with a list of albums they
-        love choose which one to listen to next.
+        love choose which one to listen to.
         It does this by taking their list of album titles from a Google Sheet
         and presenting one of them at random. It supports multiple curators and
         works on all devices as a web app.
@@ -85,11 +87,13 @@ const AlbumPicker = () => (
         {' '}
         <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
           here
-        </ExternalLink>, and the open-source code
+        </ExternalLink>
+        {' '}
+        , and the open-source code
         {' '}
         <ExternalLink href="https://github.com/andreidobrinski/album-picker">
-          here
-        </ExternalLink>.
+          here.
+        </ExternalLink>
       </Body>
       <BackButton />
     </Content>
