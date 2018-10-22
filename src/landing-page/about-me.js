@@ -10,14 +10,16 @@ const AboutMe = () => (
       </Header>
       <Body>
         I&apos;m Andrei.
-        I like to build websites using modern tools like
-        React, Redux, Styled Components, and Gatsby.
+        I like to build websites and apps using modern tools like
+        React, Gatsby, Styled Components, and GraphQL.
         I do mostly front-end development while staying mindful of the UX design.
         I&apos;m always
         {' '}
         <InternalLink to="/learning">
           learning
-        </InternalLink> and
+        </InternalLink>
+        {' '}
+        and
         {' '}
         <ExternalLink href="https://github.com/andreidobrinski">
           contributing
