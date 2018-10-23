@@ -83,6 +83,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/web-push-codelab',
     type: 'Tutorial',
   },
+  14: {
+    author: 'Stephen Grider',
+    name: 'The Coding Interview Bootcamp',
+    link: 'https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/',
+    repo: 'https://github.com/andreidobrinski/AlgoCasts',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
