@@ -90,6 +90,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/AlgoCasts',
     type: 'Course',
   },
+  15: {
+    author: 'Taylor Bell',
+    name: 'Build a Blog with React and Markdown using Gatsby',
+    link: 'https://egghead.io/courses/build-a-blog-with-react-and-markdown-using-gatsby',
+    repo: 'https://github.com/andreidobrinski/blog-tutorial-gatsby',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
