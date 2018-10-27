@@ -33,7 +33,9 @@ const StyledIcons = css`
   }
 `;
 
-export const EmailButton = styled.button`
+export const EmailButton = styled.button.attrs({
+  type: 'button',
+})`
   ${StyledIcons};
   border: none;
   cursor: pointer;

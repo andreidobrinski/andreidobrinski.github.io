@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import { Body } from '../work/styled';
 import { LinkStyles } from './styled';
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  type: 'button',
+})`
   all: unset;
   ${LinkStyles};
 `;
