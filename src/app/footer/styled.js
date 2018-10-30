@@ -42,10 +42,6 @@ export const EmailButton = styled.button.attrs({
   grid-column: 2;
   padding: 0;
   margin-top: 10px;
-
-  &:focus {
-    outline-style: none;
-  }
 `;
 
 export const SocialLink = styled.a.attrs({
