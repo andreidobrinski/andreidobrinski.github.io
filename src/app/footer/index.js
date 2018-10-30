@@ -4,7 +4,9 @@ import { Tooltip } from 'react-tippy';
 import EmailIcon from './assets/email-icon';
 import GithubLogo from './assets/github-logo';
 import LinkedInLogo from './assets/linkedin-logo';
-import { Wrap, CtaWrap, EmailButton, SocialLink, Message } from './styled';
+import {
+  Wrap, CtaWrap, EmailButton, SocialLink, Message,
+} from './styled';
 
 const Footer = () => (
   <Wrap>
