@@ -1,13 +1,10 @@
 /* eslint-disable max-len */
 import React from 'react';
 import StackSkill from '../../app/stack-skill';
-import { Subheader, Body } from '../styled';
+import { Body } from '../styled';
 
 const IosDev = () => (
   <>
-    <Subheader>
-      iOS Development
-    </Subheader>
     <StackSkill skill="swift" />
     <StackSkill skill="xcode" />
     <Body>After a few months of learning Swift and Xcode in my own time, I put my skills to practice at LifeTales. I mainly focused on animation, prototyping, as well as building out and styling the front-end.</Body>

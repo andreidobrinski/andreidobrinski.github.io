@@ -2,13 +2,10 @@
 import React from 'react';
 import StackSkill from '../../app/stack-skill';
 import { ExternalLink } from '../../app/styled';
-import { Subheader, Body, ListItem } from '../styled';
+import { Body, ListItem } from '../styled';
 
 const UXDesign = () => (
   <div>
-    <Subheader>
-      User Experience Design
-    </Subheader>
     <StackSkill skill="sketch" />
     <StackSkill skill="invision" />
     <StackSkill skill="xcode" />

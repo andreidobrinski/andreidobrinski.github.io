@@ -1,13 +1,10 @@
 /* eslint-disable max-len */
 import React from 'react';
 import StackSkill from '../../app/stack-skill';
-import { Subheader, Body, ListItem } from '../styled';
+import { Body, ListItem } from '../styled';
 
 const WebDev = () => (
   <>
-    <Subheader>
-      Web Development
-    </Subheader>
     <StackSkill skill="react" />
     <StackSkill skill="redux" />
     <StackSkill skill="reactrouter" />
