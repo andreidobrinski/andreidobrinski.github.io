@@ -4,6 +4,7 @@ import Card from '../../app/card';
 import Footer from '../../app/footer';
 import WebDev from './web-dev';
 import IosDev from './ios-dev';
+import UXDesign from './ux-design';
 import {
   Content, Context, Header, Subheader,
 } from '../styled';
@@ -27,6 +28,10 @@ const LifeTales = () => (
         iOS Development
       </Subheader>
       <IosDev />
+      <Subheader>
+        User Experience Design
+      </Subheader>
+      <UXDesign />
     </Content>
     <Footer />
   </ScrollToTop>
