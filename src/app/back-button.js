@@ -8,18 +8,20 @@ import { LinkStyles } from './styled';
 const Button = styled.button.attrs({
   type: 'button',
 })`
-  all: unset;
   ${LinkStyles};
+  margin-top: ${props => props.theme.ratio.two}em;
+  border: none;
+  background: none;
 `;
 
 const BackButton = ({ history }) => (
-  <Body style={{ marginTop: '2.618em' }}>
-    <Button
-      onClick={() => history.goBack()}
-    >
+  <Button
+    onClick={() => history.goBack()}
+  >
+    <Body style={{ margin: '0' }}>
       &larr; Back
-    </Button>
-  </Body>
+    </Body>
+  </Button>
 );
 
 BackButton.propTypes = {
