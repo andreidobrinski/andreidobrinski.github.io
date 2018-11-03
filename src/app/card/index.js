@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Projects from './projects';
-import { Wrapper, Overlay, Project, Skill, Text } from './styled';
+import {
+  Wrapper, Overlay, Project, Skill, Text,
+} from './styled';
 
 const Card = ({
   isHeader, project,
@@ -25,7 +27,7 @@ const Card = ({
 );
 
 Card.propTypes = {
-  project: PropTypes.string.isRequired,
+  project: PropTypes.oneOf(Object.keys(Projects)).isRequired,
   isHeader: PropTypes.bool,
 };
 
