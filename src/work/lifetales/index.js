@@ -6,6 +6,7 @@ import BackButton from '../../app/back-button';
 import WebDev from './web-dev';
 import IosDev from './ios-dev';
 import UXDesign from './ux-design';
+import { ExternalLink } from '../../app/styled';
 import {
   Content, Context, Header, Subheader, SectionToggleButton,
 } from '../styled';
@@ -35,7 +36,11 @@ class LifeTales extends Component {
           </Header>
           <Context>
             A journey through marketing, design and iOS development, leading into web development,
-            starting May 2016 until the present day.
+            starting May 2016 until the present day. Check out the website
+            {' '}
+            <ExternalLink href="https://lifetales.com/">
+              here.
+            </ExternalLink>
           </Context>
           <SectionToggleButton onClick={() => toggle('webDevToggled')}>
             <Subheader>
