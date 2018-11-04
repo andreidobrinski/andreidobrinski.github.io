@@ -12,6 +12,13 @@ import {
 } from '../styled';
 
 class LifeTales extends Component {
+  constructor(props) {
+    super(props);
+    this.webDevRef = React.createRef();
+    this.iosDevRef = React.createRef();
+    this.uxRef = React.createRef();
+  }
+
   state = {
     webDevToggled: true,
     iosDevToggled: false,
@@ -25,6 +32,10 @@ class LifeTales extends Component {
       this.setState(prevState => ({
         [state]: !prevState[state],
       }));
+    };
+
+    const blur = (ref) => {
+      ref.current.blur();
     };
 
     return (
@@ -42,19 +53,37 @@ class LifeTales extends Component {
               here.
             </ExternalLink>
           </Context>
-          <SectionToggleButton onClick={() => toggle('webDevToggled')}>
+          <SectionToggleButton
+            onClick={() => {
+              toggle('webDevToggled');
+              blur(this.webDevRef);
+            }}
+            ref={this.webDevRef}
+          >
             <Subheader>
               Web Development
             </Subheader>
           </SectionToggleButton>
           {webDevToggled && <WebDev />}
-          <SectionToggleButton onClick={() => toggle('iosDevToggled')}>
+          <SectionToggleButton
+            onClick={() => {
+              toggle('iosDevToggled');
+              blur(this.iosDevRef);
+            }}
+            ref={this.iosDevRef}
+          >
             <Subheader>
               iOS Development
             </Subheader>
           </SectionToggleButton>
           {iosDevToggled && <IosDev />}
-          <SectionToggleButton onClick={() => toggle('uxDesignToggled')}>
+          <SectionToggleButton
+            onClick={() => {
+              toggle('uxDesignToggled');
+              blur(this.uxRef);
+            }}
+            ref={this.uxRef}
+          >
             <Subheader>
               User Experience Design
             </Subheader>

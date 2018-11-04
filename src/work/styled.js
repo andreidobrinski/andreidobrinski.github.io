@@ -46,6 +46,9 @@ export const SectionToggleButton = styled.button.attrs({
   &:hover {
     box-shadow: inset 0 -40px 0 0 ${props => props.theme.colours.link};
   }
+  &:active {
+    outline: none;
+  }
   display: inherit;
   border: none;
   margin-bottom: ${props => props.theme.ratio.one}em;
