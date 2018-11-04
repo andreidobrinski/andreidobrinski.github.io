@@ -7,7 +7,7 @@
     "react": "^16.5.2",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.5.2",
-    "react-instagram-embed": "^1.4.0",
+    "react-instagram-embed": "^1.4.1",
     "react-router-dom": "^4.0.0",
     "react-scripts": "2.0.5",
     "react-tippy": "^1.2.3",
