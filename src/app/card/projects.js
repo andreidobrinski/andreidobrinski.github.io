@@ -1,4 +1,4 @@
-import badlandsLogo from './assets/badlands-logo.svg';
+import badlandsLogo from '../../work/badlands-brewing/assets/badlands-logo-light.png';
 import albumpickerLogo from './assets/album-picker.svg';
 import spiralGif from './assets/spiral-one.gif';
 import lifetalesLogo from './assets/lifetales-logo.svg';
