@@ -16,7 +16,7 @@ export const CtaWrap = styled.div`
   padding: 0px 0px 32px;
 `;
 
-const StyledIcons = css`
+export const StyledIcons = css`
   justify-self: center;
   width: 40px;
   height: 40px;
@@ -31,17 +31,6 @@ const StyledIcons = css`
       fill: ${props => props.theme.colours.link};
     }
   }
-`;
-
-export const EmailButton = styled.button.attrs({
-  type: 'button',
-})`
-  ${StyledIcons};
-  border: none;
-  cursor: pointer;
-  grid-column: 2;
-  padding: 0;
-  margin-top: 10px;
 `;
 
 export const SocialLink = styled.a.attrs({

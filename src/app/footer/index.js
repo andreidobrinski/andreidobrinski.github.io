@@ -1,11 +1,11 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Tooltip } from 'react-tippy';
-import EmailIcon from './assets/email-icon';
+import EmailButton from './email-button';
 import GithubLogo from './assets/github-logo';
 import LinkedInLogo from './assets/linkedin-logo';
 import {
-  Wrap, CtaWrap, EmailButton, SocialLink, Message,
+  Wrap, CtaWrap, SocialLink, Message,
 } from './styled';
 
 const Footer = () => (
@@ -21,9 +21,7 @@ const Footer = () => (
         style={{ gridColumn: '2' }}
       >
         <CopyToClipboard text="dobrinski.andrei@gmail.com">
-          <EmailButton>
-            <EmailIcon />
-          </EmailButton>
+          <EmailButton />
         </CopyToClipboard>
       </Tooltip>
       <SocialLink center href="https://github.com/andreidobrinski">
