@@ -32,7 +32,7 @@ export const colours = {
 
 export const fonts = {
   header: '"Oxygen", "sans-serif"',
-  body: '"Bitter", "serif"',
+  body: '"Open Sans", "serif"',
 };
 
 export const spacer = '16px';
