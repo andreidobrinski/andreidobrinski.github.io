@@ -12,7 +12,7 @@ const WebDev = () => (
     <StackSkill skill="gatsby" />
     <StackSkill skill="graphql" />
     <Body>In 2017, I began learning React through Codecademy, Udemy, and several other resources. In November, I brought my learning to practice and began working with React full-time at LifeTales.</Body>
-    <Body>he front-end stack I worked with includes React, Redux, React Router, and Styled Components (including their Theme Provider), as well as Gatsby and GraphQL for a static marketing site. Working at LifeTales has taught me to focus on clean, DRY code for improved component re-usability and readability.</Body>
+    <Body>The front-end stack I worked with includes React, Redux, React Router, and Styled Components (including their Theme Provider), as well as Gatsby and GraphQL for a static marketing site. Working at LifeTales has taught me to focus on clean, DRY code for improved component re-usability and readability.</Body>
     <Body>At LifeTales, I&apos;ve:</Body>
     <ul>
       <ListItem>created and improved on React components that are conditionally styled and rendered based on the component and application state,</ListItem>
