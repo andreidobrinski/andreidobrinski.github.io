@@ -97,6 +97,12 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/blog-tutorial-gatsby',
     type: 'Course',
   },
+  16: {
+    author: 'Zach Goldstein',
+    name: 'Penrose Triangle with Three.js',
+    link: 'https://github.com/zachgoldstein/penroseTriangle',
+    type: 'Workshop',
+  },
 };
 
 export default LearningList;
