@@ -5,7 +5,9 @@ import Footer from '../app/footer';
 import LearningList from './list';
 import BackButton from '../app/back-button';
 import { ExternalLink } from '../app/styled';
-import { Content, Context, Header, Body } from '../work/styled';
+import {
+  Content, Context, Header, Body,
+} from '../work/styled';
 
 const Learning = () => (
   <ScrollToTop>
