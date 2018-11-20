@@ -1,5 +1,7 @@
 import React from 'react';
-import { Wrapper, Content, Header, Body } from '../work/styled';
+import {
+  Wrapper, Content, Header, Body,
+} from '../work/styled';
 import { ExternalLink, InternalLink } from '../app/styled';
 
 const AboutMe = () => (
