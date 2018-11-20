@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/react-router.02419671.svg"
   },
   {
-    "revision": "18d93258a8f04b26fd2e",
+    "revision": "bc60ad9c68e54c187e22",
     "url": "/static/css/main.31b4c823.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/media/zelda-owl.e52f441d.png"
   },
   {
-    "revision": "3e28d4af357c63ac27bb",
-    "url": "/static/js/1.3e28d4af.chunk.js"
+    "revision": "cf3b1d9f67ea264249d6",
+    "url": "/static/js/1.cf3b1d9f.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/static/media/redux.85772647.svg"
   },
   {
-    "revision": "18d93258a8f04b26fd2e",
-    "url": "/static/js/main.18d93258.chunk.js"
+    "revision": "bc60ad9c68e54c187e22",
+    "url": "/static/js/main.bc60ad9c.chunk.js"
   },
   {
     "revision": "5a4a847bcd232f4b3731bbfb9974f088",
@@ -88,11 +88,11 @@ self.__precacheManifest = [
     "url": "/static/media/badlands-logo-dark.e2846d12.png"
   },
   {
-    "revision": "3e28d4af357c63ac27bb",
+    "revision": "cf3b1d9f67ea264249d6",
     "url": "/static/css/1.eced0a4a.chunk.css"
   },
   {
-    "revision": "7364efbddf2021eec17a21332b714db9",
+    "revision": "45cc195f2641dd4eca2e028ed641137e",
     "url": "/index.html"
   }
 ];
