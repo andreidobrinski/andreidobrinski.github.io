@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   margin: 16px auto;
   max-width: 800px;
-  max-height: 533px;
+  max-height: 325px;
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
   transition-timing-function: ease-in-out;
