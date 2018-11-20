@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { LinkStyles } from '../../app/styled';
 
 export const Wrapper = styled.div`
   display: grid;
@@ -38,4 +39,14 @@ export const Svg = styled.svg`
       fill: transparent;
     }
   }
+`;
+
+export const AboutMeButton = styled.button.attrs({
+  type: 'button',
+})`
+  ${LinkStyles};
+  border: none;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
 `;

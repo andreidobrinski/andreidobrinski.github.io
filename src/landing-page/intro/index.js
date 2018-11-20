@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AdLogo from './ad-logo';
 import { ExternalLink } from '../../app/styled';
-import { Wrapper, TextWrap, Text } from './styled';
+import {
+  Wrapper, TextWrap, Text, AboutMeButton,
+} from './styled';
 
-const Intro = () => (
+const Intro = ({ scrollToAboutMe }) => (
   <Wrapper>
     <AdLogo />
     <TextWrap>
@@ -23,10 +26,20 @@ const Intro = () => (
         in Toronto.
       </Text>
       <Text>
-        Check out some of my projects.
+        Learn a bit more
+        {' '}
+        <AboutMeButton onClick={scrollToAboutMe}>
+          about me
+        </AboutMeButton>
+        {' '}
+        or check out some of my projects below.
       </Text>
     </TextWrap>
   </Wrapper>
 );
+
+Intro.propTypes = {
+  scrollToAboutMe: PropTypes.func.isRequired,
+};
 
 export default Intro;
