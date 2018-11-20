@@ -48,3 +48,17 @@ export const Message = styled.p`
   font-family: ${props => props.theme.fonts.header};
   margin: 64px 0px 0px;
 `;
+
+export const Button = styled.button.attrs({
+  type: 'button',
+})`
+  ${StyledIcons};
+  border: none;
+  cursor: pointer;
+  grid-column: 2;
+  padding: 0;
+  margin-top: 10px;
+  &:active {
+    outline: none;
+  }
+`;
