@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { Component } from 'react';
 import ScrollToTop from '../../app/scroll-to-top';
 import Card from '../../app/card';
@@ -46,12 +47,25 @@ class LifeTales extends Component {
             LifeTales
           </Header>
           <Context>
-            A journey through marketing, design and iOS development, leading into web development,
-            starting May 2016 until the present day. Check out the website
+            I took on several roles while working at a startup called LifeTales, based out of the Ryerson DMZ tech incubator.
+          </Context>
+          <Context>
+            LifeTales is an iOS and web app that helps families easily create and privately share stories worth remembering. Check out the
             {' '}
             <ExternalLink href="https://lifetales.com/">
-              here.
+              website
             </ExternalLink>
+            {' '}
+            and the
+            {' '}
+            <ExternalLink href="https://member.lifetales.com/account">
+              app
+            </ExternalLink>
+            {' '}
+            that I helped build.
+          </Context>
+          <Context>
+            I started with job in marketing, which led to opportunities in UX design, iOS development, and then ultimately to a career in web development.
           </Context>
           <SectionToggleButton
             onClick={() => {

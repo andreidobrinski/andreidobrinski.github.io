@@ -11,33 +11,23 @@ const WebDev = () => (
     <StackSkill skill="styledcomponents" />
     <StackSkill skill="gatsby" />
     <StackSkill skill="graphql" />
-    <Body>In 2017, I began learning React through Codecademy, Udemy, and several other resources. In November, I brought my learning to practice and began working with React full-time at LifeTales.</Body>
-    <Body>The front-end stack I worked with includes React, Redux, React Router, and Styled Components (including their Theme Provider), as well as Gatsby and GraphQL for a static marketing site. Working at LifeTales has taught me to focus on clean, DRY code for improved component re-usability and readability.</Body>
-    <Body>At LifeTales, I&apos;ve:</Body>
+    <Body>I began learning React through Codecademy, Udemy, and several other resources while working as a UX designer at LifeTales. In November 2017, I moved into a full-time React development role at LifeTales.</Body>
+    <Body>As part of a small web development team, I contributed to our web app as well as our static marketing site. The front-end stack I worked with included React, Redux, React Router and Styled Components. For our static marketing site, I worked with Gatsby and GraphQL. Working at LifeTales taught me to focus on clean, DRY code for readable and reusable React components.</Body>
+    <Body>Examples of reusable component workflows I’ve created and worked with across the app and site included:</Body>
     <ul>
-      <ListItem>created and improved on React components that are conditionally styled and rendered based on the component and application state,</ListItem>
-      <ListItem>worked on fully-functional components as part of the web app and visual components for the static marketing site,</ListItem>
-      <ListItem>worked with advanced React patterns such as render props and higher-order components,</ListItem>
-      <ListItem>implemented web push notifications for mobile and desktop browsers,</ListItem>
-      <ListItem>worked on the static marketing site using Gatsby and GraphQL,</ListItem>
-      <ListItem>worked with component routing with React Router,</ListItem>
-      <ListItem>worked with connected components in Redux patterns,</ListItem>
-      <ListItem>worked with API calls to fetch, post, update and delete data,</ListItem>
-      <ListItem>worked with technologies such as Formik, redux-form, react-powerplug and react tippy for input components and dropdown menus, and</ListItem>
-      <ListItem>implemented styles throughout the app using a centralized style guide.</ListItem>
+      <ListItem>Render props and higher-order components used to fetch data from the Redux store and provide data to child components.</ListItem>
+      <ListItem>A reusable modal component that was rendered with either component/application state or using a route.</ListItem>
+      <ListItem>Components that render svg icons with passed props for size and colour.</ListItem>
+      <ListItem>A style guide using Styled Components’ theme provider, used across the app and site.</ListItem>
     </ul>
-    <Body>Examples of some of my work include:</Body>
+    <Body>Much of my work for the app involved building components that dynamically render photos, videos, text, and audio. I also built components that handle the API calls to fetch, post, update and delete the appropriate data for the user. In addition to this, work that I’ve done on the app includes:</Body>
     <ul>
-      <ListItem>building components that handle the fetching, posting, updating and deleting of text, images, video and audio,</ListItem>
-      <ListItem>reusable interactive modal components, rendered as part of the route with React Router or as part of the application state with Redux,</ListItem>
-      <ListItem>componentized, reusable SVG’s,</ListItem>
-      <ListItem>UI components for a static marketing site,</ListItem>
-      <ListItem>interactive dropdown menus,</ListItem>
-      <ListItem>data-fetching for notifications using websockets,</ListItem>
-      <ListItem>CSS styling with modern layout techniques such as Flexbox and CSS Grid, as well as conditional styling with props and styled-components.</ListItem>
+      <ListItem>Implementing web push notifications for desktop and mobile browsers.</ListItem>
+      <ListItem>Data-fetching notifications using WebSockets.</ListItem>
+      <ListItem>Creating and improving on forms with Formik and redux-form.</ListItem>
     </ul>
-    <Body>I also worked with the Foundation framework to build the HTML and CSS for the email notifications we send to LifeTales users.</Body>
-    <Body>Before moving to full-time web development, I have been involved in several other areas at LifeTales such as user experience (UX) design and iOS development. In addition, I analyzed the market to create competitive reviews which helped LifeTales strategize positioning and define the company’s value proposition.</Body>
+    <Body>I worked on several iterations of the marketing site using Gatsby v2 for generating the static site from React components. I used GraphQL for populating the site with necessary data and to load responsive images efficiently with gatsby-image-sharp. I used modern CSS techniques like grid and flexbox in styled-components, with fallbacks for older browser support.</Body>
+    <Body>Before moving to full-time web development, I have been involved in several other areas at LifeTales such as user experience (UX) design and iOS development.</Body>
   </>
 );
 
