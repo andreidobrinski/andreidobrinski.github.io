@@ -1,9 +1,9 @@
 import React from 'react';
+import InstagramEmbed from 'react-instagram-embed';
 import ScrollToTop from '../../app/scroll-to-top';
 import Card from '../../app/card';
 import StackSkill from '../../app/stack-skill';
 import LargeImage from '../../app/large-image';
-import InstagramPhotos from './instagram-photos';
 import badlandsLogoLight from './assets/badlands-logo-light.png';
 import badlandsLogoDark from './assets/badlands-logo-dark.png';
 import zeldaOwl from './assets/zelda-owl.png';
@@ -13,7 +13,7 @@ import { ExternalLink } from '../../app/styled';
 import {
   Content, Context, Header, Subheader, Body,
 } from '../styled';
-import { LogoWrap, Logo } from './styled';
+import { LogoWrap, Logo, InstagramWrap } from './styled';
 
 const BadlandsBrewing = () => (
   <ScrollToTop>
@@ -117,7 +117,12 @@ const BadlandsBrewing = () => (
           here.
         </ExternalLink>
       </Body>
-      <InstagramPhotos />
+      <InstagramWrap>
+        <InstagramEmbed
+          url="https://www.instagram.com/p/BedKYX5nFla/?taken-by=badlandsbrewing"
+          hideCaption
+        />
+      </InstagramWrap>
       <BackButton />
     </Content>
     <Footer />

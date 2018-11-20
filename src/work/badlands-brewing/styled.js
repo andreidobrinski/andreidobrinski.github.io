@@ -16,9 +16,7 @@ export const Logo = styled.img`
 `;
 
 export const InstagramWrap = styled.div`
-  display: grid;
-  grid-template-columns: minmax(320px, 1fr);
-  ${props => props.theme.media.mediumTablet`
-    grid-template-columns: 1fr 1fr;
-  `};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
