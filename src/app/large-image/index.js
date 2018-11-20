@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, SourceText } from './styled';
 
-const LargeImage = props => (
+const LargeImage = ({ image, alt, cite }) => (
   <div>
     <Image
-      src={props.image}
-      alt={props.alt}
+      src={image}
+      alt={alt}
     />
     <SourceText>
-      {props.cite}
+      {cite}
     </SourceText>
   </div>
 );
