@@ -17,7 +17,13 @@ const AlbumPicker = () => (
         Album Picker
       </Header>
       <Context>
-        Designing and building a React app as a side project to solve a personal problem.
+        Designing and building a
+        {' '}
+        <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
+          React app
+        </ExternalLink>
+        {' '}
+        as a side project to solve a personal problem.
       </Context>
       <Subheader>
         The Motivation
