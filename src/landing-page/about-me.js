@@ -4,10 +4,10 @@ import {
 } from '../work/styled';
 import { ExternalLink, InternalLink } from '../app/styled';
 
-const AboutMe = () => (
+const AboutMe = React.forwardRef((props, aboutMeRef) => (
   <Wrapper style={{ backgroundColor: 'transparent', textAlign: 'left' }}>
     <Content>
-      <Header>
+      <Header ref={aboutMeRef}>
         About Me
       </Header>
       <Body>
@@ -42,6 +42,6 @@ const AboutMe = () => (
       </Body>
     </Content>
   </Wrapper>
-);
+));
 
 export default AboutMe;

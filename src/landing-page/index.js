@@ -7,8 +7,10 @@ import Footer from '../app/footer';
 import { App, ExternalLink } from '../app/styled';
 
 const LandingPage = () => {
+  const aboutMeRef = React.createRef();
+
   const scrollToAboutMe = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    aboutMeRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
@@ -26,7 +28,7 @@ const LandingPage = () => {
       <ExternalLink noStyle href="https://github.com/andreidobrinski/LoadingAnimations">
         <Card project="loadingAnimations" />
       </ExternalLink>
-      <AboutMe />
+      <AboutMe ref={aboutMeRef} />
       <Footer />
     </App>
   );
