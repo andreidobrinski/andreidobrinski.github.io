@@ -37,6 +37,8 @@ export const fonts = {
 
 export const spacer = '16px';
 
+export const borderRadius = '16px 0px 16px 0px';
+
 export const ratio = {
   one: '1.618',
   two: '2.618',
@@ -47,6 +49,7 @@ export default {
   media,
   colours,
   fonts,
-  ratio,
   spacer,
+  borderRadius,
+  ratio,
 };

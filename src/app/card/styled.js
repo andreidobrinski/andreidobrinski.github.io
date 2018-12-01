@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
+  border-radius: ${props => props.theme.borderRadius};
   height: 60vw;
   width: ${props => (props.isHeader ? '100%' : '90vw')};
   position: relative;
@@ -41,6 +42,7 @@ export const Overlay = styled.div`
   height: 20%;
   background: linear-gradient(to top, rgba(0,0,0,100), rgba(0,0,0,0));
   max-height: 75px;
+  border-radius: 0px 0px 16px 0px;
 `;
 
 export const Project = styled.div`

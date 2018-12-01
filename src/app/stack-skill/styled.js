@@ -7,7 +7,7 @@ export const Wrap = styled.div`
   justify-content: center;
   padding: ${props => props.theme.spacer};
   border: 1px solid rgba(0,0,0,0.5);
-  border-radius: 16px 0px 16px 0px;
+  border-radius: ${props => props.theme.borderRadius};
   background-color: rgba(255,255,255,1);
   color: rgba(0,0,0,0.85);
   margin: calc(${props => props.theme.spacer} / 2);
