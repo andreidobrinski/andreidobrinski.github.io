@@ -2,10 +2,6 @@
 
 # Portfolio
 
-_____
-
-
-
 Check it out [here.](https://andreidobrinski.github.io/)
 
 Built with:
