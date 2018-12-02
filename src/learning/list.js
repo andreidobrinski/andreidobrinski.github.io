@@ -28,6 +28,7 @@ const LearningList = {
     author: 'Stephen Grider',
     name: 'Modern React and Redux',
     link: 'https://www.udemy.com/react-redux/',
+    repo: 'https://github.com/andreidobrinski/modern-react-redux-course',
     type: 'Course',
   },
   6: {
