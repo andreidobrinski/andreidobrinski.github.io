@@ -104,6 +104,12 @@ const LearningList = {
     link: 'https://github.com/zachgoldstein/penroseTriangle',
     type: 'Workshop',
   },
+  17: {
+    author: 'Peter Cottle',
+    name: 'Learn Git Branching',
+    link: 'https://learngitbranching.js.org/',
+    type: 'Mini-Course',
+  },
 };
 
 export default LearningList;
