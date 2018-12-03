@@ -110,6 +110,12 @@ const LearningList = {
     link: 'https://learngitbranching.js.org/',
     type: 'Mini-Course',
   },
+  18: {
+    author: 'Codecademy',
+    name: 'Learn Color Design',
+    link: 'https://www.codecademy.com/learn/learn-color-design',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
