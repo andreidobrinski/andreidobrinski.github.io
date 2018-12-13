@@ -116,6 +116,13 @@ const LearningList = {
     link: 'https://www.codecademy.com/learn/learn-color-design',
     type: 'Course',
   },
+  19: {
+    author: 'Nik Graf',
+    name: 'GraphQL Data in React with Apollo Client',
+    link: 'https://egghead.io/courses/graphql-data-in-react-with-apollo-client',
+    repo: 'https://github.com/andreidobrinski/graphql-apollo-client-course-egghead',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
