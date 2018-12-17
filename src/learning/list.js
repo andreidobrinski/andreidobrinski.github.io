@@ -123,6 +123,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/graphql-apollo-client-course-egghead',
     type: 'Course',
   },
+  20: {
+    author: 'Chris Achard',
+    name: 'Progressive Web Apps in React with create-react-app',
+    link: 'https://egghead.io/courses/progressive-web-apps-in-react-with-create-react-app',
+    repo: 'https://github.com/andreidobrinski/todo-pwa-course',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
