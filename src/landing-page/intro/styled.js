@@ -23,7 +23,7 @@ export const Text = styled.p`
     font-size: ${props.theme.ratio.one}rem;
   `};
   ${props => props.theme.media.tablet`
-    margin: 5% 10% 5% 20%;
+    margin: 5% 10% 5% 17%;
   `};
 `;
 

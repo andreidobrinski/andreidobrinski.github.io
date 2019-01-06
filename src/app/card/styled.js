@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const ListWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
 export const Wrapper = styled.div`
   background-image: url(${props => props.image});
   background-color: ${props => props.backgroundColor || props.theme.colours.support};

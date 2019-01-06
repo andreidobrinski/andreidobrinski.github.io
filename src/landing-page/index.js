@@ -5,6 +5,7 @@ import Card from '../app/card';
 import AboutMe from './about-me';
 import Footer from '../app/footer';
 import { App, ExternalLink } from '../app/styled';
+import { ListWrap } from '../app/card/styled';
 
 const LandingPage = () => {
   const aboutMeRef = React.createRef();
@@ -16,18 +17,20 @@ const LandingPage = () => {
   return (
     <App>
       <Intro scrollToAboutMe={scrollToAboutMe} />
-      <Link to="/lifetales">
-        <Card project="lifetales" />
-      </Link>
-      <Link to="/albumpicker">
-        <Card project="albumpicker" />
-      </Link>
-      <Link to="/badlands-brewing">
-        <Card project="badlands" />
-      </Link>
-      <ExternalLink noStyle href="https://github.com/andreidobrinski/LoadingAnimations">
-        <Card project="loadingAnimations" />
-      </ExternalLink>
+      <ListWrap>
+        <Link to="/lifetales">
+          <Card project="lifetales" />
+        </Link>
+        <Link to="/albumpicker">
+          <Card project="albumpicker" />
+        </Link>
+        <Link to="/badlands-brewing">
+          <Card project="badlands" />
+        </Link>
+        <ExternalLink noStyle href="https://github.com/andreidobrinski/LoadingAnimations">
+          <Card project="loadingAnimations" />
+        </ExternalLink>
+      </ListWrap>
       <AboutMe ref={aboutMeRef} />
       <Footer />
     </App>
