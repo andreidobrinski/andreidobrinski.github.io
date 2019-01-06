@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import 'react-tippy/dist/tippy.css';
 import theme from './theme';
-
 import LandingPage from '../landing-page';
 import LifeTales from '../work/lifetales';
 import AlbumPicker from '../work/album-picker';
