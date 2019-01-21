@@ -130,6 +130,14 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/todo-pwa-course',
     type: 'Course',
   },
+  // 2019
+  21: {
+    author: 'David Katz',
+    name: 'Essentials in JavaScript ES6',
+    link: 'https://www.udemy.com/essentials-in-javascript-es6/',
+    repo: 'https://github.com/andreidobrinski/es6-course-udemy',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
