@@ -4,6 +4,7 @@ import Intro from './intro';
 import Card from '../app/card';
 import AboutMe from './about-me';
 import Footer from '../app/footer';
+import { AboutMeEvent } from '../app/analytics/events';
 import { App, ExternalLink } from '../app/styled';
 import { ListWrap } from '../app/card/styled';
 
@@ -11,6 +12,7 @@ const LandingPage = () => {
   const aboutMeRef = React.createRef();
 
   const scrollToAboutMe = () => {
+    AboutMeEvent();
     aboutMeRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -27,7 +29,11 @@ const LandingPage = () => {
         <Link to="/badlands-brewing">
           <Card project="badlands" />
         </Link>
-        <ExternalLink noStyle href="https://github.com/andreidobrinski/LoadingAnimations">
+        <ExternalLink
+          eventLabel="LoadingAnimations"
+          to="https://github.com/andreidobrinski/LoadingAnimations"
+          noStyle
+        >
           <Card project="loadingAnimations" />
         </ExternalLink>
       </ListWrap>

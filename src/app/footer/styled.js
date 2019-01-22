@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import ReactGA from 'react-ga';
 import { BodyTextStyles } from '../../work/styled';
 
 export const Wrap = styled.div`
@@ -33,7 +34,7 @@ export const StyledIcons = css`
   }
 `;
 
-export const SocialLink = styled.a.attrs({
+export const SocialLink = styled(ReactGA.OutboundLink).attrs({
   target: '_blank',
   rel: 'noopener noreferrer',
 })`

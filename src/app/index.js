@@ -8,16 +8,19 @@ import LifeTales from '../work/lifetales';
 import AlbumPicker from '../work/album-picker';
 import BadlandsBrewing from '../work/badlands-brewing';
 import Learning from '../learning';
+import AnalyticsWrap from './analytics/wrap';
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/lifetales" component={LifeTales} />
-        <Route exact path="/albumpicker" component={AlbumPicker} />
-        <Route exact path="/badlands-brewing" component={BadlandsBrewing} />
-        <Route exact path="/learning" component={Learning} />
-        <Route exact path="/" component={LandingPage} />
+        <AnalyticsWrap>
+          <Route exact path="/lifetales" component={LifeTales} />
+          <Route exact path="/albumpicker" component={AlbumPicker} />
+          <Route exact path="/badlands-brewing" component={BadlandsBrewing} />
+          <Route exact path="/learning" component={Learning} />
+          <Route exact path="/" component={LandingPage} />
+        </AnalyticsWrap>
       </Switch>
     </BrowserRouter>
   </ThemeProvider>

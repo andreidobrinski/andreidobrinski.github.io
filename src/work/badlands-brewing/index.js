@@ -59,7 +59,10 @@ const BadlandsBrewing = () => (
         I decided to choose an owl as this could serve as both a logo and
         a mascot for the brand. For the design I was inspired by
         {' '}
-        <ExternalLink href="http://zelda.wikia.com/wiki/Kaepora_Gaebora">
+        <ExternalLink
+          eventLabel="Zelda Owl"
+          to="http://zelda.wikia.com/wiki/Kaepora_Gaebora"
+        >
           this owl
         </ExternalLink>
         {' '}
@@ -113,7 +116,10 @@ const BadlandsBrewing = () => (
       <Body>
         If you would like to learn more about Badlands Brewing, check out their website
         {' '}
-        <ExternalLink href="http://badlandsbrewing.ca">
+        <ExternalLink
+          eventLabel="Badlands Brewing Website"
+          to="http://badlandsbrewing.ca"
+        >
           here.
         </ExternalLink>
       </Body>

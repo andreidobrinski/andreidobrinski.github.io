@@ -19,7 +19,10 @@ const AlbumPicker = () => (
       <Context>
         Designing and building a
         {' '}
-        <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
+        <ExternalLink
+          eventLabel="Album Picker GitHub Repo from Context"
+          to="https://andreidobrinski.github.io/album-picker/"
+        >
           React app
         </ExternalLink>
         {' '}
@@ -91,13 +94,19 @@ const AlbumPicker = () => (
       <Body>
         Check out the project
         {' '}
-        <ExternalLink href="https://andreidobrinski.github.io/album-picker/">
+        <ExternalLink
+          eventLabel="Album Picker from footer"
+          to="https://andreidobrinski.github.io/album-picker/"
+        >
           here
         </ExternalLink>
         {' '}
         , and the open-source code
         {' '}
-        <ExternalLink href="https://github.com/andreidobrinski/album-picker">
+        <ExternalLink
+          eventLabel="Album Picker GitHub Repo from footer"
+          to="https://github.com/andreidobrinski/album-picker"
+        >
           here.
         </ExternalLink>
       </Body>

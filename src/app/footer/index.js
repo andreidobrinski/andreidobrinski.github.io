@@ -1,6 +1,7 @@
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Tooltip } from 'react-tippy';
+import { EmailEvent } from '../analytics/events';
 import GithubLogo from './assets/github-logo';
 import LinkedInLogo from './assets/linkedin-logo';
 import {
@@ -25,17 +26,27 @@ const Footer = () => {
         >
           <CopyToClipboard text="dobrinski.andrei@gmail.com">
             <Button
-              onClick={() => emailButtonRef.current.blur()}
+              onClick={() => {
+                EmailEvent();
+                emailButtonRef.current.blur();
+              }}
               ref={emailButtonRef}
             >
               <EmailIcon />
             </Button>
           </CopyToClipboard>
         </Tooltip>
-        <SocialLink center href="https://github.com/andreidobrinski">
+        <SocialLink
+          eventLabel="GitHub Profile from Footer"
+          to="https://github.com/andreidobrinski"
+          center
+        >
           <GithubLogo />
         </SocialLink>
-        <SocialLink href="https://www.linkedin.com/in/andrei-dobrinski-13a137122/">
+        <SocialLink
+          eventLabel="LinkedIn Profile from Footer"
+          to="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
+        >
           <LinkedInLogo />
         </SocialLink>
       </CtaWrap>

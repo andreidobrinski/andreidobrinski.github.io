@@ -19,7 +19,10 @@ const Intro = ({ scrollToAboutMe }) => (
       <Text>
         I&apos;m currently working at
         {' '}
-        <ExternalLink href="https://www.lifetales.com">
+        <ExternalLink
+          eventLabel="LifeTales from Intro Page"
+          to="https://www.lifetales.com"
+        >
           LifeTales
         </ExternalLink>
         {' '}

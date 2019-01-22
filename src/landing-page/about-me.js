@@ -23,7 +23,10 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         {' '}
         and
         {' '}
-        <ExternalLink href="https://github.com/andreidobrinski">
+        <ExternalLink
+          eventLabel="GitHub Profile from About Me"
+          to="https://github.com/andreidobrinski"
+        >
           contributing
         </ExternalLink>
         {' '}
@@ -34,7 +37,10 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         producing music with Logic Pro, or sampling Ontario&apos;s selection of craft beer.
         I also enjoy reading non-fiction
         {' '}
-        <ExternalLink href="https://www.goodreads.com/user/show/44194464-andrei">
+        <ExternalLink
+          eventLabel="Goodreads Profile from About Me"
+          to="https://www.goodreads.com/user/show/44194464-andrei"
+        >
           books
         </ExternalLink>
         {' '}

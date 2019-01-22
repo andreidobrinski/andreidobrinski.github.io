@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 export const App = styled.div`
   text-align: center;
@@ -19,7 +20,7 @@ export const LinkStyles = css`
   }
 `;
 
-export const ExternalLink = styled.a.attrs({
+export const ExternalLink = styled(ReactGA.OutboundLink).attrs({
   target: '_blank',
   rel: 'noopener noreferrer',
 })`

@@ -7,6 +7,7 @@ import BackButton from '../../app/back-button';
 import WebDev from './web-dev';
 import IosDev from './ios-dev';
 import UXDesign from './ux-design';
+import { LTWebEvent, LTIosEvent, LTDesignEvent } from '../../app/analytics/events';
 import { ExternalLink } from '../../app/styled';
 import {
   Content, Context, Header, Subheader, SectionToggleButton,
@@ -52,13 +53,19 @@ class LifeTales extends Component {
           <Context>
             LifeTales is an iOS and web app that helps families easily create and privately share stories worth remembering. Check out the
             {' '}
-            <ExternalLink href="https://lifetales.com/">
+            <ExternalLink
+              eventLabel="LifeTales Website from LifeTales"
+              to="https://lifetales.com/"
+            >
               website
             </ExternalLink>
             {' '}
             and the
             {' '}
-            <ExternalLink href="https://member.lifetales.com/account">
+            <ExternalLink
+              eventLabel="LifeTales App from LifeTales"
+              to="https://member.lifetales.com/account"
+            >
               app
             </ExternalLink>
             {' '}
@@ -70,6 +77,7 @@ class LifeTales extends Component {
           <SectionToggleButton
             onClick={() => {
               toggle('webDevToggled');
+              LTWebEvent();
               blur(this.webDevRef);
             }}
             ref={this.webDevRef}
@@ -82,6 +90,7 @@ class LifeTales extends Component {
           <SectionToggleButton
             onClick={() => {
               toggle('iosDevToggled');
+              LTIosEvent();
               blur(this.iosDevRef);
             }}
             ref={this.iosDevRef}
@@ -94,6 +103,7 @@ class LifeTales extends Component {
           <SectionToggleButton
             onClick={() => {
               toggle('uxDesignToggled');
+              LTDesignEvent();
               blur(this.uxRef);
             }}
             ref={this.uxRef}

@@ -23,13 +23,19 @@ const Learning = () => (
           &nbsp;-&nbsp;
           {LearningList[item].type}
           :&nbsp;
-          <ExternalLink href={LearningList[item].link}>
+          <ExternalLink
+            eventLabel="Learning List Item"
+            to={LearningList[item].link}
+          >
             {LearningList[item].name}
           </ExternalLink>
           {LearningList[item].repo && (
             <span>
               &nbsp;/&nbsp;
-              <ExternalLink href={LearningList[item].repo}>
+              <ExternalLink
+                eventLabel="Learning List Repo"
+                to={LearningList[item].repo}
+              >
                 Repo
               </ExternalLink>
             </span>

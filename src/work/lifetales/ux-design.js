@@ -28,7 +28,10 @@ const UXDesign = () => (
     <Body>
       I also designed, animated, and wrote the script for
       {' '}
-      <ExternalLink href="https://www.youtube.com/watch?v=6FqLhpU_t_E">
+      <ExternalLink
+        eventLabel="PowToon Video from LifeTales"
+        to="https://www.youtube.com/watch?v=6FqLhpU_t_E"
+      >
         this PowToon video
       </ExternalLink>
       {' '}
