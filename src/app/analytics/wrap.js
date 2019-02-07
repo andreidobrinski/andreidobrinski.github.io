@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -9,18 +9,14 @@ const initializeGA = () => {
   ReactGA.pageview('/');
 };
 
-class PageViewTracker extends Component {
-  componentDidMount() {
-    const { history } = this.props;
+const PageViewTracker = ({ history, children }) => {
+  useEffect(() => {
     initializeGA();
     history.listen(location => ReactGA.pageview(location.pathname));
-  }
+  });
 
-  render() {
-    const { children } = this.props;
-    return children;
-  }
-}
+  return children;
+};
 
 PageViewTracker.propTypes = {
   history: PropTypes.shape({

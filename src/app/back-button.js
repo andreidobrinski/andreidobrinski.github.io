@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import styled from 'styled-components';
@@ -17,29 +17,23 @@ const Button = styled.button.attrs({
   }
 `;
 
-class BackButton extends Component {
-  constructor(props) {
-    super(props);
-    this.buttonRef = React.createRef();
-  }
+const BackButton = ({ history: { goBack } }) => {
+  const buttonRef = useRef();
 
-  render() {
-    const { history: { goBack } } = this.props;
-    return (
-      <Button
-        onClick={() => {
-          this.buttonRef.current.blur();
-          goBack();
-        }}
-        ref={this.buttonRef}
-      >
-        <Body style={{ margin: '0' }}>
-          &larr; Back
-        </Body>
-      </Button>
-    );
-  }
-}
+  return (
+    <Button
+      onClick={() => {
+        buttonRef.current.blur();
+        goBack();
+      }}
+      ref={buttonRef}
+    >
+      <Body style={{ margin: '0' }}>
+        &larr; Back
+      </Body>
+    </Button>
+  );
+};
 
 BackButton.propTypes = {
   history: PropTypes.shape({
