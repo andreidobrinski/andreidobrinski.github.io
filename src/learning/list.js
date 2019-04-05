@@ -138,6 +138,18 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/es6-course-udemy',
     type: 'Course',
   },
+  22: {
+    author: 'Marius Schulz',
+    name: 'JavaScript Promises in Depth',
+    link: 'https://egghead.io/courses/javascript-promises-in-depth',
+    type: 'Course',
+  },
+  23: {
+    author: 'Trevor Miller',
+    name: 'Practical Git for Everyday Professional Use',
+    link: 'https://egghead.io/courses/practical-git-for-everyday-professional-use',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
