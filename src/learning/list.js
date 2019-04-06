@@ -150,6 +150,13 @@ const LearningList = {
     link: 'https://egghead.io/courses/practical-git-for-everyday-professional-use',
     type: 'Course',
   },
+  24: {
+    author: 'Stephen Grider',
+    name: 'Electron for Desktop Apps: The Complete Developers Guide',
+    link: 'https://www.udemy.com/electron-react-tutorial/',
+    repo: 'https://github.com/andreidobrinski/electron-course-udemy',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
