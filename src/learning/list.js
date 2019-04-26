@@ -157,6 +157,12 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/electron-course-udemy',
     type: 'Course',
   },
+  25: {
+    author: 'Codecademy',
+    name: 'Learn Express',
+    link: 'https://www.codecademy.com/learn/learn-express',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
