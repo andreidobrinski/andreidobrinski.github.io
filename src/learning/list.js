@@ -163,6 +163,12 @@ const LearningList = {
     link: 'https://www.codecademy.com/learn/learn-express',
     type: 'Course',
   },
+  26: {
+    author: 'Ryerson University',
+    name: 'Introduction to Web Accessibility',
+    link: 'https://de.ryerson.ca/wa/introduction/',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
