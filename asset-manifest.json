@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.4df9a4fe.chunk.css",
-  "main.js": "/static/js/main.ecc4786e.chunk.js",
-  "main.js.map": "/static/js/main.ecc4786e.chunk.js.map",
+  "main.js": "/static/js/main.e1fdb692.chunk.js",
+  "main.js.map": "/static/js/main.e1fdb692.chunk.js.map",
   "static/css/1.bce2caa5.chunk.css": "/static/css/1.bce2caa5.chunk.css",
   "static/js/1.04061216.chunk.js": "/static/js/1.04061216.chunk.js",
   "static/js/1.04061216.chunk.js.map": "/static/js/1.04061216.chunk.js.map",
@@ -25,9 +25,9 @@
   "static/media/album-picker.svg": "/static/media/album-picker.0cf94250.svg",
   "static/media/badlands-logo-dark.png": "/static/media/badlands-logo-dark.e2846d12.png",
   "static/media/zelda-owl.png": "/static/media/zelda-owl.e52f441d.png",
-  "static/css/main.4df9a4fe.chunk.css.map": "/static/css/main.4df9a4fe.chunk.css.map",
   "static/css/1.bce2caa5.chunk.css.map": "/static/css/1.bce2caa5.chunk.css.map",
+  "static/css/main.4df9a4fe.chunk.css.map": "/static/css/main.4df9a4fe.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.c0e63edc17dabb7d655e47de506c5a8d.js": "/precache-manifest.c0e63edc17dabb7d655e47de506c5a8d.js",
+  "precache-manifest.9ab64e93bf1ad4592f48a636771758e8.js": "/precache-manifest.9ab64e93bf1ad4592f48a636771758e8.js",
   "service-worker.js": "/service-worker.js"
 }
