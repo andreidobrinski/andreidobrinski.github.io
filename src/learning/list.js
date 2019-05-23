@@ -96,7 +96,7 @@ const LearningList = {
     name: 'Build a Blog with React and Markdown using Gatsby',
     link: 'https://egghead.io/courses/build-a-blog-with-react-and-markdown-using-gatsby',
     repo: 'https://github.com/andreidobrinski/blog-tutorial-gatsby',
-    type: 'Course',
+    type: 'Egghead Course',
   },
   16: {
     author: 'Zach Goldstein',
@@ -121,14 +121,14 @@ const LearningList = {
     name: 'GraphQL Data in React with Apollo Client',
     link: 'https://egghead.io/courses/graphql-data-in-react-with-apollo-client',
     repo: 'https://github.com/andreidobrinski/graphql-apollo-client-course-egghead',
-    type: 'Course',
+    type: 'Egghead Course',
   },
   20: {
     author: 'Chris Achard',
     name: 'Progressive Web Apps in React with create-react-app',
     link: 'https://egghead.io/courses/progressive-web-apps-in-react-with-create-react-app',
     repo: 'https://github.com/andreidobrinski/todo-pwa-course',
-    type: 'Course',
+    type: 'Egghead Course',
   },
   // 2019
   21: {
@@ -142,13 +142,13 @@ const LearningList = {
     author: 'Marius Schulz',
     name: 'JavaScript Promises in Depth',
     link: 'https://egghead.io/courses/javascript-promises-in-depth',
-    type: 'Course',
+    type: 'Egghead Course',
   },
   23: {
     author: 'Trevor Miller',
     name: 'Practical Git for Everyday Professional Use',
     link: 'https://egghead.io/courses/practical-git-for-everyday-professional-use',
-    type: 'Course',
+    type: 'Egghead Course',
   },
   24: {
     author: 'Stephen Grider',
@@ -167,6 +167,19 @@ const LearningList = {
     author: 'Ryerson University',
     name: 'Introduction to Web Accessibility',
     link: 'https://de.ryerson.ca/wa/introduction/',
+    type: 'Course',
+  },
+  27: {
+    author: 'Kent C. Dodds',
+    name: 'React Hooks and Suspense',
+    link: 'https://egghead.io/playlists/react-hooks-and-suspense-650307f2?__s=ns3juptwu4vybog9objt',
+    type: 'Egghead Course',
+  },
+  28: {
+    author: 'Stephen Grider',
+    name: 'The Complete React Native and Redux Course',
+    link: 'https://www.udemy.com/the-complete-react-native-and-redux-course/',
+    repo: 'https://github.com/andreidobrinski/react-native-course-udemy',
     type: 'Course',
   },
 };
