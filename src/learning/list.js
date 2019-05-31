@@ -182,6 +182,18 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/react-native-course-udemy',
     type: 'Course',
   },
+  29: {
+    author: 'Cameron Nokes',
+    name: 'Advanced Bash Automation for Web Developers',
+    link: 'https://www.udemy.com/the-complete-react-native-and-redux-course/',
+    type: 'Egghead Course',
+  },
+  30: {
+    name: 'Simplify React Apps with React Hooks',
+    author: 'Kent C. Dodds',
+    link: 'https://egghead.io/courses/simplify-react-apps-with-react-hooks',
+    type: 'Egghead Course',
+  },
 };
 
 export default LearningList;
