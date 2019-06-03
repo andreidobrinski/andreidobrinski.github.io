@@ -21,7 +21,7 @@ export const Header = styled.h1`
   color: ${props => props.theme.colours.text};
 `;
 
-export const Context = styled.h2`
+export const Context = styled.p`
   font-family: ${props => props.theme.fonts.header};
   font-size: ${props => props.theme.ratio.one}rem;
   font-weight: 400;
@@ -29,11 +29,12 @@ export const Context = styled.h2`
   color: ${props => props.theme.colours.text};
 `;
 
-export const Subheader = styled.h3`
+export const Subheader = styled.h2`
   font-family: ${props => props.theme.fonts.header};
   font-weight: 700;
   font-size: ${props => props.theme.ratio.two}em;
   color: ${props => props.theme.colours.text};
+  margin-bottom: 4px;
 `;
 
 export const SectionToggleButton = styled.button.attrs({
