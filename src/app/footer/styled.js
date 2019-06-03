@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import ReactGA from 'react-ga';
 import { BodyTextStyles } from '../../work/styled';
 
-export const Wrap = styled.div`
+export const Wrap = styled.footer`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,6 +52,7 @@ export const Message = styled.p`
 
 export const Button = styled.button.attrs({
   type: 'button',
+  'aria-label': 'Copy email to clipboard',
 })`
   ${StyledIcons};
   border: none;
