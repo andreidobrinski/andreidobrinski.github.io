@@ -8,7 +8,8 @@ const LearningList = {
   2: {
     author: 'FreeCodeCamp',
     name: 'Basic JavaScript',
-    link: 'https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript',
+    link:
+      'https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-javascript',
     type: 'Course',
   },
   3: {
@@ -80,21 +81,24 @@ const LearningList = {
   13: {
     author: 'Matt Gaunt (Google CodeLabs)',
     name: 'Adding Push Notifications to a Web App',
-    link: 'https://developers.google.com/web/fundamentals/codelabs/push-notifications/',
+    link:
+      'https://developers.google.com/web/fundamentals/codelabs/push-notifications/',
     repo: 'https://github.com/andreidobrinski/web-push-codelab',
     type: 'Tutorial',
   },
   14: {
     author: 'Stephen Grider',
     name: 'The Coding Interview Bootcamp',
-    link: 'https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/',
+    link:
+      'https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/',
     repo: 'https://github.com/andreidobrinski/AlgoCasts',
     type: 'Course',
   },
   15: {
     author: 'Taylor Bell',
     name: 'Build a Blog with React and Markdown using Gatsby',
-    link: 'https://egghead.io/courses/build-a-blog-with-react-and-markdown-using-gatsby',
+    link:
+      'https://egghead.io/courses/build-a-blog-with-react-and-markdown-using-gatsby',
     repo: 'https://github.com/andreidobrinski/blog-tutorial-gatsby',
     type: 'Egghead Course',
   },
@@ -120,13 +124,15 @@ const LearningList = {
     author: 'Nik Graf',
     name: 'GraphQL Data in React with Apollo Client',
     link: 'https://egghead.io/courses/graphql-data-in-react-with-apollo-client',
-    repo: 'https://github.com/andreidobrinski/graphql-apollo-client-course-egghead',
+    repo:
+      'https://github.com/andreidobrinski/graphql-apollo-client-course-egghead',
     type: 'Egghead Course',
   },
   20: {
     author: 'Chris Achard',
     name: 'Progressive Web Apps in React with create-react-app',
-    link: 'https://egghead.io/courses/progressive-web-apps-in-react-with-create-react-app',
+    link:
+      'https://egghead.io/courses/progressive-web-apps-in-react-with-create-react-app',
     repo: 'https://github.com/andreidobrinski/todo-pwa-course',
     type: 'Egghead Course',
   },
@@ -147,7 +153,8 @@ const LearningList = {
   23: {
     author: 'Trevor Miller',
     name: 'Practical Git for Everyday Professional Use',
-    link: 'https://egghead.io/courses/practical-git-for-everyday-professional-use',
+    link:
+      'https://egghead.io/courses/practical-git-for-everyday-professional-use',
     type: 'Egghead Course',
   },
   24: {
@@ -172,7 +179,8 @@ const LearningList = {
   27: {
     author: 'Kent C. Dodds',
     name: 'React Hooks and Suspense',
-    link: 'https://egghead.io/playlists/react-hooks-and-suspense-650307f2?__s=ns3juptwu4vybog9objt',
+    link:
+      'https://egghead.io/playlists/react-hooks-and-suspense-650307f2?__s=ns3juptwu4vybog9objt',
     type: 'Egghead Course',
   },
   28: {
@@ -193,6 +201,13 @@ const LearningList = {
     author: 'Kent C. Dodds',
     link: 'https://egghead.io/courses/simplify-react-apps-with-react-hooks',
     type: 'Egghead Course',
+  },
+  31: {
+    name: 'Typescript with modern React (i.e. hooks, context, suspense)',
+    author: 'Richard Oliver Bray',
+    link: 'https://www.udemy.com/typescript-with-react-hooks-and-context/',
+    repo: 'https://github.com/andreidobrinski/typescript-with-react-course-udemy',
+    type: 'Course',
   },
 };
 
