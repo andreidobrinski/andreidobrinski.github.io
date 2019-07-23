@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e94582513e7a7ddea037c24eddaafedc",
+    "revision": "eb3017f93faf224319e114987f6e33d1",
     "url": "/index.html"
   },
   {
-    "revision": "79daf2d1091b99ea4b45",
+    "revision": "10f0a9aa08119ee96e32",
     "url": "/static/css/2.a189aca7.chunk.css"
   },
   {
-    "revision": "cd0dd826cda180a6d447",
+    "revision": "b0a264fd4fdca1e1362e",
     "url": "/static/css/main.73bde696.chunk.css"
   },
   {
-    "revision": "79daf2d1091b99ea4b45",
-    "url": "/static/js/2.794f6469.chunk.js"
+    "revision": "10f0a9aa08119ee96e32",
+    "url": "/static/js/2.43deb49a.chunk.js"
   },
   {
-    "revision": "cd0dd826cda180a6d447",
-    "url": "/static/js/main.6fb1b373.chunk.js"
+    "revision": "b0a264fd4fdca1e1362e",
+    "url": "/static/js/main.2b4cbcd5.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b42c430ef2ae94be82e832d7f58020ff",
     "url": "/static/media/badlands-logo-light.b42c430e.png"
+  },
+  {
+    "revision": "7824021c5054d4a9d8e295db5c954596",
+    "url": "/static/media/car.7824021c.png"
+  },
+  {
+    "revision": "6caacd1ac451f5d5c012ebabcb25d071",
+    "url": "/static/media/firebase.6caacd1a.svg"
   },
   {
     "revision": "aec012ae2ee1860442d37e9c7c274c57",
