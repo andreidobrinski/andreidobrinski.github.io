@@ -9,6 +9,7 @@ import AlbumPicker from '../work/album-picker';
 import BadlandsBrewing from '../work/badlands-brewing';
 import Learning from '../learning';
 import AnalyticsWrap from './analytics/wrap';
+import RlInventory from '../work/rl-inventory';
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -16,6 +17,7 @@ const App = () => (
       <Switch>
         <AnalyticsWrap>
           <Route exact path="/lifetales" component={LifeTales} />
+          <Route exact path="/rl-inventory" component={RlInventory} />
           <Route exact path="/albumpicker" component={AlbumPicker} />
           <Route exact path="/badlands-brewing" component={BadlandsBrewing} />
           <Route exact path="/learning" component={Learning} />

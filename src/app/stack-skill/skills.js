@@ -10,6 +10,7 @@ import invisionIcon from './assets/invision.svg';
 import googleSheetsIcon from './assets/google-sheets.png';
 import swiftIcon from './assets/swift.svg';
 import xcodeIcon from './assets/xcode.png';
+import firebaseIcon from './assets/firebase.svg';
 
 const Skills = {
   illustrator: {
@@ -59,6 +60,10 @@ const Skills = {
   xcode: {
     name: 'XCode',
     image: xcodeIcon,
+  },
+  firebase: {
+    name: 'Firebase',
+    image: firebaseIcon,
   },
 };
 
