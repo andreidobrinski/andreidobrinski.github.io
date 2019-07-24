@@ -209,6 +209,12 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/typescript-with-react-course-udemy',
     type: 'Course',
   },
+  32: {
+    name: 'JavaScript ES2019 in Practice',
+    author: 'Mike Sherov',
+    link: 'https://egghead.io/lessons/javascript-course-overview-javascript-es2019-in-practice',
+    type: 'Egghead Course',
+  },
 };
 
 export default LearningList;
