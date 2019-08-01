@@ -39,7 +39,7 @@ const Footer = () => {
         <SocialLink
           eventLabel="GitHub Profile from Footer"
           to="https://github.com/andreidobrinski"
-          center
+          center="true"
         >
           <GithubLogo />
         </SocialLink>

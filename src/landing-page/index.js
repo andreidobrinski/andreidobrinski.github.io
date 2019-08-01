@@ -35,7 +35,7 @@ const LandingPage = () => {
         <ExternalLink
           eventLabel="LoadingAnimations"
           to="https://github.com/andreidobrinski/LoadingAnimations"
-          noStyle
+          nostyle="true"
         >
           <Card project="loadingAnimations" />
         </ExternalLink>

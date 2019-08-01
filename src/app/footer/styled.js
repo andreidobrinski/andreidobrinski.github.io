@@ -39,7 +39,7 @@ export const SocialLink = styled(ReactGA.OutboundLink).attrs({
   rel: 'noopener noreferrer',
 })`
   ${StyledIcons};
-  grid-column: ${props => (props.center ? '3' : '4')};
+  grid-column: ${props => (props.center === 'true' ? '3' : '4')};
 `;
 
 export const Message = styled.p`

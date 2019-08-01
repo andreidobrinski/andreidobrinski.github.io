@@ -25,7 +25,7 @@ export const ExternalLink = styled(ReactGA.OutboundLink).attrs({
   rel: 'noopener noreferrer',
 })`
   ${LinkStyles};
-  ${props => props.noStyle && `
+  ${props => props.nostyle === 'true' && `
     box-shadow: none;
     &:hover {
       box-shadow: none;
