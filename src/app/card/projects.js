@@ -11,7 +11,7 @@ const Projects = {
     image: lifetalesLogo,
   },
   rlinventory: {
-    name: 'RL Item Inventory',
+    name: 'Rocket League Item Inventory',
     skill: 'Web Dev',
     image: rlLogo,
   },

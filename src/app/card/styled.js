@@ -43,26 +43,26 @@ export const Wrapper = styled.div`
 `;
 
 export const Overlay = styled.div`
+  display: flex;
+  align-items: center;
   color: white;
   bottom: 0;
   position: absolute;
   width: 100%;
-  height: 20%;
   background: linear-gradient(to top, rgba(0,0,0,100), rgba(0,0,0,0));
   max-height: 75px;
   border-radius: 0px 0px 16px 0px;
 `;
 
 export const Project = styled.div`
-  position: absolute;
-  left: 16px;
-  bottom: 0;
+  margin-left: 16px;
+  text-align: left;
 `;
 
 export const Skill = styled.div`
-  position: absolute;
-  right: 16px;
-  bottom: 0;
+  margin-left: auto;
+  margin-right: 16px;
+  text-align: right;
 `;
 
 export const Text = styled.p`
