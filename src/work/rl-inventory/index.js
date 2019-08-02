@@ -6,7 +6,7 @@ import BackButton from '../../app/back-button';
 import Footer from '../../app/footer';
 import { ExternalLink } from '../../app/styled';
 import {
-  Content, Context, Header, Subheader, Body,
+  Content, Context, Header, Subheader, Body, ListItem,
 } from '../styled';
 
 const RlInventory = () => (
@@ -30,7 +30,14 @@ const RlInventory = () => (
           Firebase
         </ExternalLink>
         {' '}
-        to help keep track of items that I want to trade in Rocket League.
+        to help keep track of items that I want to trade in
+        {' '}
+        <ExternalLink
+          to="https://en.wikipedia.org/wiki/Rocket_League"
+          eventLabel="RL wiki from project"
+        >
+          Rocket League.
+        </ExternalLink>
       </Context>
       <Subheader>The Motivation</Subheader>
       <Body>
@@ -51,7 +58,7 @@ const RlInventory = () => (
         holds Study Jams, where members build an app to learn a Google
         technology, and meet up to talk about the insights and issues they came
         across while building their app. The Google tech for this Study Jam was
-        Firebase, so I needed to think of a front-end app to build to work with
+        Firebase, which meant I needed to think of a front-end app to build to work with
         Firebase.
       </Body>
       <Body>
@@ -90,21 +97,7 @@ const RlInventory = () => (
       <StackSkill skill="firebase" />
       <Subheader>The Product</Subheader>
       <Body>
-        <ExternalLink
-          to="https://rl-inventory.web.app/"
-          eventLabel="RL app from project"
-        >
-          Rocket League Item Inventory
-        </ExternalLink>
-        {' '}
-        <ExternalLink
-          to="https://rl-inventory.web.app/"
-          eventLabel="RL app from project"
-        >
-          Rocket League Item Inventory
-        </ExternalLink>
-        {' '}
-        lets users add, view, and delete items. Users can create an account and
+        Rocket League Item Inventory lets users add, view, and delete items. Users can create an account and
         authenticate with an email link - one of my favourite of Firebase&apos;s
         features. The project is intentionally narrow in scope, as it was built
         and demoed in the 6 weeks that our meetup group met and talked about our
@@ -112,33 +105,27 @@ const RlInventory = () => (
       </Body>
       <Subheader>The Process</Subheader>
       <Body>
-        I started by thinking about this project from two perspectives: the
+        I started thinking about this project from two perspectives: the
         affordances a user would have for their item inventory and how to store
         the data in a NoSQL database. To do this, I made a list of what
         functionality would need to exist to meet the minimum viable use case of
-        the app. The initial requirements involved the user being able to
-        authenticate themselves to have a unique list that only they could
-        control, add and delete items, and have a define a level of specificity
-        that items would go into, ie. how many form fields would be on an item.
+        the app. The initial requirements involved:
       </Body>
-      <Body>
-        I reached out to Psyonix (the company that developed Rocket League) to
-        see if I was able to get access to their item API. I was hoping to pull
-        from a preset list of items so that users would have to enter fewer
-        fields manually. I got a quick reply saying that I wasn&apos;t able to
-        get access because the API is in a closed beta. Fortunately, this
-        simplified the UI and database requirements because I didn&apos;t need
-        to consider how to present and store a preexisting list of items to pull
-        from and customize. The user would need to submit their item information
-        themselves.
-      </Body>
+      <ol>
+        <ListItem>defining the properties of an item, for the data model and form,</ListItem>
+        <ListItem>adding and deleting items, and</ListItem>
+        <ListItem>authentication, so the user could have a unique list that only they could control.</ListItem>
+      </ol>
       <Body>
         I mocked a sketch on paper of what the adding and viewing item UI would
         look like. I decided where the buttons would go and how the form would
         be presented. There was no need for a high fidelity mock in Sketch or
         Figma since I went from paper to experimenting with HTML directly and
         didn&apos;t need to hand over a design spec to anyone.
+        Once I was able to visualize the idea enough to understand how someone would use it,
+        started to think about the data.
       </Body>
+      <Subheader>The Back-End</Subheader>
       <Body>
         I let the database requirements follow the UI requirements at this
         point. I went with Firebase&apos;s Cloud Firestore, since it was the
@@ -153,12 +140,23 @@ const RlInventory = () => (
         <code>Items</code>
         , which had documents titled with unique item
         ID&apos;s. Those documents then held the data model that items needed.
-        </Body>
+      </Body>
+      <Body>
+        I reached out to Psyonix (the company that developed Rocket League) to
+        see if I was able to get access to their item API, to let the users choose from an existing list.
+        I got a reply saying that I wasn&apos;t able to
+        get access because the API is in a closed beta. Fortunately, this
+        simplified the UI and database requirements because I didn&apos;t need
+        to consider how to present and store a preexisting list of items to pull
+        from and customize. The user would need to submit their item information
+        themselves.
+      </Body>
+      <Subheader>The Front-End</Subheader>
       <Body>
         The execution of the front-end was fairly straightforward. I felt
         confident in my React development and didn&apos;t face too many
         challenges outside of the initial architecture decisions. I went with
-        two independent React Contexts that store and pass down information for
+        two independent React Contexts that store and pass down information about
         Firebase and the User respectively. A challenge I set for myself was to
         build the app without needing Redux or Class components, which was
         doable with React Context and Hooks. The codebase is all
@@ -187,6 +185,7 @@ const RlInventory = () => (
         documentation is great and I would definitely use it again to add a bit
         of flair to a React app.
       </Body>
+      <Subheader>The Challenges</Subheader>
       <Body>
         The challenges I faced along the way were mainly with Firebase
         authentication. I moved from using username and passwords - which was
@@ -202,6 +201,7 @@ const RlInventory = () => (
         proof-of-concept where I needed either a NoSQL database, authentication
         or hosting.
       </Body>
+      <Subheader>The Next Steps</Subheader>
       <Body>
         I&apos;ve outlined some potential next steps in the repo&apos;s
         {' '}
