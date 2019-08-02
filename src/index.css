@@ -12,6 +12,10 @@ html {
   box-sizing: border-box;
 }
 
+code {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 *,
 *:before,
 *:after {
