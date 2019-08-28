@@ -215,6 +215,20 @@ const LearningList = {
     link: 'https://egghead.io/lessons/javascript-course-overview-javascript-es2019-in-practice',
     type: 'Egghead Course',
   },
+  33: {
+    name: 'Building Neural Networks in JavaScript',
+    author: 'Matthew Mihok',
+    link: 'https://github.com/mihok/workshop-aug13',
+    repo: 'https://github.com/andreidobrinski/workshop-aug13',
+    type: 'Workshop',
+  },
+  // 34: {
+  //   name: `Dart and Flutter: The Complete Developer's Guide`,
+  //   author: 'Stephen Grider',
+  //   link: 'https://www.udemy.com/course/dart-and-flutter-the-complete-developers-guide/',
+  //   repo: 'https://github.com/andreidobrinski/dart-and-flutter-course-udemy',
+  //   type: 'Course',
+  // },
 };
 
 export default LearningList;
