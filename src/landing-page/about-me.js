@@ -21,7 +21,7 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
           learning
         </InternalLink>
         {' '}
-        and
+        new technologies and
         {' '}
         <ExternalLink
           eventLabel="GitHub Profile from About Me"
@@ -33,8 +33,7 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         to open-source software.
       </Body>
       <Body>
-        In my spare time, you can find me playing my Stratocaster,
-        producing music with Logic Pro, or sampling Ontario&apos;s selection of craft beer.
+        In my spare time, you can find me at the gym, hanging out with my cat, or at a tech meetup in the city.
         I also enjoy reading non-fiction
         {' '}
         <ExternalLink
