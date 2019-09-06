@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b1324f205f7a1045180f7b82f8171af",
+    "revision": "5b7186bdc7f18a16792a4a27bcd8fe42",
     "url": "/index.html"
   },
   {
-    "revision": "d02efde773be62533202",
+    "revision": "29681b6cd78e2d53c6fe",
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "5bd7b6bc76c2612fd0c4",
+    "revision": "cc3d1685f5bce164ca96",
     "url": "/static/css/main.d5cd45c9.chunk.css"
   },
   {
-    "revision": "d02efde773be62533202",
-    "url": "/static/js/2.eb57c5f4.chunk.js"
+    "revision": "29681b6cd78e2d53c6fe",
+    "url": "/static/js/2.a772fd80.chunk.js"
   },
   {
-    "revision": "5bd7b6bc76c2612fd0c4",
-    "url": "/static/js/main.d30f7e3f.chunk.js"
+    "revision": "cc3d1685f5bce164ca96",
+    "url": "/static/js/main.ee2d45c3.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8d86cad05847fdbae962d2960bde9d7c",
     "url": "/static/media/lifetales-logo.8d86cad0.svg"
+  },
+  {
+    "revision": "e48e27f9d0eab488e665d8513578dfb5",
+    "url": "/static/media/next.e48e27f9.svg"
   },
   {
     "revision": "024196716802e272adb3cbefb81fd557",
