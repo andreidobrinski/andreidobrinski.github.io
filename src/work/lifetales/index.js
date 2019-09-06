@@ -58,7 +58,7 @@ const LifeTales = () => {
           that I helped build.
         </Context>
         <Context>
-          I started with job in marketing, which led to opportunities in UX design, iOS development, and then ultimately to a career in web development.
+          I started with a job in marketing, which led to opportunities in UX design, iOS development, and then ultimately to a career in web development.
         </Context>
         <SectionToggleButton
           onClick={() => {

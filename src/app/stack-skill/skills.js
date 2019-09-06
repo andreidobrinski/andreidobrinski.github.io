@@ -11,6 +11,7 @@ import googleSheetsIcon from './assets/google-sheets.png';
 import swiftIcon from './assets/swift.svg';
 import xcodeIcon from './assets/xcode.png';
 import firebaseIcon from './assets/firebase.svg';
+import nextIcon from './assets/next.svg';
 
 const Skills = {
   illustrator: {
@@ -64,6 +65,10 @@ const Skills = {
   firebase: {
     name: 'Firebase',
     image: firebaseIcon,
+  },
+  next: {
+    name: 'Next',
+    image: nextIcon,
   },
 };
 
