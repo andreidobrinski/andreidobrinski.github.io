@@ -38,6 +38,15 @@ const RlInventory = () => (
         >
           Rocket League.
         </ExternalLink>
+        {' '}
+        Check out the gif
+        {' '}
+        <ExternalLink
+          to="https://github.com/andreidobrinski/rocket-league-item-inventory#rocket-league-item-inventory"
+          eventLabel="RL demo from project"
+        >
+          demo.
+        </ExternalLink>
       </Context>
       <Subheader>The Motivation</Subheader>
       <Body>
