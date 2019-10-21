@@ -4,10 +4,17 @@
 
 Check it out [here.](https://andreidobrinski.github.io/)
 
+## To Run Locally
+
+1. Clone the repo
+2. `cd` into the directory
+3. Run `yarn install` and `yarn start`
+
+## Technologies
+
 Built with:
 
 - Create React App
 - React
 - React Router
 - Styled Components
-
