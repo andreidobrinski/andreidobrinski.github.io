@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "40b2a915b6ea3b9756ae3d3d26d2be89",
+    "revision": "7e85293fd6ff02866eea86c65144d94f",
     "url": "/index.html"
   },
   {
-    "revision": "29681b6cd78e2d53c6fe",
+    "revision": "aed7a37d9fd0d1e82279",
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "0391a55b6c64c72c6e54",
+    "revision": "1c8ea30849b620df9b1f",
     "url": "/static/css/main.d5cd45c9.chunk.css"
   },
   {
-    "revision": "29681b6cd78e2d53c6fe",
-    "url": "/static/js/2.a772fd80.chunk.js"
+    "revision": "aed7a37d9fd0d1e82279",
+    "url": "/static/js/2.fe161e0b.chunk.js"
   },
   {
-    "revision": "0391a55b6c64c72c6e54",
-    "url": "/static/js/main.1911a785.chunk.js"
+    "revision": "1c8ea30849b620df9b1f",
+    "url": "/static/js/main.cddf7ed8.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/car.7824021c.png"
   },
   {
+    "revision": "b85088c3b0d40ac11eb78853e58ff313",
+    "url": "/static/media/dart.b85088c3.svg"
+  },
+  {
     "revision": "6caacd1ac451f5d5c012ebabcb25d071",
     "url": "/static/media/firebase.6caacd1a.svg"
+  },
+  {
+    "revision": "450062ba915d59dc27b60672165284a6",
+    "url": "/static/media/flutter.450062ba.svg"
   },
   {
     "revision": "aec012ae2ee1860442d37e9c7c274c57",
@@ -54,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a4a847bcd232f4b3731bbfb9974f088",
     "url": "/static/media/graphql.5a4a847b.svg"
+  },
+  {
+    "revision": "edf1567126183bcceb82fd2cbbf33931",
+    "url": "/static/media/gym-todo.edf15671.svg"
   },
   {
     "revision": "cee0eba49b576b96bd76c126ffac71b1",
@@ -90,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "39353001c68abd5e4c6d3beb152a249b",
     "url": "/static/media/spiral-one.39353001.gif"
+  },
+  {
+    "revision": "6a7290c66b4cc4b87166bf1cf08ffc04",
+    "url": "/static/media/sqlite.6a7290c6.svg"
   },
   {
     "revision": "2c199c96f517487e3359c7dc5ed770e6",
