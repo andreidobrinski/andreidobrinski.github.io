@@ -5,6 +5,10 @@ export const Image = styled.img`
   width: 100%;
 `;
 
+export const Img = styled.img`
+  max-width: 100%;
+`;
+
 export const SourceText = styled.p`
   text-align: right;
   margin-right: 8px;

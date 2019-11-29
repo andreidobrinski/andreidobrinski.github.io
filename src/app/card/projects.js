@@ -3,6 +3,7 @@ import albumpickerLogo from './assets/album-picker.svg';
 import spiralGif from './assets/spiral-one.gif';
 import lifetalesLogo from './assets/lifetales-logo.svg';
 import rlLogo from './assets/car.png';
+import gymTodoLogo from './assets/gym-todo.svg';
 
 const Projects = {
   lifetales: {
@@ -14,6 +15,12 @@ const Projects = {
     name: 'Rocket League Item Inventory',
     skill: 'Web Dev',
     image: rlLogo,
+  },
+  gymtodo: {
+    name: 'Gym Todo',
+    skill: 'App Dev',
+    image: gymTodoLogo,
+    backgroundColor: 'rgba(0,0,0,0.05)',
   },
   badlands: {
     name: 'Badlands Brewing',

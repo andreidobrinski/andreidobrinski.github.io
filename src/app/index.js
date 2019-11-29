@@ -10,12 +10,14 @@ import BadlandsBrewing from '../work/badlands-brewing';
 import Learning from '../learning';
 import AnalyticsWrap from './analytics/wrap';
 import RlInventory from '../work/rl-inventory';
+import GymTodo from '../work/gym-todo';
 
 const App = () => (
   <ThemeProvider theme={theme}>
     <BrowserRouter>
       <Switch>
         <AnalyticsWrap>
+          <Route exact path="/gym-todo" component={GymTodo} />
           <Route exact path="/lifetales" component={LifeTales} />
           <Route exact path="/rl-inventory" component={RlInventory} />
           <Route exact path="/albumpicker" component={AlbumPicker} />

@@ -12,6 +12,9 @@ import swiftIcon from './assets/swift.svg';
 import xcodeIcon from './assets/xcode.png';
 import firebaseIcon from './assets/firebase.svg';
 import nextIcon from './assets/next.svg';
+import flutterIcon from './assets/flutter.svg';
+import dartIcon from './assets/dart.svg';
+import sqliteIcon from './assets/sqlite.svg';
 
 const Skills = {
   illustrator: {
@@ -69,6 +72,18 @@ const Skills = {
   next: {
     name: 'Next',
     image: nextIcon,
+  },
+  flutter: {
+    name: 'Flutter',
+    image: flutterIcon,
+  },
+  dartprovider: {
+    name: 'Provider',
+    image: dartIcon,
+  },
+  sqlite: {
+    name: 'SQLite',
+    image: sqliteIcon,
   },
 };
 

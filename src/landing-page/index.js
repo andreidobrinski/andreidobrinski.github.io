@@ -26,6 +26,9 @@ const LandingPage = () => {
         <Link to="/rl-inventory">
           <Card project="rlinventory" />
         </Link>
+        <Link to="/gym-todo">
+          <Card project="gymtodo" />
+        </Link>
         <Link to="/albumpicker">
           <Card project="albumpicker" />
         </Link>
