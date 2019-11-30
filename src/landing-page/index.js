@@ -1,15 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useLayoutEffect, createRef } from 'react';
 import Intro from './intro';
 import Card from '../app/card';
 import AboutMe from './about-me';
 import Footer from '../app/footer';
 import { AboutMeEvent } from '../app/analytics/events';
 import { App, ExternalLink } from '../app/styled';
-import { ListWrap } from '../app/card/styled';
+import { ListWrap, ButtonLink } from '../app/card/styled';
 
-const LandingPage = () => {
-  const aboutMeRef = React.createRef();
+const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) => {
+  const aboutMeRef = createRef();
+
+  useLayoutEffect(() => {
+    window.scroll(0, scrollPosition);
+  }, [scrollPosition]);
 
   const scrollToAboutMe = () => {
     AboutMeEvent();
@@ -20,25 +23,41 @@ const LandingPage = () => {
     <App>
       <Intro scrollToAboutMe={scrollToAboutMe} />
       <ListWrap>
-        <Link to="/lifetales">
+        <ButtonLink onClick={() => {
+          push('/lifetales');
+          setScrollPosition(window.pageYOffset);
+        }}>
           <Card project="lifetales" />
-        </Link>
-        <Link to="/rl-inventory">
+        </ButtonLink>
+        <ButtonLink onClick={() => {
+          push('/rl-inventory');
+          setScrollPosition(window.pageYOffset);
+        }}>
           <Card project="rlinventory" />
-        </Link>
-        <Link to="/gym-todo">
+        </ButtonLink>
+        <ButtonLink onClick={() => {
+          push('/gym-todo');
+          setScrollPosition(window.pageYOffset);
+        }}>
           <Card project="gymtodo" />
-        </Link>
-        <Link to="/albumpicker">
+        </ButtonLink>
+        <ButtonLink onClick={() => {
+          push('/albumpicker');
+          setScrollPosition(window.pageYOffset);
+        }}>
           <Card project="albumpicker" />
-        </Link>
-        <Link to="/badlands-brewing">
+        </ButtonLink>
+        <ButtonLink onClick={() => {
+          push('/badlands-brewing');
+          setScrollPosition(window.pageYOffset);
+        }}>
           <Card project="badlands" />
-        </Link>
+        </ButtonLink>
         <ExternalLink
           eventLabel="LoadingAnimations"
           to="https://github.com/andreidobrinski/LoadingAnimations"
           nostyle="true"
+          style={{ margin: '16px auto' }}
         >
           <Card project="loadingAnimations" />
         </ExternalLink>

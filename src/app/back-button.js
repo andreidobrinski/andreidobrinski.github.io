@@ -17,14 +17,14 @@ const Button = styled.button.attrs({
   }
 `;
 
-const BackButton = ({ history: { goBack } }) => {
+const BackButton = ({ history: { push } }) => {
   const buttonRef = useRef();
 
   return (
     <Button
       onClick={() => {
         buttonRef.current.blur();
-        goBack();
+        push('/');
       }}
       ref={buttonRef}
     >

@@ -19,7 +19,6 @@ export const Wrapper = styled.div`
   width: ${props => (props.isHeader ? '100%' : '90vw')};
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-  margin: 16px auto;
   max-width: 800px;
   max-height: 325px;
   z-index: 1;
@@ -73,4 +72,11 @@ export const Text = styled.p`
     font-size: 1.2rem;
     margin-bottom: 16px;
   `};
+`;
+
+export const ButtonLink = styled.button.attrs(() => ({ type: 'button' }))`
+  border: none;
+  background: transparent;
+  margin: 16px auto;
+  padding: 0;
 `;
