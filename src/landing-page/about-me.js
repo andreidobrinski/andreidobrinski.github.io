@@ -14,7 +14,7 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         I&apos;m Andrei.
         I like to build websites and apps using modern tools like
         React, Gatsby, Styled Components, and GraphQL.
-        I do mostly front-end development while staying mindful of the UX design.
+        I build the front-end while staying mindful of the UX design, business objectives, and core product value.
         I&apos;m always
         {' '}
         <InternalLink to="/learning">
