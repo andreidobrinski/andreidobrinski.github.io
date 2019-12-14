@@ -229,13 +229,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/react-ar-workshop-sept-2019',
     type: 'Workshop',
   },
-  // 35: {
-  //   name: `Dart and Flutter: The Complete Developer's Guide`,
-  //   author: 'Stephen Grider',
-  //   link: 'https://www.udemy.com/course/dart-and-flutter-the-complete-developers-guide/',
-  //   repo: 'https://github.com/andreidobrinski/dart-and-flutter-course-udemy',
-  //   type: 'Course',
-  // },
+  35: {
+    name: `Dart and Flutter: The Complete Developer's Guide`,
+    author: 'Stephen Grider',
+    link: 'https://www.udemy.com/course/dart-and-flutter-the-complete-developers-guide/',
+    repo: 'https://github.com/andreidobrinski/dart-and-flutter-course-udemy',
+    type: 'Course',
+  },
 };
 
 export default LearningList;
