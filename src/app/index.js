@@ -11,6 +11,7 @@ import Learning from '../learning';
 import AnalyticsWrap from './analytics/wrap';
 import RlInventory from '../work/rl-inventory';
 import GymTodo from '../work/gym-todo';
+import Scopa from '../work/scopa';
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -20,6 +21,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <AnalyticsWrap>
+            <Route exact path="/scopa-calculator" component={Scopa} />
             <Route exact path="/gym-todo" component={GymTodo} />
             <Route exact path="/lifetales" component={LifeTales} />
             <Route exact path="/rl-inventory" component={RlInventory} />

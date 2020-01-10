@@ -4,6 +4,7 @@ import spiralGif from './assets/spiral-one.gif';
 import lifetalesLogo from './assets/lifetales-logo.svg';
 import rlLogo from './assets/car.png';
 import gymTodoLogo from './assets/gym-todo.svg';
+import scopaLogo from './assets/coin.svg';
 
 const Projects = {
   lifetales: {
@@ -15,6 +16,12 @@ const Projects = {
     name: 'Rocket League Item Inventory',
     skill: 'Web Dev',
     image: rlLogo,
+  },
+  scopa: {
+    name: 'Scopa Calculator',
+    skill: 'Web Dev',
+    image: scopaLogo,
+    backgroundColor: '#7496eb',
   },
   gymtodo: {
     name: 'Gym Todo',

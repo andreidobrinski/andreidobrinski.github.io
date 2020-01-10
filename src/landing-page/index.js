@@ -36,6 +36,12 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
           <Card project="rlinventory" />
         </ButtonLink>
         <ButtonLink onClick={() => {
+          push('/scopa-calculator');
+          setScrollPosition(window.pageYOffset);
+        }}>
+          <Card project="scopa" />
+        </ButtonLink>
+        <ButtonLink onClick={() => {
           push('/gym-todo');
           setScrollPosition(window.pageYOffset);
         }}>
