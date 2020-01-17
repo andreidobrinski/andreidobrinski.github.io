@@ -2,7 +2,7 @@
 
 # Portfolio
 
-Check it out [here.](https://andreidobrinski.github.io/)
+Check it out [here.](https://andreidobrinski.com)
 
 ## To Run Locally
 

@@ -36,7 +36,7 @@ const Scopa = () => (
         Check it out
         {' '}
         <ExternalLink
-          to="https://andreidobrinski.github.io/scopa/"
+          to="https://andreidobrinski.com/scopa/"
           eventLabel="Scopa demo from project"
         >
           here.
@@ -78,7 +78,7 @@ const Scopa = () => (
         You can find a demo of it
         {' '}
         <ExternalLink
-          to="https://andreidobrinski.github.io/scopa/"
+          to="https://andreidobrinski.com/scopa/"
           eventLabel="Scopa demo from project"
         >
           here.
@@ -141,7 +141,7 @@ const Scopa = () => (
         Feel free to have a look at the
         {' '}
         <ExternalLink
-          to="https://andreidobrinski.github.io/scopa/"
+          to="https://andreidobrinski.com/scopa/"
           eventLabel="Scopa demo from project"
         >
           demo

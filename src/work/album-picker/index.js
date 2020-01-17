@@ -21,7 +21,7 @@ const AlbumPicker = () => (
         {' '}
         <ExternalLink
           eventLabel="Album Picker GitHub Repo from Context"
-          to="https://andreidobrinski.github.io/album-picker/"
+          to="https://andreidobrinski.com/album-picker/"
         >
           React app
         </ExternalLink>
@@ -96,7 +96,7 @@ const AlbumPicker = () => (
         {' '}
         <ExternalLink
           eventLabel="Album Picker from footer"
-          to="https://andreidobrinski.github.io/album-picker/"
+          to="https://andreidobrinski.com/album-picker/"
         >
           here
         </ExternalLink>

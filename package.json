@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andreidobrinski.github.io/",
+  "homepage": "https://andreidobrinski.com/",
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.8.0",
