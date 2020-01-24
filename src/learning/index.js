@@ -5,6 +5,7 @@ import Footer from '../app/footer';
 import LearningList from './list';
 import BackButton from '../app/back-button';
 import { ExternalLink } from '../app/styled';
+import { Text } from '../app/card/styled';
 import { Content, Context, Header, Body } from '../work/styled';
 
 const Learning = () => (
@@ -20,31 +21,38 @@ const Learning = () => (
       {Object.keys(LearningList)
         .slice()
         .reverse()
-        .map(item => (
-          <Body key={item}>
-            {LearningList[item].author}
-            &nbsp;-&nbsp;
+        .map(item => {
+          console.log('item', item);
+          if (LearningList[item].year) return (
+            <Text key={item} style={{ fontWeight: 'bold' }}>{LearningList[item].year}</Text>
+          );
+          return (
+            <Body key={item}>
+              {LearningList[item].inProgress && <em>In Progress: </em>}
+              {LearningList[item].author}
+              &nbsp;-&nbsp;
             {LearningList[item].type}
-            :&nbsp;
+              :&nbsp;
             <ExternalLink
-              eventLabel="Learning List Item"
-              to={LearningList[item].link}
-            >
-              {LearningList[item].name}
-            </ExternalLink>
-            {LearningList[item].repo && (
-              <span>
-                &nbsp;/&nbsp;
+                eventLabel="Learning List Item"
+                to={LearningList[item].link}
+              >
+                {LearningList[item].name}
+              </ExternalLink>
+              {LearningList[item].repo && (
+                <span>
+                  &nbsp;/&nbsp;
                 <ExternalLink
-                  eventLabel="Learning List Repo"
-                  to={LearningList[item].repo}
-                >
-                  Repo
+                    eventLabel="Learning List Repo"
+                    to={LearningList[item].repo}
+                  >
+                    Repo
                 </ExternalLink>
-              </span>
-            )}
-          </Body>
-        ))}
+                </span>
+              )}
+            </Body>
+          );
+        })}
       <BackButton />
     </Content>
     <Footer />
