@@ -250,7 +250,6 @@ const LearningList = {
     link: 'https://www.udemy.com/course/typescript-the-complete-developers-guide/',
     repo: 'https://github.com/andreidobrinski/typescript-course-udemy',
     type: 'Course',
-    inProgress: true,
   },
   40: { year: '2020' }
 };
