@@ -22,7 +22,7 @@ const App = () => {
         <Switch>
           <AnalyticsWrap>
             <Route exact path="/scopa-calculator" component={Scopa} />
-            <Route exact path="/gym-todo" component={GymTodo} />
+            <Route exact path="/gym-todo-project" component={GymTodo} />
             <Route exact path="/lifetales" component={LifeTales} />
             <Route exact path="/rl-inventory" component={RlInventory} />
             <Route exact path="/albumpicker" component={AlbumPicker} />
