@@ -15,6 +15,7 @@ import nextIcon from './assets/next.svg';
 import flutterIcon from './assets/flutter.svg';
 import dartIcon from './assets/dart.svg';
 import sqliteIcon from './assets/sqlite.svg';
+import typescriptIcon from './assets/typescript.svg';
 
 const Skills = {
   illustrator: {
@@ -84,6 +85,10 @@ const Skills = {
   sqlite: {
     name: 'SQLite',
     image: sqliteIcon,
+  },
+  typescript: {
+    name: 'TypeScript',
+    image: typescriptIcon,
   },
 };
 

@@ -16,25 +16,25 @@ const GymTodo = () => (
     <Content>
       <Header>Gym Todo</Header>
       <Context>
-        Building an
+        Building an open-source
         {' '}
         <ExternalLink
           to="https://github.com/andreidobrinski/todo-flutter"
           eventLabel="Gym Todo repo from project"
         >
-          open-source
+          Flutter app  
         </ExternalLink>
         {' '}
-        app with
+        and
         {' '}
         <ExternalLink
-          to="https://flutter.dev/"
-          eventLabel="Flutter docs"
+          to="https://github.com/andreidobrinski/gym-todo"
+          eventLabel="Gym Todo repo from project"
         >
-          Flutter
+          React/TypeScript app
         </ExternalLink>
         {' '}
-        keep track of exercises to be done at the gym every week.
+        to keep track of exercises to be done at the gym every week.
       </Context>
       <Img src="https://github.com/andreidobrinski/todo-flutter/raw/master/demo.png" alt="gym todo app with flutter" />
       <Subheader>The Motivation</Subheader>
@@ -58,10 +58,16 @@ const GymTodo = () => (
         doing the exercises that needed to be done every week,
         while staying flexible about what to do at the gym on any given day.
       </Body>
+      <Body>
+        I later decided to rewrite the app with React and TypeScript to practice the technologies and to
+        be able to share the app with more people.
+      </Body>
       <Subheader>The Stack</Subheader>
       <StackSkill skill="flutter" />
       <StackSkill skill="dartprovider" />
       <StackSkill skill="sqlite" />
+      <StackSkill skill="react" />
+      <StackSkill skill="typescript" />
       <Subheader>The Product</Subheader>
       <Body>
         A todo app that adds, delete, checks and unchecks exercises.
@@ -138,6 +144,16 @@ const GymTodo = () => (
           eventLabel="Gym Todo repo"
         >
           open source.
+        </ExternalLink>
+      </Body>
+      <Body>
+        The TypeScript/React app is live and can be found
+        {' '}
+        <ExternalLink
+          to="https://andreidobrinski.com/gym-todo/"
+          eventLabel="TypeScript app demo"
+        >
+          here.
         </ExternalLink>
       </Body>
       <BackButton />
