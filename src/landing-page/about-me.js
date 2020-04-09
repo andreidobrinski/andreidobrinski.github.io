@@ -33,7 +33,8 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         to open-source software.
       </Body>
       <Body>
-        In my spare time, you can find me at the gym, hanging out with my cat, or at a tech meetup in the city.
+        In my spare time, you can find me at home in quarantine.
+        Before that, you could fine me at the gym, hanging out with my cat, or at a tech meetup in the city.
         I also enjoy reading non-fiction
         {' '}
         <ExternalLink
