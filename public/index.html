@@ -19,18 +19,15 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
+      (function (l) {
         if (l.search) {
           var q = {};
           l.search
             .slice(1)
             .split("&")
-            .forEach(function(v) {
+            .forEach(function (v) {
               var a = v.split("=");
-              q[a[0]] = a
-                .slice(1)
-                .join("=")
-                .replace(/~and~/g, "&");
+              q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
             });
           if (q.p !== undefined) {
             window.history.replaceState(
@@ -50,6 +47,23 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen:400,700"
       rel="stylesheet"
     />
+    <meta name="description" content="Andrei Dobrinski's Portfolio" />
+    <meta property="og:title" content="Andrei Dobrinski - Portfolio" />
+    <meta property="og:url" content="https://andreidobrinski.com/" />
+    <meta property="og:description" content="Andrei Dobrinski's Portfolio" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/andreidobrinski/andreidobrinski.github.io/develop/public/android-chrome-256x256.png"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/andreidobrinski/andreidobrinski.github.io/develop/public/android-chrome-256x256.png"
+    />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Andrei Dobrinski - Portfolio"
+    />
+    <meta name="application-name" content="Andrei Dobrinski - Portfolio" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
