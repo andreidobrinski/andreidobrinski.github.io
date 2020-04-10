@@ -17,18 +17,6 @@ const Intro = ({ scrollToAboutMe }) => (
         a front-end developer that loves the modern web.
       </Text>
       <Text>
-        I&apos;m currently working at
-        {' '}
-        <ExternalLink
-          eventLabel="LifeTales from Intro Page"
-          to="https://www.lifetales.com"
-        >
-          LifeTales
-        </ExternalLink>
-        {' '}
-        in Toronto.
-      </Text>
-      <Text>
         Learn a bit more
         {' '}
         <AboutMeButton onClick={scrollToAboutMe}>
