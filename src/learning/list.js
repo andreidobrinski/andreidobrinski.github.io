@@ -251,7 +251,14 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/typescript-course-udemy',
     type: 'Course',
   },
-  40: { year: '2020' }
+  40: {
+    name: 'React: Using TypeScript',
+    author: 'Emmanuel Henri',
+    link: 'https://www.linkedin.com/learning/react-using-typescript',
+    repo: 'https://github.com/andreidobrinski/react-using-typescript-li-learning',
+    type: 'Course',
+  },
+  51: { year: '2020' }
 };
 
 export default LearningList;
