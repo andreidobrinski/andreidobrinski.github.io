@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AdLogo from './ad-logo';
-import { ExternalLink } from '../../app/styled';
 import {
   Wrapper, TextWrap, Text, AboutMeButton,
 } from './styled';
