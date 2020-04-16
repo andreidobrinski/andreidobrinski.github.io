@@ -258,6 +258,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/react-using-typescript-li-learning',
     type: 'Course',
   },
+  41: {
+    name: 'Testing React Applications with Jest',
+    author: 'Daniel Stern',
+    type: 'Course',
+    link: 'https://app.pluralsight.com/library/courses/testing-react-applications-jest',
+    repo: 'https://github.com/andreidobrinski/testing-react-applications-with-jest-ps',
+  },
   51: { year: '2020' }
 };
 
