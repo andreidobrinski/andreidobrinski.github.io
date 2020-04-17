@@ -22,7 +22,6 @@ const Learning = () => (
         .slice()
         .reverse()
         .map(item => {
-          console.log('item', item);
           if (LearningList[item].year) return (
             <Text key={item} style={{ fontWeight: 'bold' }}>{LearningList[item].year}</Text>
           );
