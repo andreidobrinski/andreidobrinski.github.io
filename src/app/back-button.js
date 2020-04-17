@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Body } from '../work/styled';
 import { LinkStyles } from './styled';
 
-const Button = styled.button.attrs({
+export const LinkButton = styled.button.attrs({
   type: 'button',
 })`
   ${LinkStyles};
@@ -21,7 +21,7 @@ const BackButton = ({ history: { push } }) => {
   const buttonRef = useRef();
 
   return (
-    <Button
+    <LinkButton
       onClick={() => {
         buttonRef.current.blur();
         push('/');
@@ -31,7 +31,7 @@ const BackButton = ({ history: { push } }) => {
       <Body style={{ margin: '0' }}>
         &larr; Back
       </Body>
-    </Button>
+    </LinkButton>
   );
 };
 

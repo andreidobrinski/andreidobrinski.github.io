@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
+import { BodyTextStyles } from '../work/styled';
 
 export const App = styled.div`
   text-align: center;
@@ -36,4 +37,5 @@ export const ExternalLink = styled(ReactGA.OutboundLink).attrs({
 
 export const InternalLink = styled(Link)`
   ${LinkStyles};
+  /* ${BodyTextStyles}; */
 `;

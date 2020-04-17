@@ -6,6 +6,8 @@ import Footer from '../app/footer';
 import { AboutMeEvent } from '../app/analytics/events';
 import { App, ExternalLink } from '../app/styled';
 import { ListWrap, ButtonLink } from '../app/card/styled';
+import { Body } from '../work/styled';
+import { LinkButton } from '../app/back-button';
 
 const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) => {
   const aboutMeRef = createRef();
@@ -68,6 +70,14 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
           <Card project="loadingAnimations" />
         </ExternalLink>
       </ListWrap>
+      <LinkButton onClick={() => {
+        push('/archived-projects');
+        setScrollPosition(window.pageYOffset);
+      }}>
+        <Body style={{ margin: 0 }}>
+          Archived Projects
+        </Body>
+      </LinkButton>
       <AboutMe ref={aboutMeRef} />
       <Footer />
     </App>
