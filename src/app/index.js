@@ -12,6 +12,7 @@ import AnalyticsWrap from './analytics/wrap';
 import RlInventory from '../work/rl-inventory';
 import GymTodo from '../work/gym-todo';
 import Scopa from '../work/scopa';
+import Archive from '../work/archive';
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,6 +29,7 @@ const App = () => {
             <Route exact path="/albumpicker" component={AlbumPicker} />
             <Route exact path="/badlands-brewing" component={BadlandsBrewing} />
             <Route exact path="/learning" component={Learning} />
+            <Route exact path="/archived-projects" component={Archive} />
             <Route
               exact
               path="/"
