@@ -26,7 +26,7 @@ const Archive = () => (
               <strong>{ArchiveList[item].name}</strong>
             </Body>
             <TagList>
-              {ArchiveList[item].tech.map(tag => <Tag>{tag}</Tag>)}
+              {ArchiveList[item].tech.map(tag => <Tag key={tag}>{tag}</Tag>)}
             </TagList>
             <Body style={{ marginTop: '4px' }}>
               {ArchiveList[item].description}
