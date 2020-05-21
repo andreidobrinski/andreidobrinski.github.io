@@ -265,6 +265,41 @@ const LearningList = {
     link: 'https://app.pluralsight.com/library/courses/testing-react-applications-jest',
     repo: 'https://github.com/andreidobrinski/testing-react-applications-with-jest-ps',
   },
+  42: {
+    name: 'Payment Card Security, Processing, and the PCI Standards',
+    author: 'John Elliott',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/payment-card-security-processing-pci-standards',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/payment-card-security-processing-and-the-PCI-standards.md',
+  },
+  43: {
+    name: 'Defending Against JavaScript Keylogger Attacks on Payment Card Information',
+    author: 'John Elliott and Troy Hunt',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/defending-javascript-keylogger-attacks-pci',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/defending-against-JS-keylogger-ps-course.md',
+  },
+  44: {
+    name: 'Play by Play: OWASP Top 10 2017',
+    author: 'Andrew van der Stock and Troy Hunt',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/play-by-play-owasp-top-ten-2017',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/owasp-top-10-2017.md',
+  },
+  45: {
+    name: 'Play by Play: JavaScript Security',
+    author: 'Troy Hunt and Aaron Powell',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/play-by-play-javascript-security',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/js-security.md',
+  },
+  46: {
+    name: 'Play by Play: What You Need to Know About HTTPS Today',
+    author: 'Troy Hunt and Lars Klint',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/play-by-play-https-what-you-need-know-about-today',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/what-you-need-to-know-about-https-today.md',
+  },
   51: { year: '2020' }
 };
 
