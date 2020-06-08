@@ -17,7 +17,7 @@ export const LinkStyles = css`
   transition: box-shadow 0.3s ease-in;
 
   &:hover {
-    box-shadow: inset 0 -30px 0 0 ${props => props.theme.colours.link};
+    box-shadow: inset 0 -40px 0 0 ${props => props.theme.colours.link};
   }
 `;
 
