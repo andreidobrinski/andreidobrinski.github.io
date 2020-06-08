@@ -44,7 +44,7 @@ const fallbackFonts = [
 ].join(',');
 
 export const fonts = {
-  header: `Oxygen,${fallbackFonts}`,
+  header: `Hind,${fallbackFonts}`,
   body: `Open Sans,${fallbackFonts}`,
 };
 
