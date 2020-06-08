@@ -30,9 +30,22 @@ export const colours = {
   background: 'rgba(0,0,0,0.02)',
 };
 
+const fallbackFonts = [
+  '-apple-system',
+  'BlinkMacSystemFont',
+  'Segoe UI',
+  'Roboto',
+  'Ubuntu',
+  'Cantarell',
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  'sans-serif',
+].join(',');
+
 export const fonts = {
-  header: '"Oxygen", "sans-serif"',
-  body: '"Open Sans", "serif"',
+  header: `Oxygen,${fallbackFonts}`,
+  body: `Open Sans,${fallbackFonts}`,
 };
 
 export const spacer = '16px';
