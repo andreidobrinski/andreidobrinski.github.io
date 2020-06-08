@@ -33,7 +33,15 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         to open-source software.
       </Body>
       <Body>
-        In my spare time, I'll be at home in quarantine.
+        In my spare time, I'll be at home in quarantine, cooking up
+        {' '}
+        <ExternalLink
+          eventLabel="Recipes Project from About Me"
+          to="https://andreidobrinski.com/recipes"
+        >
+          recipes.
+        </ExternalLink>
+        {' '}
         Before that, you could find me at the gym, hanging out with my cat, or at a tech meetup in the city.
         I also enjoy reading non-fiction
         {' '}
