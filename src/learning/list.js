@@ -300,6 +300,12 @@ const LearningList = {
     link: 'https://www.pluralsight.com/courses/play-by-play-https-what-you-need-know-about-today',
     repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/what-you-need-to-know-about-https-today.md',
   },
+  47: {
+    name: 'JSP Tutorial',
+    author: 'TutorialsPoint',
+    type: 'Tutorial',
+    link: 'https://www.tutorialspoint.com/jsp/index.htm',
+  },
   51: { year: '2020' }
 };
 
