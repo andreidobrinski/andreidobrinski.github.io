@@ -306,6 +306,13 @@ const LearningList = {
     type: 'Tutorial',
     link: 'https://www.tutorialspoint.com/jsp/index.htm',
   },
+  48: {
+    name: 'Microservices with Node JS and React',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
+    inProgress: true,
+  },
   51: { year: '2020' }
 };
 
