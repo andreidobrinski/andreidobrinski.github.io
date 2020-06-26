@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import React, { useState, useRef } from 'react';
+import styled from 'styled-components';
 import ScrollToTop from '../../app/scroll-to-top';
 import Card from '../../app/card';
 import Footer from '../../app/footer';
@@ -10,8 +11,9 @@ import UXDesign from './ux-design';
 import { LTWebEvent, LTIosEvent, LTDesignEvent } from '../../app/analytics/events';
 import { ExternalLink } from '../../app/styled';
 import {
-  Content, Context, Header, Subheader, SectionToggleButton,
+  Content, Context, Header, Subheader,
 } from '../styled';
+import { LinkStyles } from '../../app/styled';
 
 const LifeTales = () => {
   const webDevRef = useRef();
@@ -105,5 +107,24 @@ const LifeTales = () => {
     </ScrollToTop>
   );
 };
+
+const SectionToggleButton = styled.button.attrs({
+  type: 'button',
+})`
+  ${LinkStyles};
+  h3 {
+    margin: 0;
+  }
+  &:hover {
+    box-shadow: inset 0 -70px 0 0 ${props => props.theme.colours.link};
+  }
+  &:active {
+    outline: none;
+  }
+  display: inherit;
+  border: none;
+  margin-bottom: ${props => props.theme.ratio.one}em;
+  background: none;
+`;
 
 export default LifeTales;

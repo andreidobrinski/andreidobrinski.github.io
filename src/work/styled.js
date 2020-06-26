@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { LinkStyles } from '../app/styled';
 
 export const Wrapper = styled.div`
   display: flex;
@@ -35,25 +34,6 @@ export const Subheader = styled.h2`
   font-size: ${props => props.theme.ratio.two}em;
   color: ${props => props.theme.colours.text};
   margin-bottom: 4px;
-`;
-
-export const SectionToggleButton = styled.button.attrs({
-  type: 'button',
-})`
-  ${LinkStyles};
-  h3 {
-    margin: 0;
-  }
-  &:hover {
-    box-shadow: inset 0 -40px 0 0 ${props => props.theme.colours.link};
-  }
-  &:active {
-    outline: none;
-  }
-  display: inherit;
-  border: none;
-  margin-bottom: ${props => props.theme.ratio.one}em;
-  background: none;
 `;
 
 export const BodyTextStyles = css`
