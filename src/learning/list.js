@@ -311,6 +311,7 @@ const LearningList = {
     author: 'Stephen Grider',
     type: 'Course',
     link: 'https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/',
+    repo: 'https://github.com/andreidobrinski/docker-kubernetes-course-udemy',
     inProgress: true,
   },
   49: {
@@ -318,6 +319,7 @@ const LearningList = {
     author: 'Stephen Grider',
     type: 'Course',
     link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
+    repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
     inProgress: true,
   },
   51: { year: '2020' }
