@@ -307,6 +307,13 @@ const LearningList = {
     link: 'https://www.tutorialspoint.com/jsp/index.htm',
   },
   48: {
+    name: 'Docker and Kubernetes: The Complete Guide',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/',
+    inProgress: true,
+  },
+  49: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
