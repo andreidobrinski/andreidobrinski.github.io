@@ -35,6 +35,14 @@ const GymTodo = () => (
         </ExternalLink>
         {' '}
         to keep track of exercises to be done at the gym every week.
+        Check it out
+        {' '}
+        <ExternalLink
+          to="https://andreidobrinski.com/gym-todo"
+          eventLabel="Gym Todo repo from project"
+        >
+          here.
+        </ExternalLink>
       </Context>
       <Img src="https://github.com/andreidobrinski/todo-flutter/raw/master/demo.png" alt="gym todo app with flutter" />
       <Subheader>The Motivation</Subheader>
