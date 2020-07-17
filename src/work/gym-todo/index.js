@@ -39,7 +39,7 @@ const GymTodo = () => (
         {' '}
         <ExternalLink
           to="https://andreidobrinski.com/gym-todo"
-          eventLabel="Gym Todo repo from project"
+          eventLabel="Gym Todo demo from project"
         >
           here.
         </ExternalLink>
