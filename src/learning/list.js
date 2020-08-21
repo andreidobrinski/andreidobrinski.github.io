@@ -312,9 +312,16 @@ const LearningList = {
     type: 'Course',
     link: 'https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/',
     repo: 'https://github.com/andreidobrinski/docker-kubernetes-course-udemy',
-    inProgress: true,
   },
   49: {
+    name: 'React Testing Masterclass',
+    author: 'Kati Frantz',
+    type: 'Course',
+    link: 'https://katifrantz.com/course/react-testing-masterclass',
+    repo: '',
+    inProgress: true,
+  },
+  50: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
@@ -322,7 +329,7 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
     inProgress: true,
   },
-  51: { year: '2020' }
+  99: { year: '2020' }
 };
 
 export default LearningList;
