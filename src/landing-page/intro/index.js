@@ -5,8 +5,6 @@ import { ExternalLink } from '../../app/styled';
 import {
   Wrapper, TextWrap, Text, AboutMeButton,
 } from './styled';
-import { LinkStyles } from '../../app/styled';
-console.log('LinkStyles', LinkStyles);
 
 const Intro = ({ scrollToAboutMe }) => (
   <Wrapper>
