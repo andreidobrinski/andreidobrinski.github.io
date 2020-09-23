@@ -314,6 +314,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/docker-kubernetes-course-udemy',
   },
   49: {
+    name: 'Node with React: Fullstack Web Development',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/node-with-react-fullstack-web-development',
+    repo: 'https://github.com/andreidobrinski/node-with-react-fullstack-course-udemy',
+  },
+  50: {
     name: 'React Testing Masterclass',
     author: 'Kati Frantz',
     type: 'Course',
@@ -321,14 +328,14 @@ const LearningList = {
     repo: '',
     inProgress: true,
   },
-  50: {
-    name: 'Microservices with Node JS and React',
-    author: 'Stephen Grider',
-    type: 'Course',
-    link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
-    repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
-    inProgress: true,
-  },
+  // 51: {
+  //   name: 'Microservices with Node JS and React',
+  //   author: 'Stephen Grider',
+  //   type: 'Course',
+  //   link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
+  //   repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
+  //   inProgress: true,
+  // },
   99: { year: '2020' }
 };
 
