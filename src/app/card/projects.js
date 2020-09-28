@@ -25,7 +25,7 @@ const Projects = {
   },
   gymtodo: {
     name: 'Gym Todo',
-    skill: 'App Dev',
+    skill: 'Web & App Dev',
     image: gymTodoLogo,
     backgroundColor: 'rgba(0,0,0,0.05)',
   },
