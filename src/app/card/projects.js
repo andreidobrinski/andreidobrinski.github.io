@@ -12,6 +12,12 @@ const Projects = {
     skill: 'Dev & Design',
     image: lifetalesLogo,
   },
+  gymtodo: {
+    name: 'Gym Todo',
+    skill: 'Web & App Dev',
+    image: gymTodoLogo,
+    backgroundColor: 'rgba(0,0,0,0.05)',
+  },
   rlinventory: {
     name: 'Rocket League Item Inventory',
     skill: 'Web Dev',
@@ -23,22 +29,16 @@ const Projects = {
     image: scopaLogo,
     backgroundColor: '#7496eb',
   },
-  gymtodo: {
-    name: 'Gym Todo',
-    skill: 'Web & App Dev',
-    image: gymTodoLogo,
-    backgroundColor: 'rgba(0,0,0,0.05)',
-  },
-  badlands: {
-    name: 'Badlands Brewing',
-    skill: 'Logo Design',
-    image: badlandsLogo,
-  },
   albumpicker: {
     name: 'Album Picker',
     skill: 'Dev & Design',
     image: albumpickerLogo,
     backgroundColor: '#062F70',
+  },
+  badlands: {
+    name: 'Badlands Brewing',
+    skill: 'Logo Design',
+    image: badlandsLogo,
   },
   loadingAnimations: {
     name: 'LoadingAnimations',
