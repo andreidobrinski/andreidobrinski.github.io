@@ -325,8 +325,7 @@ const LearningList = {
     author: 'Kati Frantz',
     type: 'Course',
     link: 'https://katifrantz.com/course/react-testing-masterclass',
-    repo: '',
-    inProgress: true,
+    repo: 'https://github.com/andreidobrinski/react-testing-masterclass-course',
   },
   // 51: {
   //   name: 'Microservices with Node JS and React',
