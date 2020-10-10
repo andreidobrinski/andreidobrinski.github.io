@@ -26,7 +26,7 @@ const AlbumPicker = () => (
           React app
         </ExternalLink>
         {' '}
-        as a side project to solve a personal problem.
+        as a side project to solve a personal problem - picking an album to listen to from a collection of my favourites.
       </Context>
       <Subheader>
         The Motivation
