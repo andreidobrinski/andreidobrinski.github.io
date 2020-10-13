@@ -16,6 +16,8 @@ import flutterIcon from './assets/flutter.svg';
 import dartIcon from './assets/dart.svg';
 import sqliteIcon from './assets/sqlite.svg';
 import typescriptIcon from './assets/typescript.svg';
+import jestIcon from './assets/jest.svg';
+import reactTestingLibIcon from './assets/react-testing-lib.png';
 
 const Skills = {
   illustrator: {
@@ -90,6 +92,14 @@ const Skills = {
     name: 'TypeScript',
     image: typescriptIcon,
   },
+  jest: {
+    name: 'Jest',
+    image: jestIcon,
+  },
+  reactTestingLib: {
+    name: 'React Testing Library',
+    image: reactTestingLibIcon,
+  }
 };
 
 export default Skills;

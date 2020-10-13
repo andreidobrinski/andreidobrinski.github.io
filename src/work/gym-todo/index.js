@@ -70,12 +70,16 @@ const GymTodo = () => (
         I later decided to rewrite the app with React and TypeScript to practice the technologies and to
         be able to share the app with more people.
       </Body>
-      <Subheader>The Stack</Subheader>
+      <Subheader>The Stack: Flutter App</Subheader>
       <StackSkill skill="flutter" />
       <StackSkill skill="dartprovider" />
       <StackSkill skill="sqlite" />
+      <Subheader>The Stack: React App</Subheader>
       <StackSkill skill="react" />
       <StackSkill skill="typescript" />
+      <StackSkill skill="styledcomponents" />
+      <StackSkill skill="jest" />
+      <StackSkill skill="reactTestingLib" />
       <Subheader>The Product</Subheader>
       <Body>
         A todo app that adds, delete, checks and unchecks exercises.
