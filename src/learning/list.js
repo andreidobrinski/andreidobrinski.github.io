@@ -327,14 +327,14 @@ const LearningList = {
     link: 'https://katifrantz.com/course/react-testing-masterclass',
     repo: 'https://github.com/andreidobrinski/react-testing-masterclass-course',
   },
-  // 51: {
-  //   name: 'Microservices with Node JS and React',
-  //   author: 'Stephen Grider',
-  //   type: 'Course',
-  //   link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
-  //   repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
-  //   inProgress: true,
-  // },
+  51: {
+    name: 'Microservices with Node JS and React',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
+    repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
+    inProgress: true,
+  },
   99: { year: '2020' }
 };
 
