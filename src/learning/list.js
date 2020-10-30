@@ -328,6 +328,27 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/react-testing-masterclass-course',
   },
   51: {
+    name: 'Learning Webpack 1',
+    author: 'Eve Porcello',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/learning-webpack-1/',
+    repo: 'https://github.com/andreidobrinski/webpack-li-learning'
+  },
+  52: {
+    name: 'Learning Webpack 3',
+    author: 'Eve Porcello',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/learning-webpack-3/',
+    repo: 'https://github.com/andreidobrinski/webpack-li-learning'
+  },
+  53: {
+    name: 'Learning Webpack 4',
+    author: 'Eve Porcello',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/learning-webpack-4/',
+    repo: 'https://github.com/andreidobrinski/webpack-li-learning'
+  },
+  54: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
