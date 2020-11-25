@@ -349,6 +349,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/webpack-li-learning'
   },
   54: {
+    name: 'Cybersecurity at Work',
+    author: 'Caroline Wong',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/cybersecurity-at-work/',
+    repo: 'https://github.com/andreidobrinski/cybersecurity-at-work-li-learning'
+  },
+  55: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
