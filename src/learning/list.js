@@ -356,6 +356,13 @@ const LearningList = {
     repo: 'https://github.com/andreidobrinski/cybersecurity-at-work-li-learning'
   },
   55: {
+    name: 'How to GraphQL',
+    author: 'Various Authors',
+    type: 'Tutorial',
+    link: 'https://www.howtographql.com/',
+    repo: 'https://github.com/andreidobrinski/how-to-graphql-tutorial'
+  },
+  56: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
