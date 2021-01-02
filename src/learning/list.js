@@ -362,15 +362,15 @@ const LearningList = {
     link: 'https://www.howtographql.com/',
     repo: 'https://github.com/andreidobrinski/how-to-graphql-tutorial'
   },
-  56: {
+  56: { year: '2020' },
+  57: {
     name: 'Microservices with Node JS and React',
     author: 'Stephen Grider',
     type: 'Course',
     link: 'https://www.udemy.com/course/microservices-with-node-js-and-react/',
     repo: 'https://github.com/andreidobrinski/microservices-course-udemy',
-    inProgress: true,
   },
-  99: { year: '2020' }
+  99: { year: '2021' }
 };
 
 export default LearningList;
