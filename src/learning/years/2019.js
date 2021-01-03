@@ -1,0 +1,102 @@
+export const year2019 = [
+  { year: '2019' },
+  {
+    name: `Dart and Flutter: The Complete Developer's Guide`,
+    author: 'Stephen Grider',
+    link: 'https://www.udemy.com/course/dart-and-flutter-the-complete-developers-guide/',
+    repo: 'https://github.com/andreidobrinski/dart-and-flutter-course-udemy',
+    type: 'Course',
+  },
+  {
+    name: 'Augmented Reality Workshop',
+    author: 'Simon Stern',
+    link: 'https://github.com/simistern/ARWorkshop01',
+    repo: 'https://github.com/andreidobrinski/react-ar-workshop-sept-2019',
+    type: 'Workshop',
+  },
+  {
+    name: 'Building Neural Networks in JavaScript',
+    author: 'Matthew Mihok',
+    link: 'https://github.com/mihok/workshop-aug13',
+    repo: 'https://github.com/andreidobrinski/workshop-aug13',
+    type: 'Workshop',
+  },
+  {
+    name: 'JavaScript ES2019 in Practice',
+    author: 'Mike Sherov',
+    link: 'https://egghead.io/lessons/javascript-course-overview-javascript-es2019-in-practice',
+    type: 'Egghead Course',
+  },
+  {
+    name: 'Typescript with modern React (i.e. hooks, context, suspense)',
+    author: 'Richard Oliver Bray',
+    link: 'https://www.udemy.com/typescript-with-react-hooks-and-context/',
+    repo: 'https://github.com/andreidobrinski/typescript-with-react-course-udemy',
+    type: 'Course',
+  },
+  {
+    name: 'Simplify React Apps with React Hooks',
+    author: 'Kent C. Dodds',
+    link: 'https://egghead.io/courses/simplify-react-apps-with-react-hooks',
+    type: 'Egghead Course',
+  },
+  {
+    author: 'Cameron Nokes',
+    name: 'Advanced Bash Automation for Web Developers',
+    link: 'https://www.udemy.com/the-complete-react-native-and-redux-course/',
+    type: 'Egghead Course',
+  },
+  {
+    author: 'Stephen Grider',
+    name: 'The Complete React Native and Redux Course',
+    link: 'https://www.udemy.com/the-complete-react-native-and-redux-course/',
+    repo: 'https://github.com/andreidobrinski/react-native-course-udemy',
+    type: 'Course',
+  },
+  {
+    author: 'Kent C. Dodds',
+    name: 'React Hooks and Suspense',
+    link:
+      'https://egghead.io/playlists/react-hooks-and-suspense-650307f2?__s=ns3juptwu4vybog9objt',
+    type: 'Egghead Course',
+  },
+  {
+    author: 'Ryerson University',
+    name: 'Introduction to Web Accessibility',
+    link: 'https://de.ryerson.ca/wa/introduction/',
+    type: 'Course',
+  },
+  {
+    author: 'Codecademy',
+    name: 'Learn Express',
+    link: 'https://www.codecademy.com/learn/learn-express',
+    type: 'Course',
+  },
+  {
+    author: 'Stephen Grider',
+    name: 'Electron for Desktop Apps: The Complete Developers Guide',
+    link: 'https://www.udemy.com/electron-react-tutorial/',
+    repo: 'https://github.com/andreidobrinski/electron-course-udemy',
+    type: 'Course',
+  },
+  {
+    author: 'Trevor Miller',
+    name: 'Practical Git for Everyday Professional Use',
+    link:
+      'https://egghead.io/courses/practical-git-for-everyday-professional-use',
+    type: 'Egghead Course',
+  },
+  {
+    author: 'Marius Schulz',
+    name: 'JavaScript Promises in Depth',
+    link: 'https://egghead.io/courses/javascript-promises-in-depth',
+    type: 'Egghead Course',
+  },
+  {
+    author: 'David Katz',
+    name: 'Essentials in JavaScript ES6',
+    link: 'https://www.udemy.com/essentials-in-javascript-es6/',
+    repo: 'https://github.com/andreidobrinski/es6-course-udemy',
+    type: 'Course',
+  },
+];
