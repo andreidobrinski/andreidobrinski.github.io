@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'The Complete React Native + Hooks Course [2020 Edition]',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/the-complete-react-native-and-redux-course',
+    repo: 'https://github.com/andreidobrinski/react-native-course-udemy-2020',
+  },
+  {
     name: 'Microfrontends with React: A Complete Developers Guide',
     author: 'Stephen Grider',
     type: 'Course',
