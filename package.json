@@ -24,6 +24,7 @@
     "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
+    "@testing-library/react": "^11.2.5",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
