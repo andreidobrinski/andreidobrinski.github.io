@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'The Modern Angular Bootcamp [2020]',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/the-modern-angular-bootcamp/',
+    repo: 'https://github.com/andreidobrinski/modern-angular-bootcamp-udemy',
+  },
+  {
     name: 'The Complete React Native + Hooks Course [2020 Edition]',
     author: 'Stephen Grider',
     type: 'Course',
