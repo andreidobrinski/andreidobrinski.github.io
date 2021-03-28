@@ -66,6 +66,8 @@ const Scopa = () => (
       <StackSkill skill="react" />
       <StackSkill skill="gatsby" />
       <StackSkill skill="styledcomponents" />
+      <StackSkill skill="jest" />
+      <StackSkill skill="reactTestingLib" />
       <Subheader>The Product</Subheader>
       <Body>
         The calculator shows a list of all available card types in Scopa and asks the user to choose how many of each card type they have.
@@ -131,7 +133,7 @@ const Scopa = () => (
       <Subheader>The Next Steps</Subheader>
       <Body>
         I plan to:
-      </Body>  
+      </Body>
       <ul>
         <ListItem>use the app while playing scopa</ListItem>
         <ListItem>share with anyone while they're playing</ListItem>
