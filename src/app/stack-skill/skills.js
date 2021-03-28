@@ -18,8 +18,28 @@ import sqliteIcon from './assets/sqlite.svg';
 import typescriptIcon from './assets/typescript.svg';
 import jestIcon from './assets/jest.svg';
 import reactTestingLibIcon from './assets/react-testing-lib.png';
+import apolloIcon from './assets/apollo.svg';
+import cypressIcon from './assets/cypress.svg';
+import tailwindIcon from './assets/tailwind-css.svg';
+import twinMacroIcon from './assets/twin-macro.png';
 
 const Skills = {
+  twinMacro: {
+    name: 'Twin Macro',
+    image: twinMacroIcon,
+  },
+  tailwind: {
+    name: 'TailwindCSS',
+    image: tailwindIcon,
+  },
+  cypress: {
+    name: 'Cypress',
+    image: cypressIcon,
+  },
+  apollo: {
+    name: 'Apollo Client',
+    image: apolloIcon,
+  },
   illustrator: {
     name: 'Adobe Illustrator',
     image: illustratorIcon,
