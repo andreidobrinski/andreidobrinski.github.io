@@ -5,8 +5,15 @@ import lifetalesLogo from './assets/lifetales-logo.svg';
 import rlLogo from './assets/car.png';
 import gymTodoLogo from './assets/gym-todo.svg';
 import scopaLogo from './assets/coin.svg';
+import arcaneEyeSvg from './assets/arcane-eye.svg';
 
 const Projects = {
+  druidWildShape: {
+    name: 'Druid Wild Shape',
+    skill: 'Web Dev',
+    image: arcaneEyeSvg,
+    backgroundColor: '#58180d'
+  },
   lifetales: {
     name: 'LifeTales',
     skill: 'Dev & Design',

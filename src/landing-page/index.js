@@ -26,6 +26,12 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
       <Intro scrollToAboutMe={scrollToAboutMe} />
       <ListWrap>
         <ButtonLink onClick={() => {
+          push('/druid-wild-shape');
+          setScrollPosition(window.pageYOffset);
+        }}>
+          <Card project="druidWildShape" />
+        </ButtonLink>
+        <ButtonLink onClick={() => {
           push('/lifetales');
           setScrollPosition(window.pageYOffset);
         }}>
