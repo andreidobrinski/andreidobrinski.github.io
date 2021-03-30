@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { BodyTextStyles } from '../work/styled';
 
-export const App = styled.div`
+export const App = styled.main`
   text-align: center;
   width: 100%;
   background-color: ${props => props.theme.colours.background};
