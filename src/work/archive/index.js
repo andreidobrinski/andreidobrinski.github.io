@@ -17,42 +17,39 @@ const Archive = () => (
         A list of older archived projects.
       </Context>
       <Body>-</Body>
-      {Object.keys(ArchiveList)
-        .slice()
-        .reverse()
-        .map(item => (
-          <div key={item}>
-            <Body style={{ marginBottom: '4px' }}>
-              <strong>{ArchiveList[item].name}</strong>
-            </Body>
-            <TagList>
-              {ArchiveList[item].tech.map(tag => <Tag key={tag}>{tag}</Tag>)}
-            </TagList>
-            <Body style={{ marginTop: '4px' }}>
-              {ArchiveList[item].description}
-              <br />
-              {ArchiveList[item].demo && (
+      {ArchiveList.map(item => (
+        <article key={item}>
+          <Body style={{ marginBottom: '4px' }}>
+            <strong>{item.name}</strong>
+          </Body>
+          <TagList>
+            {item.tech.map(tag => <Tag key={tag}>{tag}</Tag>)}
+          </TagList>
+          <Body style={{ marginTop: '4px' }}>
+            {item.description}
+            <br />
+            {item.demo && (
+              <ExternalLink
+                eventLabel="Archive List Demo"
+                to={item.demo}
+              >
+                Demo
+              </ExternalLink>
+            )}
+            {item.repo && (
+              <span>
+                &nbsp;/&nbsp;
                 <ExternalLink
-                  eventLabel="Archive List Demo"
-                  to={ArchiveList[item].demo}
+                  eventLabel="Archive List Repo"
+                  to={item.repo}
                 >
-                  Demo
+                  Repo
                 </ExternalLink>
-              )}
-              {ArchiveList[item].repo && (
-                <span>
-                  &nbsp;/&nbsp;
-                  <ExternalLink
-                    eventLabel="Archive List Repo"
-                    to={ArchiveList[item].repo}
-                  >
-                    Repo
-                  </ExternalLink>
-                </span>
-              )}
-            </Body>
-          </div>
-        ))}
+              </span>
+            )}
+          </Body>
+        </article>
+      ))}
       <BackButton />
     </Content>
     <Footer />
