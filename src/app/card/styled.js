@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const ListWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 800px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  ${props => props.theme.media.tablet`
+    grid-template-columns: 1fr 1fr;
+  `};
+  max-width: 100%;
 `;
 
 export const Wrapper = styled.div`
@@ -16,7 +17,6 @@ export const Wrapper = styled.div`
   background-size: contain;
   border-radius: ${props => props.theme.borderRadius};
   height: 60vw;
-  width: ${props => (props.isHeader ? '100%' : '90vw')};
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   max-width: 800px;
@@ -24,13 +24,17 @@ export const Wrapper = styled.div`
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
   transition-timing-function: ease-in-out;
+  min-width: 45vw;
+  width: 90vw;
   ${props => props.isHeader && `
     margin: 0 auto 16px auto;
+    width: 100%;
   `};
   ${props => props.theme.media.tablet`
     ${props.isHeader && `
       margin: 16px auto;
     `};
+    width: auto;
   `};
 
   :hover {
