@@ -1,5 +1,12 @@
 const ArchiveList = [
   {
+    name: 'Produce in Season',
+    description: 'An app to show what produce is in season this month in Ontario',
+    tech: ['Svelte'],
+    demo: 'https://andreidobrinski.com/produce-in-season/',
+    repo: 'https://github.com/andreidobrinski/produce-in-season',
+  },
+  {
     name: 'Recipes',
     description: 'A cookbook filled with recipes and checklists',
     tech: ['React', 'Gatsby', 'MDX'],

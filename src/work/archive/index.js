@@ -14,7 +14,7 @@ const Archive = () => (
     <Content>
       <Header>Archive</Header>
       <Context>
-        A list of older archived projects.
+        A list of archived projects.
       </Context>
       <Body>-</Body>
       {ArchiveList.map(item => (
