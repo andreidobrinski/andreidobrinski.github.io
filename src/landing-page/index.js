@@ -71,7 +71,7 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
           eventLabel="LoadingAnimations"
           to="https://github.com/andreidobrinski/LoadingAnimations"
           nostyle="true"
-          style={{ margin: '16px auto' }}
+          style={{ display: 'flex', justifyContent: 'center' }}
         >
           <Card project="loadingAnimations" />
         </ExternalLink>

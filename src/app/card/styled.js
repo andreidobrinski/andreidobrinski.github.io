@@ -2,11 +2,18 @@ import styled from 'styled-components';
 
 export const ListWrap = styled.div`
   display: grid;
+  grid-gap: 32px;
   grid-template-columns: 1fr;
+  max-width: 800px;
+  justify-content: center;
+  margin: auto;
   ${props => props.theme.media.tablet`
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 400px);
   `};
-  max-width: 100%;
+  ${props => props.theme.media.ultraWide`
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 600px);
+  `};
 `;
 
 export const Wrapper = styled.div`
@@ -19,7 +26,6 @@ export const Wrapper = styled.div`
   height: 60vw;
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
   max-height: 325px;
   z-index: 1;
   transition: box-shadow 0.3s, transform 0.3s;
@@ -33,9 +39,10 @@ export const Wrapper = styled.div`
   ${props => props.theme.media.tablet`
     ${props.isHeader && `
       margin: 16px auto;
+      max-width: 800px;
     `};
     ${!props.isHeader && `
-      width: auto;
+      min-width: 400px;
     `};
   `};
 
@@ -83,6 +90,8 @@ export const Text = styled.p`
 export const ButtonLink = styled.button.attrs(() => ({ type: 'button' }))`
   border: none;
   background: transparent;
-  margin: 16px auto;
   padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;

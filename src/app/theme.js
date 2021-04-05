@@ -5,6 +5,7 @@ const sizes = {
   mediumTablet: 712,
   tablet: 880,
   desktop: 992,
+  ultraWide: 1440,
 };
 
 // iterate through the sizes and create a media template
