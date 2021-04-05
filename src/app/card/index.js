@@ -12,6 +12,7 @@ const Card = ({
     isHeader={isHeader}
     image={Projects[project].image}
     backgroundColor={Projects[project].backgroundColor}
+    as={isHeader ? 'div' : 'article'}
   >
     {!isHeader && (
       <Overlay>

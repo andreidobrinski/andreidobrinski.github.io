@@ -5,9 +5,9 @@ import {
 import { ExternalLink, InternalLink } from '../app/styled';
 
 const AboutMe = React.forwardRef((props, aboutMeRef) => (
-  <Wrapper style={{ backgroundColor: 'transparent', textAlign: 'left' }}>
+  <Wrapper style={{ backgroundColor: 'transparent', textAlign: 'left' }} as="section">
     <Content>
-      <Header ref={aboutMeRef}>
+      <Header ref={aboutMeRef} as="h2">
         About Me
       </Header>
       <Body>

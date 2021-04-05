@@ -7,10 +7,10 @@ import {
 } from './styled';
 
 const Intro = ({ scrollToAboutMe }) => (
-  <Wrapper>
+  <Wrapper as="section">
     <AdLogo />
     <TextWrap>
-      <Text style={{ fontWeight: 'bold' }}>
+      <Text style={{ fontWeight: 'bold' }} as="h1">
         Hi, I&apos;m Andrei Dobrinski,
       </Text>
       <Text>

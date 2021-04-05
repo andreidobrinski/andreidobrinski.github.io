@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ListWrap = styled.div`
+export const ListWrap = styled.section`
   display: grid;
   grid-gap: 32px;
   grid-template-columns: 1fr;
