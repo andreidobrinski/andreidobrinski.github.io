@@ -34,7 +34,9 @@ export const Wrapper = styled.div`
     ${props.isHeader && `
       margin: 16px auto;
     `};
-    width: auto;
+    ${!props.isHeader && `
+      width: auto;
+    `};
   `};
 
   :hover {
