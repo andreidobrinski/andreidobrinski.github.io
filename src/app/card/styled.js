@@ -87,7 +87,7 @@ export const Text = styled.p`
   `};
 `;
 
-export const ButtonLink = styled.button.attrs(() => ({ type: 'button' }))`
+export const ButtonLink = styled.button.attrs(() => ({ type: 'button', role: 'link' }))`
   border: none;
   background: transparent;
   padding: 0;

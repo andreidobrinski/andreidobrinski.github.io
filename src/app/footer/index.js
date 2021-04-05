@@ -40,12 +40,14 @@ const Footer = () => {
           eventLabel="GitHub Profile from Footer"
           to="https://github.com/andreidobrinski"
           center="true"
+          aria-label="Andrei Dobrinski's GitHub"
         >
           <GithubLogo />
         </SocialLink>
         <SocialLink
           eventLabel="LinkedIn Profile from Footer"
           to="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
+          aria-label="Andrei Dobrinski's LinkedIn"
         >
           <LinkedInLogo />
         </SocialLink>

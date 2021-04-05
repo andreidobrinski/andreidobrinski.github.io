@@ -25,46 +25,67 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
     <App>
       <Intro scrollToAboutMe={scrollToAboutMe} />
       <ListWrap>
-        <ButtonLink onClick={() => {
-          push('/druid-wild-shape');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/druid-wild-shape');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="druid wild shape project"
+        >
           <Card project="druidWildShape" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/lifetales');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/lifetales');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="lifetales project"
+        >
           <Card project="lifetales" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/gym-todo-project');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/gym-todo-project');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="gym todo project"
+        >
           <Card project="gymtodo" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/rl-inventory');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/rl-inventory');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="rocket league inventory project"
+        >
           <Card project="rlinventory" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/scopa-calculator');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/scopa-calculator');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="scopa calculator project"
+        >
           <Card project="scopa" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/albumpicker');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/albumpicker');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="album picker project"
+        >
           <Card project="albumpicker" />
         </ButtonLink>
-        <ButtonLink onClick={() => {
-          push('/badlands-brewing');
-          setScrollPosition(window.pageYOffset);
-        }}>
+        <ButtonLink
+          onClick={() => {
+            push('/badlands-brewing');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="badlands brewing project"
+        >
           <Card project="badlands" />
         </ButtonLink>
         <ExternalLink
@@ -76,10 +97,13 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
           <Card project="loadingAnimations" />
         </ExternalLink>
       </ListWrap>
-      <LinkButton onClick={() => {
-        push('/archived-projects');
-        setScrollPosition(window.pageYOffset);
-      }}>
+      <LinkButton
+        onClick={() => {
+          push('/archived-projects');
+          setScrollPosition(window.pageYOffset);
+        }}
+        aria-label="archived projects"
+      >
         <Body style={{ margin: 0 }}>
           Archived Projects
         </Body>

@@ -7,6 +7,7 @@ import { LinkStyles } from './styled';
 
 export const LinkButton = styled.button.attrs({
   type: 'button',
+  role: 'link'
 })`
   ${LinkStyles};
   margin-top: ${props => props.theme.ratio.two}em;
@@ -27,6 +28,7 @@ const BackButton = ({ history: { push } }) => {
         push('/');
       }}
       ref={buttonRef}
+      aria-label="back to home"
     >
       <Body style={{ margin: '0' }}>
         &larr; Back
