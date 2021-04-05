@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'Learn Svelte',
+    author: 'Beau Carnes',
+    type: 'Course',
+    link: 'https://www.freecodecamp.org/news/svelte-video-tutorial/',
+    repo: 'https://github.com/andreidobrinski/svelte-tutorial-freecodecamp',
+  },
+  {
     name: 'The Modern Angular Bootcamp [2020]',
     author: 'Stephen Grider',
     type: 'Course',
