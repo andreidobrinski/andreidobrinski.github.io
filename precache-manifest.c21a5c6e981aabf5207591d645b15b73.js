@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cb591bc0f449086edd99cd6c3027b5e",
+    "revision": "eb41d92b069518ab8582549949ac196b",
     "url": "/index.html"
   },
   {
-    "revision": "82d2ff1787ac11ad4b4a",
+    "revision": "dd88b09217f471331749",
     "url": "/static/css/2.4c9116bc.chunk.css"
   },
   {
-    "revision": "4d273b84141cb63c8f1b",
+    "revision": "0dd88b3633a3c705c9f1",
     "url": "/static/css/main.d5cd45c9.chunk.css"
   },
   {
-    "revision": "82d2ff1787ac11ad4b4a",
-    "url": "/static/js/2.828ea260.chunk.js"
+    "revision": "dd88b09217f471331749",
+    "url": "/static/js/2.a1e89c86.chunk.js"
   },
   {
-    "revision": "4d273b84141cb63c8f1b",
-    "url": "/static/js/main.c507fcdc.chunk.js"
+    "revision": "0dd88b3633a3c705c9f1",
+    "url": "/static/js/main.23c1c7f9.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0cf942501f72930ba18cd306ba55d4ac",
     "url": "/static/media/album-picker.0cf94250.svg"
+  },
+  {
+    "revision": "393e9a672ee8cc3d6c93dcee8aa29e33",
+    "url": "/static/media/apollo.393e9a67.svg"
+  },
+  {
+    "revision": "7c433199199cee39b1d2958a6968c757",
+    "url": "/static/media/arcane-eye.7c433199.svg"
   },
   {
     "revision": "e2846d126ca4e122c638a7279ca65826",
@@ -42,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3fb9b0be24003eafc82b34ddd4f564ae",
     "url": "/static/media/coin.3fb9b0be.svg"
+  },
+  {
+    "revision": "28f75e2655c1e9d5515dc2549607b680",
+    "url": "/static/media/cypress.28f75e26.svg"
   },
   {
     "revision": "b85088c3b0d40ac11eb78853e58ff313",
@@ -122,6 +134,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0b716c2d52ec3a48fbe91ac031070c1d",
     "url": "/static/media/swift.0b716c2d.svg"
+  },
+  {
+    "revision": "17ce325854171f2c655fcbde90183976",
+    "url": "/static/media/tailwind-css.17ce3258.svg"
+  },
+  {
+    "revision": "f7aa1a90e52c9d1b965856404625f329",
+    "url": "/static/media/twin-macro.f7aa1a90.png"
   },
   {
     "revision": "3de182d2120823fe49c27eeb1765c53a",
