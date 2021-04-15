@@ -1,6 +1,20 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'PCI DSS: The State of Cardholder Data Attacks',
+    author: 'Aaron Willis and John Elliott',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/pci-dss-state-cardholder-data-attack',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/pci-dss-the-state-of-cardholder-data-attacks.md'
+  },
+  {
+    name: 'Software and Systems Security for CompTIA CySA+',
+    author: 'Dale Meredith ',
+    type: 'Course',
+    link: 'https://www.pluralsight.com/courses/software-systems-security-comptia-cysa-plus',
+    repo: 'https://github.com/andreidobrinski/pluralsight-security-courses/blob/master/software-and-systems-security-for-comptia-cysa.md'
+  },
+  {
     name: 'Learn Svelte',
     author: 'Beau Carnes',
     type: 'Course',
