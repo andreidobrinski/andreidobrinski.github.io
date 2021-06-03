@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'Fullstack Advanced React and GraphQL',
+    author: 'Wes Bos',
+    type: 'Course',
+    link: 'https://advancedreact.com/',
+    repo: 'https://github.com/andreidobrinski/advanced-react-course-wb'
+  },
+  {
     name: 'PCI DSS: The State of Cardholder Data Attacks',
     author: 'Aaron Willis and John Elliott',
     type: 'Course',
