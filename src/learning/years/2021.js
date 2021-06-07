@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'JavaScript: Closures',
+    author: 'Sasha Vodnik',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/javascript-closures/',
+    repo: 'https://github.com/andreidobrinski/closures-course-lil'
+  },
+  {
     name: 'Fullstack Advanced React and GraphQL',
     author: 'Wes Bos',
     type: 'Course',
