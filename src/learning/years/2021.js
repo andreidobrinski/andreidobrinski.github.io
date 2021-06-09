@@ -2,13 +2,13 @@ export const year2021 = [
   { year: 2021 },
   {
     name: 'Testing Library with Jest',
-    author: 'Nicole C',
+    author: 'Nicole C.',
     type: 'Workshop',
     link: 'https://www.meetup.com/torontojs/events/278340348/',
     repo: 'https://github.com/andreidobrinski/closures-course-lil'
   },
   {
-    name: 'JavaScript: Closures',
+    name: 'JavaScript Closures',
     author: 'Sasha Vodnik',
     type: 'Course',
     link: 'https://www.linkedin.com/learning/javascript-closures/',
