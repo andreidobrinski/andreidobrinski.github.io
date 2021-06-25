@@ -46,7 +46,7 @@ const Footer = () => {
         </SocialLink>
         <SocialLink
           eventLabel="LinkedIn Profile from Footer"
-          to="https://www.linkedin.com/in/andrei-dobrinski-13a137122/"
+          to="https://www.linkedin.com/in/andrei-dobrinski"
           aria-label="Andrei Dobrinski's LinkedIn"
         >
           <LinkedInLogo />
