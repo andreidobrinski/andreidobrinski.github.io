@@ -1,11 +1,18 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'React: Building Progressive Web Apps (PWAs)',
+    author: 'Eve Porcello',
+    type: 'Course',
+    link: 'https://www.linkedin.com/learning/react-building-progressive-web-apps-pwas/',
+    repo: 'https://github.com/andreidobrinski/react-pwa-li-learning'
+  },
+  {
     name: 'Testing Library with Jest',
     author: 'Nicole C.',
     type: 'Workshop',
     link: 'https://www.meetup.com/torontojs/events/278340348/',
-    repo: 'https://github.com/andreidobrinski/closures-course-lil'
+    repo: 'https://github.com/andreidobrinski/testing-library-codealong-june-8-2021'
   },
   {
     name: 'JavaScript Closures',
