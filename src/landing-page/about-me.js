@@ -33,7 +33,10 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
         to open-source software.
       </Body>
       <Body>
-        In my spare time, I'll be at home in quarantine, cooking up
+        In my spare time,
+        you can find me riding my bike,
+        playing with my cat,
+        or cooking up
         {' '}
         <ExternalLink
           eventLabel="Recipes Project from About Me"
@@ -42,7 +45,6 @@ const AboutMe = React.forwardRef((props, aboutMeRef) => (
           recipes.
         </ExternalLink>
         {' '}
-        Before that, you could find me at the gym, hanging out with my cat, or at a tech meetup in the city.
         I also enjoy reading non-fiction
         {' '}
         <ExternalLink
