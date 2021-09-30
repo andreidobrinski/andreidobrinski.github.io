@@ -1,6 +1,13 @@
 export const year2021 = [
   { year: 2021 },
   {
+    name: 'Build Advanced Components with React Hooks',
+    author: 'Matías Hernández',
+    type: 'Course',
+    link: 'https://egghead.io/courses/build-advanced-components-with-react-hooks-810906cc',
+    repo: 'https://github.com/andreidobrinski/build-advanced-components-react-hooks-course-egghead'
+  },
+  {
     name: 'React: Building Progressive Web Apps (PWAs)',
     author: 'Eve Porcello',
     type: 'Course',
