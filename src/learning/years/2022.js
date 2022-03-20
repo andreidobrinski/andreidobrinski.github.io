@@ -6,7 +6,6 @@ export const year2022 = [
     type: 'Course',
     link: 'https://testingjavascript.com/',
     repo: 'https://github.com/andreidobrinski/testing-js-course-kcd',
-    inProgress: true
   },
   {
     name: 'Your First iOS & SwiftUI App: An App from Scratch',
