@@ -1,6 +1,13 @@
 export const year2022 = [
   { year: 2022 },
   {
+    name: 'Creative Coding with Canvas & WebGL',
+    author: 'Matt DesLauriers',
+    type: 'Course',
+    repo: 'https://github.com/andreidobrinski/canvas-webgl-fm-course',
+    link: 'https://frontendmasters.com/courses/canvas-webgl/',
+  },
+  {
     name: 'Testing JavaScript',
     author: 'Kent C. Dodds',
     type: 'Course',
