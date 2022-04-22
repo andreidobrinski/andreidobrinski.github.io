@@ -1,5 +1,12 @@
 const ArchiveList = [
   {
+    name: 'Gen Art Canvas',
+    description: 'A UI for playing around with parameters in a generative art example',
+    tech: ['React', 'Canvas'],
+    demo: 'https://andreidobrinski.com/gen-art-canvas/',
+    repo: 'https://github.com/andreidobrinski/gen-art-canvas',
+  },
+  {
     name: 'Produce in Season',
     description: 'An app to show what produce is in season this month in Ontario',
     tech: ['Svelte'],
