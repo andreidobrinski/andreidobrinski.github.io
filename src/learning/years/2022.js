@@ -1,6 +1,13 @@
 export const year2022 = [
   { year: 2022 },
   {
+    name: '100 Days of SwiftUI',
+    author: 'Paul Hudson',
+    type: 'Course',
+    repo: 'https://github.com/andreidobrinski/100-days-of-swiftui-course',
+    link: 'https://www.hackingwithswift.com/100/swiftui',
+  },
+  {
     name: 'Creative Coding with Canvas & WebGL',
     author: 'Matt DesLauriers',
     type: 'Course',
