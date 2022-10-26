@@ -1,6 +1,13 @@
 export const year2022 = [
   { year: 2022 },
   {
+    name: 'Remix Fundamentals',
+    author: 'Kent C. Dodds',
+    type: 'Course',
+    link: 'https://frontendmasters.com/courses/remix/',
+    repo: 'https://github.com/andreidobrinski/remix-fundamentals-fm-course',
+  },
+  {
     name: '100 Days of SwiftUI',
     author: 'Paul Hudson',
     type: 'Course',
