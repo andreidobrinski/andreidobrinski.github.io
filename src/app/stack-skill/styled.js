@@ -20,6 +20,7 @@ export const Icon = styled.img`
   height: 50px;
   width: 50px;
   margin-top: 0;
+  object-fit: contain;
   ${props => props.theme.media.tablet`
     height: 100px;
     width: 100px;

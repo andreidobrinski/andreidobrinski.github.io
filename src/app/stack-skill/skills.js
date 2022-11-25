@@ -22,6 +22,12 @@ import apolloIcon from './assets/apollo.svg';
 import cypressIcon from './assets/cypress.svg';
 import tailwindIcon from './assets/tailwind-css.svg';
 import twinMacroIcon from './assets/twin-macro.png';
+import dayjsIcon from './assets/day-js.png';
+import githubIcon from './assets/github.png';
+import youtubeIcon from './assets/youtube.png';
+import googleIcon from './assets/google.png';
+import smuiIcon from './assets/smui.png';
+import svelteIcon from './assets/svelte.png';
 
 const Skills = {
   twinMacro: {
@@ -119,7 +125,31 @@ const Skills = {
   reactTestingLib: {
     name: 'React Testing Library',
     image: reactTestingLibIcon,
-  }
+  },
+  dayjs: {
+    name: 'Day.js',
+    image: dayjsIcon,
+  },
+  githubPages: {
+    name: 'GitHub Pages',
+    image: githubIcon,
+  },
+  youtubeApi: {
+    name: 'YouTube API',
+    image: youtubeIcon,
+  },
+  googleAuth: {
+    name: 'GoogleAuth',
+    image: googleIcon,
+  },
+  smui: {
+    name: 'Svelte MaterialUI',
+    image: smuiIcon,
+  },
+  svelte: {
+    name: 'Svelte',
+    image: svelteIcon,
+  },
 };
 
 export default Skills;
