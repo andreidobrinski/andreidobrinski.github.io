@@ -79,7 +79,7 @@ export const Skill = styled.div`
 
 export const Text = styled.p`
   font-family: ${props => props.theme.fonts.header};
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 8px;
   ${props => props.theme.media.smallTablet`
     font-size: 1.2rem;

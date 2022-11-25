@@ -14,6 +14,7 @@ import GymTodo from '../work/gym-todo';
 import Scopa from '../work/scopa';
 import Archive from '../work/archive';
 import DruidWildShape from '../work/druid-wild-shape';
+import QueueTube from '../work/queuetube';
 
 const App = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -23,6 +24,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <AnalyticsWrap>
+            <Route exact path="/queuetube" component={QueueTube} />
             <Route exact path="/druid-wild-shape" component={DruidWildShape} />
             <Route exact path="/scopa-calculator" component={Scopa} />
             <Route exact path="/gym-todo-project" component={GymTodo} />

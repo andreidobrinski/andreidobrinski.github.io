@@ -21,6 +21,13 @@ export const LinkStyles = css`
   }
 `;
 
+export const StyledLink = styled.a.attrs({
+  target: '_blank',
+  rel: 'noopener noreferrer',
+})`
+  ${LinkStyles};
+`;
+
 export const ExternalLink = styled(ReactGA.OutboundLink).attrs({
   target: '_blank',
   rel: 'noopener noreferrer',

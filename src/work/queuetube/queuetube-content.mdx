@@ -1,0 +1,234 @@
+import StackSkill from "../../../src/app/stack-skill";
+import { Context } from "../../../src/work/styled";
+import { StyledLink } from "../../../src/app/styled";
+
+# QueueTube
+
+<Context>
+  Building a YouTube companion app to group uploads from related channels into
+  playlists. Check out{" "}
+  <StyledLink href="https://andreidobrinski.com/queuetube">
+    QueueTube here
+  </StyledLink>
+  .
+</Context>
+
+## The Motivation
+
+My fiancée enjoys watching YouTube and follows a variety of channels about different interests. As a result, she uses several YouTube playlists to sort and watch videos by topic. Here’s a glimpse into what that process looks like:
+
+1. Open YouTube
+2. Scroll the feed of recent uploads
+3. To add a video to a playlist to watch later:
+   - Tap the kabob menu
+   - Tap “Save to playlist”
+   - Choose a playlist
+4. Tap “Done”
+5. Repeat step 3 for each video that belongs in a playlist
+
+This process needed to happen roughly every other day in order to keep the playlists up to date. Doing this manually meant having to spend time organizing playlists and potentially missing a video if the algorithm didn’t serve it. Fortunately, this is exactly the type of work that can be solved with technology.
+
+QueueTube is gratitude project to say _thank-you_ for doing the work of arranging these playlists, and to eliminate the need for that work in the future, especially since one of the playlists is one that we watch together.
+
+## The Requirements
+
+The first step was establishing the app’s MVP requirements. Any specific UI-level requirements can be worked out at the development stage.
+
+As a user, I would need to:
+
+- create a playlist (or “queue”) and give it a unique name
+- associate channels with that queue
+- have any new videos from the channel added to the queue when I view it
+- remove a video from the queue when I’ve watched it, and never see it re-added to the queue
+- cast the queue to a Chromecast
+- create multiple queues that keep track of their channels independently
+
+At this point we have enough to start thinking about how to solve this problem.
+
+Before diving into solutions, it was important for me to avoid over-engineering this problem and to do that I established features that would not be included in an MVP. These boundaries helped to keep the project focused and the scope narrow in order for it to be shipped in a reasonable amount of time.
+
+For the MVP, a user would **not** need to:
+
+- store my data in the cloud
+- access the app across multiple devices
+- ensure my data is backed up
+- download an app
+
+A frontend-only static site PWA is a good solution in this case, especially since it could easily be shipped to a static hosting service like GitHub Pages. Let’s take a look at the technologies involved in making it happen.
+
+## The Demo
+
+[Link to Demo](https://andreidobrinski.com/queuetube)
+
+_Add pics_
+_Add GIF_
+
+## The Stack
+
+- SvelteKit
+- Svelte Material UI
+- Google Auth
+- YouTube API
+  <StackSkill skill="typescript" />
+- Day.js
+- GitHub Pages
+
+## The Process
+
+Let’s take a look at the steps involved in putting this app together. We’ll cover interfacing with Google, creating a queue, storing queue data, getting unseen videos, and fetching queue data.
+
+### Interfacing with Google
+
+The app needed to use the YouTube API to get information about channels and videos. There are two ways I considered doing this: registering the app with an developer API key or authenticating the user with Google to use their token to talk to Google.
+
+In both cases, developers get [10,000 “units”](https://developers.google.com/youtube/v3/determine_quota_cost) of requests with Google, with different requests having different costs towards the quota.
+
+Registering the app with an API key may be simplest path to interfacing with the YouTube API, but has one crucial downside when it comes to adding channels to a queue: the `search` action costs 100 units of quota, 100x more than a `list` action for a resource. If the UX of the app were to involve the user searching for each channel they wanted to add to their queue, this would run through the quota quickly.
+
+A cheaper solution involves the user authenticating using OAuth with their Google account on login. The user then gives permission to the app to view their YouTube subscriptions, which allows the app to show a list of all of them. This is a better UX in my opinion, because a user can see their list of subscriptions and tap the “+” button next to a channel to add that channel to a queue.
+
+One limitation here is that a user can only add channels to QueueTube that they’re subscribed to in YouTube. This limitation is acceptable because if a user intended to follow a channel they’re likely already subscribed to them on YouTube, and can easily subscribe if need be.
+
+## Storing Queue Data
+
+There are 3 key pieces of data to making the app work: a `Queue`, a `Channel` , and a `QueueVideo`. Let’s start with the main data model in question, a `Queue`.
+
+```tsx
+interface Queue {
+  name: string;
+  channels: {
+    [key: string]: Channel;
+  };
+  videos: Array<QueueVideo>;
+}
+```
+
+A `name` is a unique string the user adds to associate with the queue. `channels` are an object where the key is a `channelId` and the value is a `Channel` object (more on this later). Finally `videos` are an array of `QueueVideo` - let’s see what that looks like now.
+
+```tsx
+interface QueueVideo {
+  id: string;
+  title: string;
+  thumbnails: ChannelThumbnails;
+  channelId: string;
+  channelTitle: string;
+  publishedAt: string;
+  duration: string;
+}
+```
+
+Most of the properties on a `QueueVideo` are used to render to the UI, with the exception of `publishedAt` and `id` , which we’ll talk about in the next section. Before we do, let’s circle back to what a `Channel` looks like.
+
+```tsx
+interface Channel {
+  id: string;
+  name: string;
+  thumbnails: ChannelThumbnails;
+  latestViewed: {
+    videoId: string;
+    videoPublishedAt: string;
+  };
+}
+```
+
+Notice that we’ve added a `latestViewed` property that stores the id and publish date of a video. This is what we’ll use to decide how to show new videos in the user’s queue.
+
+## Getting Unseen Videos
+
+We’ve arrived at the bulk of the functionality behind the purpose of the app: transforming a list of channels into a list of videos that the user hasn’t watched yet. Since this is a frontend-only app, the logic executes when the user opens the queue on their device. Behind the scenes, here’s how that logic works.
+
+### Adding New Videos to the Queue
+
+First, we get the `channelIds` associated with the queue. If there are no channels, that means that the user hasn’t added any yet and we can return early.
+
+For each channel, we fetch the playlist that contains their uploaded videos, which returns a list of `videoIds` in reverse chronological order that we can work with.
+
+We iterate over this array of `videoIds` and check to see if the id matches the `Channel.latestViewed.videoId`. If the ids don’t match, this means that the user hasn't yet seen the video and we add the `videoId` to a new array. If the ids match then we return that new array of `videoIds` we’ve been adding to. Basically, we use the user’s `latestViewed.videoId` to know how many new videos to add to the list and what the new ids are.
+
+We now have this list of `videoIds` since the user’s most recently watched video, and the next step is to filter any duplicates that already exist in the queue. Since this computation happens when the `QueueVideos` component mounts, it’s likely that the user has already fetched information for videos they haven't seen yet. The list of new videos ids is then filtered by any `videoId` that already exists in the queue. This saves doing unnecessary data fetching over the network.
+
+We can then ping the YouTube API with the list of `filteredVideoIds` to get information needed to fill out the UI. Success!
+
+### Getting the Channel’s Latest Viewed Video
+
+We’ve assumed up until this point that the `Channel.latestViewed` data has just been there, but how did it get there and how does it stay updated?
+
+When a user removes a video from their queue with the checkmark button, the app treats that as the video being “watched”. This means that anytime a video is watched, the app looks at the removed video’s `publishedAt` date and compares that with the `Channel.latestViewed.videoPublishedAt` . If the removed video’s date is more recent than the existing data, then that video’s date and id overwrite the `latestViewed` data. This basically says: “the video that the user just watched is the most recent one they’ve seen from that channel”. [Day.js](https://day.js.org) helps with the date comparison.
+
+This logic is in place to support the use case of videos being watched out of order, as a user may not want to catch up on older videos before watching the most recent ones. This solution holds onto the videos they haven’t seen yet in the queue, and stores the minimum amount of necessary data on their device’s local storage to fetch new videos from where they left off.
+
+Finally, when a user adds a channel to their queue, the app automatically takes the second latest uploaded video’s data and inserts that as the default `latestViewed` . Why the second latest? Initially I set the default to the latest uploaded video, but switched to second latest in order to get a better first-time user experience. When a user creates a queue and adds some channels, defaulting to the second latest means that the app logic will populate their new queue with the latest video from each channel they add. This gives the user a nice glimpse into what a queue looks like, allows them to learn about removing videos, and avoids the dreaded empty state as a first-time experience.
+
+Now that we’ve discussed how the app calculates unseen videos and adds them to the queue, let’s dive into the network requests required to make that happen.
+
+## Fetching Queue Data
+
+The app uses [axios](https://github.com/axios/axios) for networking with the YouTube API, which attaches the user’s auth token and configures the `baseURL` to be `https://www.googleapis.com/youtube/v3`. From that `baseURL` , let’s take a look at the calls made to get the information used in the app.
+
+- `/channels` - takes a comma-separated list of `channelIds` and returns a `playlistId` that can be used to get a list of the channel’s uploaded videos.
+- `/playlistItems` - takes a `playlistId` and returns playlist items (videos) from that playlist.
+
+[PlaylistItems](https://developers.google.com/youtube/v3/docs/playlistItems) is one API request that was tricky to work with. Since it only accepts one `playlistId` instead of multiple comma-separated ones, it means that I needed to do a `Promise.all` with a request like this for each channel in a queue. This could becomes an issue with many channels, but has worked well with low double-digit channels in a queue.
+
+- `/videos` - takes a comma-separated list of `videoIds` and returns the video data for each.
+
+This one was also tricky. [The documentation](https://developers.google.com/youtube/v3/docs/videos/list) mentions that the maximum amount of results from returned from a set is 50, which means that 50 is the max number of `videoIds` that can be sent with one request. This becomes a problem if the user hasn’t returned to QueueTube long enough for 51 or more new videos to need to be fetched. The [solution](https://github.com/andreidobrinski/queuetube/blob/main/src/lib/api/getVideosByIds.ts) here was to slice the `videoIds` array in chunks of up to 50, and send a separate request for each.
+
+- `/subscriptions` - using the user’s auth token, returns a list of their subscriptions on YouTube.
+
+This one required the UI to support pagination, as Google limits the return of this endpoint to 50 results. The pagination helps get the rest of the user’s subscriptions if their list of subscriptions is over 50.
+
+### Generating a Playlist from a Queue
+
+We’ve discussed how the app handles adding videos to queues, but how does that queue become a playlist that the user can watch on YouTube and cast to a TV? It does this with one simple link:
+
+```tsx
+https://www.youtube.com/watch_videos?video_ids=
+```
+
+All the app needs to do is concatenate the queue’s array of `videoIds` into a comma-separated string and append that to the URL above. This opens an “anonymous” playlist with YouTube, either in-browser or in-app, depending on the user’s device. The user is handed off to YouTube for the the rest of the viewing/casting experience.
+
+The user can also choose to open a playlist from a certain video in their queue onward. The URL accepts a `&index=` param, but unfortunately doesn't work across all devices/browsers I tested with. Fortunately, this can also be done with a [custom solution](https://github.com/andreidobrinski/queuetube/blob/main/src/lib/api/getQueueUrl.ts) as well.
+
+## Building the UI
+
+The app is written using TypeScript and [SvelteKit](https://kit.svelte.dev). SvelteKit is an amazing tool if your frontend project needs routing, global & local state management, a componentized architecture, and animations out of the box. Svelte has just the right amount of “magic” in my opinion and is intuitive and easy to pick up, especially for someone working mainly with React apps for the last several years. The app uses GitHub Actions to deploy to GitHub Pages with each push to the `main` branch.
+
+The UI uses [Svelte Material UI](https://sveltematerialui.com), which provides many components and animations with proper documentation on how to use them. It also provides styles to support both light and dark mode right out of the box. Since this app is like an extension of YouTube, Google’s Material UI design was a good fit for this project.
+
+## The Tradeoffs
+
+The decisions made around the product and requirements helped make sure that it got shipped in a reasonable amount of time. There are some consequences and downsides to those decisions that are worth mentioning.
+
+### Data Persistence
+
+The app is frontend-only and has no backend to handle data persistence. This means that the user cannot:
+
+- save or backup data automatically, though a manual export is built in to retrieve all data
+- move their experience between devices
+- retrieve data after clearing their browser’s cache
+
+The app uses Google OAuth to authenticate a user with their Google account but not with anything specific to QueueTube - all QueueTube user data is stored on the browser’s local storage. One quirk with this is that on a shared device, if user A logs in and uses the app and then user B logs in on the same browser, they will see user A’s data.
+
+### Refresh Tokens
+
+One notable downside in using Google OAuth without a server is that Google experience auth tokens after one hour and does not issue refresh tokens (refresh tokens are only available for a server app). This means that most commonly, a user must login each time they return to use QueueTube. Fortunately, after the initial permissions are granted, the login process is a single button tap, but an inconvenient one nonetheless.
+
+To mitigate this downside, I’ve added a feature that integrates both the OAuth and API key methods I mentioned in _Interfacing with Google_ above. Since the user mainly needs Google OAuth to get their YouTube subscriptions to add channels to a queue, I defer an existing user’s OAuth flow until they request to see their subscriptions. This means that the common use case of “open app, go to queue, play videos from queue” can bypass the login step by using the developer’s API key to get videos from YouTube.
+
+### Testing
+
+The app is smoke-tested with each release and regression-tested for larger changes. This means that testing on this app is manual rather than automated. The craftsman in me regrets this decision deeply, but the pragmatist in me stands by it.
+
+The app exists mainly to help my fiancée by automating a task that was once manual. If the app should get monetized or grow vastly in scope or feature-set, then I would rethink the decision to add integration or end-to-end tests. Until then, the risk and consequence of shipping a bug is minimal and the ROI of adding a test suite is unjustified.
+
+## The Future
+
+For now, the project is finished and lives in maintenance mode. I have some ideas about features I may add in the future:
+
+- adding a feature to share a single queue; export a queue from one device and import in another
+- adding optimizations to fetch videos less often to preserve the API quota. For example, by limiting the app to one fetch per hour per user
+- adding a server component, to help with issues noted above
+- adding a test suite
+
+If you have any feedback to share about the project, don’t hesitate to let me know. Feel free to [create an issue on GitHub](https://github.com/andreidobrinski/queuetube) or reach out to me on [Twitter](https://twitter.com/andreidobrinski)!

@@ -17,10 +17,10 @@ export const Text = styled.p`
   font-family: ${props => props.theme.fonts.header};
   color: ${props => props.theme.colours.text};
   text-align: left;
-  font-size: 1.4rem;
+  font-size: ${props => props.theme.ratio.one}rem;
   margin: 5% 10%;
   ${props => props.theme.media.smallTablet`
-    font-size: ${props.theme.ratio.one}rem;
+    font-size: 2rem;
   `};
   ${props => props.theme.media.tablet`
     margin: 5% 10% 5% 17%;
