@@ -1,6 +1,5 @@
 import badlandsLogo from '../../work/badlands-brewing/assets/badlands-logo-light.png';
 import albumpickerLogo from './assets/album-picker.svg';
-import spiralGif from './assets/spiral-one.gif';
 import lifetalesLogo from './assets/lifetales-logo.svg';
 import rlLogo from './assets/car.png';
 import gymTodoLogo from './assets/gym-todo.svg';
@@ -47,11 +46,6 @@ const Projects = {
     name: 'Badlands Brewing',
     skill: 'Logo Design',
     image: badlandsLogo,
-  },
-  loadingAnimations: {
-    name: 'LoadingAnimations',
-    skill: 'iOS Motion Design',
-    image: spiralGif,
   },
   queuetube: {
     name: 'QueueTube',

@@ -36,16 +36,18 @@ const Archive = () => (
                 Demo
               </ExternalLink>
             )}
-            {item.repo && (
+            {item.demo && item.repo && (
               <span>
                 &nbsp;/&nbsp;
-                <ExternalLink
-                  eventLabel="Archive List Repo"
-                  to={item.repo}
-                >
-                  Repo
-                </ExternalLink>
               </span>
+            )}
+            {item.repo && (
+              <ExternalLink
+                eventLabel="Archive List Repo"
+                to={item.repo}
+              >
+                Repo
+              </ExternalLink>
             )}
           </Body>
         </article>

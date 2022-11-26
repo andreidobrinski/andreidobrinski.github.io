@@ -27,6 +27,12 @@ const ArchiveList = [
     demo: 'https://andreidobrinski.com/rl-random-camera-settings/',
     repo: 'https://github.com/andreidobrinski/rl-random-camera-settings',
   },
+  {
+    name: 'LoadingAnimation',
+    description: 'A loading animation in Swift',
+    tech: ['Swift', 'Animation'],
+    repo: 'https://github.com/andreidobrinski/LoadingAnimations',
+  }
 ];
 
 export default ArchiveList;

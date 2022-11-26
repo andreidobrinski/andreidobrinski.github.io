@@ -4,7 +4,7 @@ import Card from '../app/card';
 import AboutMe from './about-me';
 import Footer from '../app/footer';
 import { AboutMeEvent } from '../app/analytics/events';
-import { App, ExternalLink } from '../app/styled';
+import { App } from '../app/styled';
 import { ListWrap, ButtonLink } from '../app/card/styled';
 import { Body } from '../work/styled';
 import { LinkButton } from '../app/back-button';
@@ -25,6 +25,15 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
     <App>
       <Intro scrollToAboutMe={scrollToAboutMe} />
       <ListWrap>
+        <ButtonLink
+          onClick={() => {
+            push('/queuetube');
+            setScrollPosition(window.pageYOffset);
+          }}
+          aria-label="queuetube project"
+        >
+          <Card project="queuetube" />
+        </ButtonLink>
         <ButtonLink
           onClick={() => {
             push('/druid-wild-shape');
@@ -88,14 +97,6 @@ const LandingPage = ({ history: { push }, scrollPosition, setScrollPosition }) =
         >
           <Card project="badlands" />
         </ButtonLink>
-        <ExternalLink
-          eventLabel="LoadingAnimations"
-          to="https://github.com/andreidobrinski/LoadingAnimations"
-          nostyle="true"
-          style={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <Card project="loadingAnimations" />
-        </ExternalLink>
       </ListWrap>
       <LinkButton
         onClick={() => {
