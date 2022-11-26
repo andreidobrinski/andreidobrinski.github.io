@@ -6,6 +6,7 @@ import rlLogo from './assets/car.png';
 import gymTodoLogo from './assets/gym-todo.svg';
 import scopaLogo from './assets/coin.svg';
 import arcaneEyeSvg from './assets/arcane-eye.svg';
+import queuetubeSvg from './assets/queuetube.svg';
 
 const Projects = {
   druidWildShape: {
@@ -51,6 +52,12 @@ const Projects = {
     name: 'LoadingAnimations',
     skill: 'iOS Motion Design',
     image: spiralGif,
+  },
+  queuetube: {
+    name: 'QueueTube',
+    skill: 'Web Dev',
+    image: queuetubeSvg,
+    backgroundColor: '#FF0000',
   },
 };
 

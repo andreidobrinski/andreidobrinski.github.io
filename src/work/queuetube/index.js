@@ -11,7 +11,7 @@ const QueueTubeContent = importMDX.sync('./queuetube-content.mdx');
 
 const QueueTube = () => (
   <ScrollToTop>
-    <Card isHeader project="gymtodo" />
+    <Card isHeader project="queuetube" />
     <Content>
       <QueueTubeContent components={mdxComponents} />
       <BackButton />
