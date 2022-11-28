@@ -9,8 +9,9 @@ export const Wrapper = styled.main`
 `;
 
 export const Content = styled.div`
+  width: 100%;
   max-width: 800px;
-  margin: 0px 12px;
+  padding: 0px 12px;
 `;
 
 export const Header = styled.h1`
