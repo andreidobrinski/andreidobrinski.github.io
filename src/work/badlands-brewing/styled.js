@@ -14,9 +14,3 @@ export const LogoWrap = styled.div`
 export const Logo = styled.img`
   max-width: 100%;
 `;
-
-export const InstagramWrap = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
