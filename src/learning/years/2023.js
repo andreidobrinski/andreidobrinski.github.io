@@ -1,6 +1,13 @@
 export const year2023 = [
   { year: 2023 },
   {
+    name: 'NestJS: The Complete Developers Guide',
+    author: 'Stephen Grider',
+    type: 'Course',
+    link: 'https://www.udemy.com/course/nestjs-the-complete-developers-guide/',
+    repo: 'https://github.com/andreidobrinski/nestjs-complete-developers-guide-course-udemy',
+  },
+  {
     name: 'CSS Animations and Transitions',
     author: 'David Khourshid',
     type: 'Course',
