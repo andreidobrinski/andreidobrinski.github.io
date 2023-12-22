@@ -1,6 +1,13 @@
 export const year2023 = [
   { year: 2023 },
   {
+    name: 'NestJS Fundamentals',
+    author: 'Kamil Mysliwiec & Mark Pieszak',
+    type: 'Course',
+    link: 'https://learn.nestjs.com/p/fundamentals',
+    repo: 'https://github.com/andreidobrinski/nestjs-fundamentals-course',
+  },
+  {
     name: 'NestJS: The Complete Developers Guide',
     author: 'Stephen Grider',
     type: 'Course',
