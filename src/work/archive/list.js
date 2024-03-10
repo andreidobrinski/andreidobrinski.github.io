@@ -1,5 +1,13 @@
 const ArchiveList = [
   {
+    name: "Scratchpad",
+    description:
+      "A notes app focused on adding new ideas. The service worker installs the app for full offline use. Intended for use as a mobile PWA.",
+    tech: ["Svelte", "Tailwind", "XState", "PWA"],
+    demo: "https://andreidobrinski.com/scratchpad/",
+    repo: "https://github.com/andreidobrinski/scratchpad",
+  },
+  {
     name: "Gen Art Canvas",
     description:
       "A UI for playing around with parameters in a generative art example",
