@@ -6,6 +6,5 @@ export const year2024 = [
     type: "Course",
     link: "https://frontendmasters.com/courses/device-web-apis/",
     repo: "https://github.com/andreidobrinski/a-tour-of-web-capabilities-fm-course",
-    inProgress: true,
   },
 ];
