@@ -1,6 +1,13 @@
 export const year2024 = [
   { year: 2024 },
   {
+    name: "React Native v3",
+    author: "Kadi Kraman",
+    type: "Course",
+    link: "https://frontendmasters.com/courses/react-native-v3/",
+    repo: "https://github.com/andreidobrinski/react-native-v3-fm-course",
+  },
+  {
     name: "Guide for Launching Your Next Big Idea",
     author: "Paul Boag",
     type: "Course",
