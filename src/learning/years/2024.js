@@ -1,6 +1,13 @@
 export const year2024 = [
   { year: 2024 },
   {
+    name: "Intermediate React Native v2",
+    author: "Kadi Kraman",
+    type: "Course",
+    link: "https://frontendmasters.com/courses/intermediate-react-native-v2/",
+    repo: "https://github.com/andreidobrinski/intermediate-react-native-v2-fm-course",
+  },
+  {
     name: "React Native v3",
     author: "Kadi Kraman",
     type: "Course",
