@@ -1,6 +1,12 @@
 export const year2024 = [
   { year: 2024 },
   {
+    name: "Secure Web Application Development",
+    author: "Kobalt.io",
+    type: "Training",
+    link: "https://kobalt.io/security-web-app-development-course/",
+  },
+  {
     name: "Intermediate React Native v2",
     author: "Kadi Kraman",
     type: "Course",
