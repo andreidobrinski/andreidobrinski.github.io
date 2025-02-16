@@ -1,5 +1,11 @@
 const ArchiveList = [
   {
+    name: "deku-tree",
+    description: "A CLI tool to help with conventional git branch names.",
+    tech: ["CLI", "NPM", "JavaScript"],
+    repo: "https://github.com/andreidobrinski/deku-tree",
+  },
+  {
     name: "Scratchpad",
     description:
       "A notes app focused on adding new ideas. The service worker installs the app for full offline use. Intended for use as a mobile PWA.",
