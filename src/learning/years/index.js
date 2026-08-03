@@ -7,8 +7,10 @@ import { year2022 } from "./2022";
 import { year2023 } from "./2023";
 import { year2024 } from "./2024";
 import { year2025 } from "./2025";
+import { year2026 } from "./2026";
 
 export const learning = [
+  ...year2026,
   ...year2025,
   ...year2024,
   ...year2023,
